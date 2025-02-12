@@ -1,2 +1,2 @@
 # Traero-webxdc
-A modern Shopping list for the webxdc-platform (Delta Chat)
+A modern shopping list for the webxdc-platform (Delta Chat)
