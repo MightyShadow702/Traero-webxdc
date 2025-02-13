@@ -178,6 +178,7 @@ function update_handler(data)
   {
     objects[i].remove();
   }
+  objects = [];
   metadata = payload.metadata;
   for (var i in metadata)
   {
