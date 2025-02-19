@@ -98,6 +98,7 @@ class Item
           delete_timer = setInterval(function(){
           obj.dom.remove();
           delete metadata[name];
+          objects.splice(objects.indexOf(obj), 1);
           save_metadata();
           clearInterval(delete_timer);
           }, 1000);
@@ -173,23 +174,52 @@ function input_oninput(obj)
 
 function update_handler(data)
 {
-  payload = data.payload;
-  for (var i in objects)
-  {
-    objects[i].remove();
-  }
-  objects = [];
+  var payload = data.payload;
   metadata = payload.metadata;
+  var existing = Object.fromEntries(objects.map(i => [i.name, i]));
   for (var i in metadata)
   {
-    var obj = new Item(i, metadata[i].title, metadata[i].meta);
-    objects.push(obj);
-    obj.Update();
+    if (!(i in existing))
+    {
+      var obj = new Item(i, metadata[i].title, metadata[i].meta);
+      objects.push(obj);
+      obj.Update();
+    }
+    else
+    {
+      if (metadata[i].active)
+      {
+        existing[i].toActive();
+      }
+      else
+      {
+        existing[i].toLast();
+      }
+    }
+  }
+  for (var i in objects)
+  {
+    if (!(objects[i].name in metadata))
+    {
+      objects[i].remove();
+      objects.splice(i, 1);
+    }
   }
   update_search();
 }
 
+function change_language(lang)
+{
+  if (lang in languages)
+  {
+    document.getElementById("buy_title").innerHTML = languages[lang].buy;
+    document.getElementById("last_title").innerHTML = languages[lang].last;
+    document.getElementById("new_item_input").placeholder = languages[lang].search;
+  }
+}
+
 function onload()
 {
+  change_language(navigator.language);
   window.webxdc.setUpdateListener(update_handler);
 }

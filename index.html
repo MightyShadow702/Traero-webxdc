@@ -4,16 +4,17 @@
     <meta charset="utf-8"/>
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 		<script src="webxdc.js"></script>
-      <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+		<script src="js/languages.js"></script>
 		<link rel="stylesheet" href="css/main.css"/>
 		<title>Traero</title>
 	</head>
 	<body onload="onload()">
 		<input id="new_item_input" onkeydown="input_onkeydown(this, event)" oninput="input_oninput(this)" placeholder="Something I need..."></input>
 		<div id="item_list">
-			<p class="section_title">Buy</p>
+			<p id="buy_title" class="section_title">Buy</p>
 			<div id="current_items"></div>
-			<p class="section_title">Last used</p>
+			<p id="last_title" class="section_title">Last used</p>
 			<div id="last_items"></div>
 		<div>
 	</body>
