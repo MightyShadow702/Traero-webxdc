@@ -220,6 +220,6 @@ function change_language(lang)
 
 function onload()
 {
-  change_language(navigator.language);
+  change_language(navigator.language.split("-")[0]);
   window.webxdc.setUpdateListener(update_handler);
 }
