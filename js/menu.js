@@ -49,22 +49,20 @@ function show_controls()
   var content = show_activity(translate("controls_title"));
   content.classList.add("control_viewer");
 
-  var title_adding = document.createElement("p");
-  title_adding.innerHTML = translate("control_add");
-  title_adding.classList.add("title");
-  content.appendChild(title_adding);
-  var title_deleting = document.createElement("p");
-  title_deleting.classList.add("title");
-  title_deleting.innerHTML = translate("control_delete");
-  content.appendChild(title_deleting);
+  function add_image(title, src)
+  {
+    var element = document.createElement("div");
+    element.classList.add("image");
+    var title_txt = document.createElement("p");
+    title_txt.innerHTML = title;
+    element.appendChild(title_txt);
+    var img = document.createElement("img");
+    img.src = src;
+    element.appendChild(img);
+    content.appendChild(element);
+  }
 
-
-  var adding_img = document.createElement("img");
-  adding_img.src = "assets/controls/adding.gif";
-  adding_img.style.borderRadius = "25px";
-  content.appendChild(adding_img);
-  var remove_img = document.createElement("img");
-  remove_img.src = "assets/controls/deleting.gif";
-  remove_img.style.borderRadius = "25px";
+  add_image(translate("control_add"), "assets/controls/adding.gif");
+  add_image(translate("control_delete"), "assets/controls/deleting.gif");
   content.appendChild(remove_img);
 }

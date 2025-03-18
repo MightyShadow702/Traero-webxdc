@@ -43,7 +43,7 @@ var languages = {
 function translate(name)
 {
   var lang = navigator.language.split("-")[0];
-  if (lang in languages && name in languages[lang] && false)
+  if (lang in languages && name in languages[lang])
   {
     return languages[lang][name];
   }

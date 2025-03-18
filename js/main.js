@@ -224,6 +224,7 @@ function update_language(lang)
 
 function onload()
 {
-  //update_language();
+  update_language();
   window.webxdc.setUpdateListener(update_handler);
+  show_controls();
 }

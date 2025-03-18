@@ -139,23 +139,40 @@
 
 #activity #content {
   margin-top: 50px;
-  height: calc(100% - 50px);
-  overflow: hidden;
   overflow-y: auto;
 }
 
-.control_viewer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5%;
-  padding: 5%;
+@media screen and (orientation: landscape) {
+  .control_viewer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    overflow: hidden;
+  }
 }
 
-.control_viewer img {
-  width: 100%;
+@media screen and (orientation: portrait) {
+  .control_viewer {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
 }
 
-.control_viewer .title {
+.control_viewer .image {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  border-radius: 25px;
+}
+
+.control_viewer > .image p {
   text-align: center;
-  width: 100%;
+  margin: 5px;
+  color:white;
+}
+
+.control_viewer > .image img {
+  height: 100%;
+  object-fit: contain;
 }
