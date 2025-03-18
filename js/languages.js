@@ -9,7 +9,8 @@ var languages = {
     "controls_title": "Controls",
     "control_add": "Add item",
     "control_delete": "Delete item",
-    "control_editing": "Edit item"
+    "control_editing": "Edit item",
+    "export_message": "This file was exported by Traero"
   },
   "es": {
     "buy": "Compra",
@@ -21,7 +22,8 @@ var languages = {
     "controls_title": "Instrucciones",
     "control_add": "Añade cosa",
     "control_delete": "Quita cosa",
-    "control_editing": "Edita cosa"
+    "control_editing": "Edita cosa",
+    "export_message": "Este archivo estuvo exportado por Traero"
   },
   "de": {
     "buy": "Kaufen",
@@ -33,7 +35,8 @@ var languages = {
     "controls_title": "Bedienung",
     "control_add": "Item hinzufügen",
     "control_delete": "Item löschen",
-    "control_editing": "Item editieren"
+    "control_editing": "Item editieren",
+    "export_message": "Diese Datei ist aus Traero exportiert"
   },
   "nl": {
     "buy": "Kopen",

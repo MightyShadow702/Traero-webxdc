@@ -41,7 +41,27 @@ function show_activity(title=undefined)
 
 function show_about()
 {
-  show_activity(translate("about_title"));
+  var content = show_activity(translate("about_title"));
+  content.classList.add("about_screen");
+  var img = document.createElement("img");
+  img.id = "appicon";
+  img.src = "icon.png";
+  content.appendChild(img);
+  var title = document.createElement("p");
+  title.id = "apptitle";
+  title.innerHTML = "Traero";
+  content.appendChild(title);
+  var version_number = document.createElement("p");
+  version_number.innerHTML = "Version: 0.6.0";
+  content.appendChild(version_number);
+  var license_txt = document.createElement("p");
+  license_txt.id = "license_title";
+  license_txt.innerHTML = "License";
+  content.appendChild(license_txt);
+  var license = document.createElement("iframe");
+  license.id = "license_view"
+  license.src = "LICENSE";
+  content.appendChild(license);
 }
 
 function show_controls()
@@ -65,5 +85,4 @@ function show_controls()
   add_image(translate("control_add"), "assets/controls/adding.gif");
   add_image(translate("control_delete"), "assets/controls/deleting.gif");
   add_image(translate("control_editing"), "assets/controls/editing.gif");
-  content.appendChild(remove_img);
 }

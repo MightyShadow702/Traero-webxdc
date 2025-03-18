@@ -212,6 +212,27 @@ function update_handler(data)
   update_search();
 }
 
+function import_metadata()
+{
+  window.webxdc.importFiles({
+    mimeTypes: ["applcation/json"],
+    extensions: [".json"],
+  }).then((files) => {
+    files[0].text().then(text => {
+      Object.assign(metadata, JSON.parse(text));
+      save_metadata();
+    });
+  });
+}
+
+function export_metadata()
+{
+  window.webxdc.sendToChat({
+      file: {plainText: JSON.stringify(metadata), name: "Traero.json"},
+      text: translate("export_message")
+  });
+}
+
 function update_language(lang)
 {
   document.getElementById("buy_title").innerHTML = translate("buy");
@@ -228,5 +249,5 @@ function onload()
 {
   update_language();
   window.webxdc.setUpdateListener(update_handler);
-  show_controls();
+  show_about();
 }
