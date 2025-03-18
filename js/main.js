@@ -95,16 +95,18 @@ class Item
     var delete_timer = -1;
     function startPress()
     {
-         if (!metadata[name].active)
-        {
-          delete_timer = setInterval(function(){
-          obj.dom.remove();
-          delete metadata[name];
-          objects.splice(objects.indexOf(obj), 1);
-          save_metadata();
-          clearInterval(delete_timer);
-          }, 1000);
-        }
+      delete_timer = setInterval(function(){
+      obj.dom.remove();
+      if (metadata[name].active)
+      {
+        document.getElementById("new_item_input").value = name;
+        document.getElementById("new_item_input").focus();
+      }
+      delete metadata[name];
+      objects.splice(objects.indexOf(obj), 1);
+      save_metadata();
+      clearInterval(delete_timer);
+      }, 1000);
     }
     function cancelPress()
     {
@@ -226,5 +228,5 @@ function onload()
 {
   update_language();
   window.webxdc.setUpdateListener(update_handler);
-  show_controls();
+  //show_controls();
 }
