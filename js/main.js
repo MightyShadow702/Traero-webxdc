@@ -21,10 +21,10 @@ function save_metadata()
       "payload": {
         "metadata": metadata
       },
-      "summary": item_count + " items",
-      "info": window.webxdc.selfName + " updated the list in Traero"
+      "summary": item_count + " " + translate(item_count > 1 ? "update_items_txt" : "update_item_txt"),
+      "info": window.webxdc.selfName + " " + translate("update_message")
     },
-    window.webxdc.selfName + " updated the list in Traero"
+    window.webxdc.selfName + " " + translate("update_message")
   );
 }
 
@@ -249,5 +249,4 @@ function onload()
 {
   update_language();
   window.webxdc.setUpdateListener(update_handler);
-  show_about();
 }
