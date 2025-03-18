@@ -28,6 +28,7 @@ body {
 	text-align: center;
 	border-radius: 25px;
 	border: 0px;
+	z-index: 10;
 }
 
 #item {

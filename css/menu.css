@@ -1,0 +1,220 @@
+#menu {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  z-index: 20;
+  content: inherit;
+}
+
+:root{
+  --menu_background: #485858;
+}
+
+@media screen and (orientation: portrait) {
+  .menu_open {
+    width: 50%;
+    animation: menu_slide 1s;
+    background-color: var(--menu_background);
+  }
+  .menu_close #menucontet{
+    display: none;
+  }
+  @keyframes menu_slide {
+    0% {
+      width: 50px;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .menu_open {
+    width: 33%;
+    animation: menu_slide 1s;
+    background-color: var(--menu_background);
+  }
+  .menu_close #menucontet{
+    display: none;
+  }
+  @keyframes menu_slide {
+    0% {
+      width: 50px;
+    }
+    100% {
+      width: 33%;
+    }
+  }
+}
+
+.menu_open #menucontent
+{
+  display: flex;
+}
+
+#menu #toggle {
+  position: fixed;
+  left:0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 25%;
+  border: 0px;
+}
+
+#menu #toggle img {
+  width: 100%;
+  height: 100%;
+}
+
+#menucontent {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+#menucontent button {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #80908E;
+  font-size: 100%;
+  color: white;
+  border: 0px;
+  border-radius: 25px;
+}
+#menucontent button:hover {
+  background-color: #92AAA2FF;
+}
+
+#activity {
+  position: fixed;
+  top: 5%;
+  bottom: 5%;
+  right: 5%;
+  left: 5%;
+  background-color: #80908E;
+  z-index: 50;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+#activity #bt_close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 0px 25px 0px 25px;
+  border: 0px;
+  background-color: #909F9DFF;
+  color: white;
+  font-size: 16px;
+  z-index: 1;
+}
+
+#activity #bt_close:hover {
+  background-color: #92AAA2FF;
+}
+
+#activity #title {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  z-index: 0;
+}
+
+#activity #content {
+  margin-top: 50px;
+  overflow-y: auto;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+@media screen and (orientation: landscape) {
+  .control_viewer {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 5%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .control_viewer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.control_viewer .image {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  background-color: #49595D;
+  border-radius: 25px;
+  margin: 15px;
+}
+
+.control_viewer .image p {
+  height: 20px;
+  margin: 15px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.control_viewer .image img{
+  max-height: calc(100% - 50px);
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 25px;
+}
+
+.about_screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_screen #appicon {
+  width: 50%;
+  max-height: 50%;
+  object-fit: contain;
+}
+
+.about_screen #apptitle {
+  font-size: 25px;
+}
+
+.about_screen p {
+  color: white;
+  font-size: 18px;
+}
+
+.about_screen #license_title {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.about_screen #license_view {
+  width: 50%;
+  height: 50%;
+  margin: 0px 15px 15px 15px;
+  border: 1px solid white;
+}

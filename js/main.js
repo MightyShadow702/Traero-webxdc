@@ -4,6 +4,8 @@ var search_string = "";
 
 var objects = []
 
+var language = {};
+
 function save_metadata()
 {
     var item_count = 0;
@@ -19,10 +21,10 @@ function save_metadata()
       "payload": {
         "metadata": metadata
       },
-      "summary": item_count + " items",
-      "info": window.webxdc.selfName + " updated the list in Traero"
+      "summary": item_count + " " + translate(item_count == 1 ? "update_item_txt" : "update_items_txt"),
+      "info": window.webxdc.selfName + " " + translate("update_message")
     },
-    window.webxdc.selfName + " updated the list in Traero"
+    window.webxdc.selfName + " " + translate("update_message")
   );
 }
 
@@ -93,16 +95,18 @@ class Item
     var delete_timer = -1;
     function startPress()
     {
-         if (!metadata[name].active)
-        {
-          delete_timer = setInterval(function(){
-          obj.dom.remove();
-          delete metadata[name];
-          objects.splice(objects.indexOf(obj), 1);
-          save_metadata();
-          clearInterval(delete_timer);
-          }, 1000);
-        }
+      delete_timer = setInterval(function(){
+      obj.dom.remove();
+      if (metadata[name].active)
+      {
+        document.getElementById("new_item_input").value = name;
+        document.getElementById("new_item_input").focus();
+      }
+      delete metadata[name];
+      objects.splice(objects.indexOf(obj), 1);
+      save_metadata();
+      clearInterval(delete_timer);
+      }, 1000);
     }
     function cancelPress()
     {
@@ -208,18 +212,41 @@ function update_handler(data)
   update_search();
 }
 
-function change_language(lang)
+function import_metadata()
 {
-  if (lang in languages)
-  {
-    document.getElementById("buy_title").innerHTML = languages[lang].buy;
-    document.getElementById("last_title").innerHTML = languages[lang].last;
-    document.getElementById("new_item_input").placeholder = languages[lang].search;
-  }
+  window.webxdc.importFiles({
+    mimeTypes: ["applcation/json"],
+    extensions: [".json"],
+  }).then((files) => {
+    files[0].text().then(text => {
+      Object.assign(metadata, JSON.parse(text));
+      save_metadata();
+    });
+  });
+}
+
+function export_metadata()
+{
+  window.webxdc.sendToChat({
+      file: {plainText: JSON.stringify(metadata), name: "Traero.json"},
+      text: translate("export_message")
+  });
+}
+
+function update_language(lang)
+{
+  document.getElementById("buy_title").innerHTML = translate("buy");
+  document.getElementById("last_title").innerHTML = translate("last");
+  document.getElementById("new_item_input").placeholder = translate("search");
+
+  document.getElementById("bt_about").innerHTML = translate("about_title");
+  document.getElementById("bt_controls").innerHTML = translate("controls_title");
+  document.getElementById("bt_export").innerHTML = translate("bt_export");
+  document.getElementById("bt_import").innerHTML = translate("bt_import");
 }
 
 function onload()
 {
-  change_language(navigator.language.split("-")[0]);
+  update_language();
   window.webxdc.setUpdateListener(update_handler);
 }
