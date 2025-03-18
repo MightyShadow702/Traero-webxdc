@@ -8,7 +8,8 @@ var languages = {
     "about_title": "About",
     "controls_title": "Controls",
     "control_add": "Add item",
-    "control_delete": "Delete item"
+    "control_delete": "Delete item",
+    "control_editing": "Edit item"
   },
   "es": {
     "buy": "Compra",
@@ -19,7 +20,8 @@ var languages = {
     "about_title": "Informaciones",
     "controls_title": "Instrucciones",
     "control_add": "Añade cosa",
-    "control_delete": "Quita cosa"
+    "control_delete": "Quita cosa",
+    "control_editing": "Edita cosa"
   },
   "de": {
     "buy": "Kaufen",
@@ -30,7 +32,8 @@ var languages = {
     "about_title": "Über",
     "controls_title": "Bedienung",
     "control_add": "Item hinzufügen",
-    "control_delete": "Item löschen"
+    "control_delete": "Item löschen",
+    "control_editing": "Item editieren"
   },
   "nl": {
     "buy": "Kopen",

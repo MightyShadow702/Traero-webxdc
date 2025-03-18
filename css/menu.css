@@ -140,6 +140,8 @@
 #activity #content {
   margin-top: 50px;
   overflow-y: auto;
+  width: 100%;
+  height: calc(100% - 50px);
 }
 
 @media screen and (orientation: landscape) {
@@ -162,13 +164,17 @@
 .control_viewer .image {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 100%;
   border-radius: 25px;
+  margin: 15px;
+  background-color: #49595D;
+  padding: 15px;
 }
 
 .control_viewer > .image p {
   text-align: center;
-  margin: 5px;
+  font-size: 20px;
+  margin-bottom: 15px;
   color:white;
 }
 

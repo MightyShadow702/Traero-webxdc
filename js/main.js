@@ -228,5 +228,5 @@ function onload()
 {
   update_language();
   window.webxdc.setUpdateListener(update_handler);
-  //show_controls();
+  show_controls();
 }

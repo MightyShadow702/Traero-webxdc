@@ -64,5 +64,6 @@ function show_controls()
 
   add_image(translate("control_add"), "assets/controls/adding.gif");
   add_image(translate("control_delete"), "assets/controls/deleting.gif");
+  add_image(translate("control_editing"), "assets/controls/editing.gif");
   content.appendChild(remove_img);
 }
