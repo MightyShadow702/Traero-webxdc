@@ -1,0 +1,161 @@
+#menu {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  z-index: 20;
+  content: inherit;
+}
+
+:root{
+  --menu_background: #485858;
+}
+
+@media screen and (orientation: portrait) {
+  .menu_open {
+    width: 50%;
+    animation: menu_slide 1s;
+    background-color: var(--menu_background);
+  }
+  .menu_close #menucontet{
+    display: none;
+  }
+  @keyframes menu_slide {
+    0% {
+      width: 50px;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .menu_open {
+    width: 33%;
+    animation: menu_slide 1s;
+    background-color: var(--menu_background);
+  }
+  .menu_close #menucontet{
+    display: none;
+  }
+  @keyframes menu_slide {
+    0% {
+      width: 50px;
+    }
+    100% {
+      width: 33%;
+    }
+  }
+}
+
+.menu_open #menucontent
+{
+  display: flex;
+}
+
+#menu #toggle {
+  position: fixed;
+  left:0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 25%;
+  border: 0px;
+}
+
+#menu #toggle img {
+  width: 100%;
+  height: 100%;
+}
+
+#menucontent {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+#menucontent button {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #80908E;
+  color: white;
+  border: 0px;
+  border-radius: 25px;
+}
+#menucontent button:hover {
+  background-color: #92AAA2FF;
+}
+
+#activity {
+  position: fixed;
+  top: 5%;
+  bottom: 5%;
+  right: 5%;
+  left: 5%;
+  background-color: #80908E;
+  z-index: 50;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+#activity #bt_close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 0px 25px 0px 25px;
+  border: 0px;
+  background-color: #909F9DFF;
+  color: white;
+  font-size: 16px;
+  z-index: 1;
+}
+
+#activity #bt_close:hover {
+  background-color: #92AAA2FF;
+}
+
+#activity #title {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  z-index: 0;
+}
+
+#activity #content {
+  margin-top: 50px;
+  height: calc(100% - 50px);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.control_viewer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  padding: 5%;
+}
+
+.control_viewer img {
+  width: 100%;
+}
+
+.control_viewer .title {
+  text-align: center;
+  width: 100%;
+}

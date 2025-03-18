@@ -4,6 +4,8 @@ var search_string = "";
 
 var objects = []
 
+var language = {};
+
 function save_metadata()
 {
     var item_count = 0;
@@ -208,18 +210,20 @@ function update_handler(data)
   update_search();
 }
 
-function change_language(lang)
+function update_language(lang)
 {
-  if (lang in languages)
-  {
-    document.getElementById("buy_title").innerHTML = languages[lang].buy;
-    document.getElementById("last_title").innerHTML = languages[lang].last;
-    document.getElementById("new_item_input").placeholder = languages[lang].search;
-  }
+  document.getElementById("buy_title").innerHTML = translate("buy");
+  document.getElementById("last_title").innerHTML = translate("last");
+  document.getElementById("new_item_input").placeholder = translate("search");
+
+  document.getElementById("bt_about").innerHTML = translate("about_title");
+  document.getElementById("bt_controls").innerHTML = translate("controls_title");
+  document.getElementById("bt_export").innerHTML = translate("bt_export");
+  document.getElementById("bt_import").innerHTML = translate("bt_import");
 }
 
 function onload()
 {
-  change_language(navigator.language.split("-")[0]);
+  //update_language();
   window.webxdc.setUpdateListener(update_handler);
 }
