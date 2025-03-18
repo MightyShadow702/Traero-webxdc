@@ -27,7 +27,7 @@ var languages = {
     "control_delete": "Quita cosa",
     "control_editing": "Edita cosa",
     "export_message": "Este archivo estuvo exportado por Traero",
-    "update_message": "actualizó la lista en Traero"
+    "update_message": "actualizó la lista en Traero",
     "update_item_txt": "elemento",
     "update_items_txt": "elementos"
   },
