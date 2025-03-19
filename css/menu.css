@@ -11,6 +11,7 @@
 
 :root{
   --menu_background: #485858;
+  --menu_button_size: min(9vw, 100px);
 }
 
 @media screen and (orientation: portrait) {
@@ -24,7 +25,7 @@
   }
   @keyframes menu_slide {
     0% {
-      width: 50px;
+      width: var(--menu_button_size);
     }
     100% {
       width: 50%;
@@ -43,7 +44,7 @@
   }
   @keyframes menu_slide {
     0% {
-      width: 50px;
+      width: var(--menu_button_size);
     }
     100% {
       width: 33%;
@@ -60,11 +61,12 @@
   position: fixed;
   left:0px;
   top: 0px;
-  width: 50px;
-  height: 50px;
+  width: var(--menu_button_size);
+  height: var(--menu_button_size);
   background-color: transparent;
   border-radius: 25%;
   border: 0px;
+  cursor: pointer;
 }
 
 #menu #toggle img {
@@ -82,14 +84,16 @@
 }
 
 #menucontent button {
-  width: 100%;
-  height: 50px;
+  width: calc(100% - 10px);
+  height: min(var(--menu_button_size), 100px);
   overflow: hidden;
   background-color: #80908E;
-  font-size: 100%;
+  font-size: min(2.5vw, 25px);
   color: white;
   border: 0px;
   border-radius: 25px;
+  cursor: pointer;
+  margin-left: 5px;
 }
 #menucontent button:hover {
   background-color: #92AAA2FF;

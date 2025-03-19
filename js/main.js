@@ -4,7 +4,7 @@ var search_string = "";
 
 var objects = []
 
-var language = {};
+var editing = false;
 
 function save_metadata()
 {
@@ -99,8 +99,11 @@ class Item
       obj.dom.remove();
       if (metadata[name].active)
       {
+        editing = true;
+        search_string = name;
         document.getElementById("new_item_input").value = name;
         document.getElementById("new_item_input").focus();
+        update_search();
       }
       delete metadata[name];
       objects.splice(objects.indexOf(obj), 1);
@@ -124,20 +127,26 @@ class Item
   }
 }
 
+function add_item(name)
+{
+  if (!(name in metadata))
+  {
+    var content = name.split(",").map(i => i.trim())
+    metadata[name] = {"active": true, "title": content[0], "meta": content.slice(1).join(", ")};
+  }
+  else
+  {
+      metadata[name].active = true;
+  }
+  save_metadata();
+}
+
 function input_onkeydown(obj, event)
 {
   if (obj.value != "" && event.key == "Enter")
   {
-    if (!(obj.value in metadata))
-    {
-      var content = obj.value.split(",").map(i => i.trim())
-      metadata[obj.value] = {"active": true, "title": content[0], "meta": content.slice(1).join(", ")};
-    }
-    else
-    {
-        metadata[obj.value].active = true;
-    }
-    save_metadata();
+    editing = false;
+    add_item(obj.value);
     obj.value = "";
     search_string = "";
     update_search();
@@ -148,6 +157,7 @@ function update_search()
 {
     if (search_string != "")
     {
+        document.getElementById("input_clear").style.display = "";
         for (var i in objects)
         {
             var item = objects[i];
@@ -163,6 +173,7 @@ function update_search()
     }
     else
     {
+        document.getElementById("input_clear").style.display = "none";
         for (var i in objects)
         {
             objects[i].show();
@@ -174,6 +185,19 @@ function input_oninput(obj)
 {
     search_string = obj.value.trim();
     update_search();
+}
+
+function input_clear()
+{
+  var obj = document.getElementById("new_item_input");
+  if (editing)
+  {
+    add_item(obj.value);
+    editing = false;
+  }
+  obj.value = "";
+  search_string = "";
+  update_search();
 }
 
 function update_handler(data)
