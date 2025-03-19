@@ -5,6 +5,7 @@ var search_string = "";
 var objects = []
 
 var editing = false;
+var name_backup = "";
 
 function save_metadata()
 {
@@ -100,6 +101,7 @@ class Item
       if (metadata[name].active)
       {
         editing = true;
+        name_backup = name;
         search_string = name;
         document.getElementById("new_item_input").value = name;
         document.getElementById("new_item_input").focus();
@@ -192,7 +194,7 @@ function input_clear()
   var obj = document.getElementById("new_item_input");
   if (editing)
   {
-    add_item(obj.value.trim());
+    add_item(name_backup);
     editing = false;
   }
   obj.value = "";
