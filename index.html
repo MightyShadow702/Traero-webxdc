@@ -9,6 +9,7 @@
 		<script src="js/menu.js"></script>
 		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="stylesheet" href="css/menu.css"/>
+		<link rel="stylesheet" href="css/list.css"/>
 		<title>Traero</title>
 	</head>
 	<body onload="onload()">
@@ -21,7 +22,10 @@
 				<button onclick="show_about()" id="bt_about">About</button>
 			</div>
 		</div>
-		<input id="new_item_input" onkeydown="input_onkeydown(this, event)" oninput="input_oninput(this)" placeholder="Something I need..."></input>
+		<div id="inputarea">
+			<input id="new_item_input" onkeydown="input_onkeydown(this, event)" oninput="input_oninput(this)" placeholder="Something I need..."></input>
+			<button id="input_clear" onclick="input_clear()">X</button>
+		</div>
 		<div id="item_list">
 			<p id="buy_title" class="section_title">Buy</p>
 			<div id="current_items"></div>
