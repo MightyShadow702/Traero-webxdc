@@ -45,6 +45,7 @@ body {
 	z-index: 0;
 }
 #inputarea button {
+	display: none;
 	position: relative;
 	right: 0px;
 	top: 0px;

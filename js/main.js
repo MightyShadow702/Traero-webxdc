@@ -146,7 +146,7 @@ function input_onkeydown(obj, event)
   if (obj.value != "" && event.key == "Enter")
   {
     editing = false;
-    add_item(obj.value);
+    add_item(obj.value.trim());
     obj.value = "";
     search_string = "";
     update_search();
@@ -157,7 +157,7 @@ function update_search()
 {
     if (search_string != "")
     {
-        document.getElementById("input_clear").style.display = "";
+        document.getElementById("input_clear").style.display = "block";
         for (var i in objects)
         {
             var item = objects[i];
@@ -173,7 +173,7 @@ function update_search()
     }
     else
     {
-        document.getElementById("input_clear").style.display = "none";
+        document.getElementById("input_clear").style.display = "";
         for (var i in objects)
         {
             objects[i].show();
@@ -192,7 +192,7 @@ function input_clear()
   var obj = document.getElementById("new_item_input");
   if (editing)
   {
-    add_item(obj.value);
+    add_item(obj.value.trim());
     editing = false;
   }
   obj.value = "";
