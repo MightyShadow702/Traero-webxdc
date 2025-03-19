@@ -33,7 +33,6 @@ body {
 
 #inputarea > * {
 	border: 0px;
-	height: 100%;
 	font-size: 3.5vw;
 	color: black;
 	background-color: white;
@@ -41,10 +40,13 @@ body {
 
 #inputarea input {
 	text-align: center;
+	padding: 5px;
+	height: calc(100% - 10px);
 	width: 100%;
 	z-index: 0;
 }
 #inputarea button {
+	height: 100%;
 	display: none;
 	position: relative;
 	right: 0px;

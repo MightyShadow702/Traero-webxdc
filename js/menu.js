@@ -52,7 +52,7 @@ function show_about()
   title.innerHTML = "Traero";
   content.appendChild(title);
   var version_number = document.createElement("p");
-  version_number.innerHTML = "Version: 0.6.1";
+  version_number.innerHTML = "Version: 0.6.2";
   content.appendChild(version_number);
   var license_txt = document.createElement("p");
   license_txt.id = "license_title";
