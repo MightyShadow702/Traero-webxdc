@@ -6,23 +6,13 @@
 		<script src="webxdc.js"></script>
     <script src="js/tutorial.js"></script>
 		<script src="js/languages.js"></script>
-		<script src="js/menu.js"></script>
 		<script src="js/list.js"></script>
 		<link rel="stylesheet" href="css/main.css"/>
-		<link rel="stylesheet" href="css/menu.css"/>
 		<link rel="stylesheet" href="css/list.css"/>
+		<link rel="stylesheet" href="css/tutorial.css"/>
 		<title>Traero</title>
 	</head>
 	<body onload="onload()">
-		<div id="menu">
-			<button id="toggle" onclick="toggle_menu()"><img src="assets/menu.svg"></img></button>
-			<div id="menucontent">
-				<button onclick="import_metadata()" id="bt_import">Import</button>
-				<button onclick="export_metadata()" id="bt_export">Export</button>
-				<button onclick="show_controls()" id="bt_controls">Controls</button>
-				<button onclick="show_about()" id="bt_about">About</button>
-			</div>
-		</div>
 		<div id="inputarea">
 			<input id="new_item_input" onkeydown="input_onkeydown(this, event)" oninput="input_oninput(this)" placeholder="Something I need..."></input>
 			<button id="input_clear" onclick="input_clear()">X</button>

@@ -6,14 +6,21 @@ var languages = {
     "bt_export": "Export",
     "bt_import": "Import",
     "about_title": "About",
-    "controls_title": "Controls",
-    "control_add": "Add item",
-    "control_delete": "Delete item",
-    "control_editing": "Edit item",
     "export_message": "This file was exported by Traero",
     "update_message": "updated the list in Traero",
     "update_item_txt": "item",
-    "update_items_txt": "items"
+    "update_items_txt": "items",
+
+    //Tutorial
+    "tutorial_title": "Tutorial",
+    "tutorial_button_cancel": "Cancel",
+    "tutorial_button_next": "Next",
+    "tutorial_add": "Add at the bottom a name of something you want to buy.",
+    "tutorial_edit": "Great, now press the button of your thing for a moment.",
+    "tutorial_edit_change": "Now you are in the Edit-mode where you can make some modifications to your thing.\nWrite, separated after a comma, how many things you wish to buy.",
+    "tutorial_check": "Click on the thing to mark it as bought.",
+    "tutorial_remove": "Perfect! Now it is in your shopping history, so you can find it faster next time.\nNow press again for a moment on your thing to remove it completely from the shopping history.",
+    "tutorial_close": "This was the complete tutorial with all its function's importance.\nHave fun on your next shopping tour!"
   },
   "es": {
     "buy": "Compra",
@@ -22,14 +29,20 @@ var languages = {
     "bt_export": "Exportación",
     "bt_import": "Importación",
     "about_title": "Informaciones",
-    "controls_title": "Instrucciones",
-    "control_add": "Añade cosa",
-    "control_delete": "Quita cosa",
-    "control_editing": "Edita cosa",
     "export_message": "Este archivo estuvo exportado por Traero",
     "update_message": "actualizó la lista en Traero",
     "update_item_txt": "elemento",
-    "update_items_txt": "elementos"
+    "update_items_txt": "elementos",
+
+    //Tutorial
+    "tutorial_button_cancel": "Cancelar",
+    "tutorial_button_next": "Listo",
+    "tutorial_add": "Añade abajo un nombre de una cosa que quiere comprar.",
+    "tutorial_edit": "Muy bien, ahora pon el botón de tu cosa por un momento.",
+    "tutorial_edit_change": "Ahora estás en el modo de editar para hacer cambios a tu cosa.\nPara eso, escribe detrás del nombre de tu cosa con una coma separada qué cantidad de esta cosa necesitas.",
+    "tutorial_check": "Toca ahora el botón de tu cosa para maquearlo comprado.",
+    "tutorial_remove": "¡Es perfecto!  Ahora tu cosa está en la historia de compras, que por la siguiente vez lo podrías encontrar más fácil.\nPon el botón otra vez por un momento para quitarlo completo de la historia de compras.",
+    "tutorial_close": "Eso fue todo el tutorial con todas las funciones importantes.\n¡Un placer por ayudarte en tu próxima compra!"
   },
   "pt": {
      "buy": "Comprar",
@@ -38,10 +51,6 @@ var languages = {
      "bt_export": "Exportar",
      "bt_import": "Importar",
      "about_title": "Informações",
-     "controls_title": "Instruções",
-     "control_add": "Adicionar coisa",
-     "control_delete": "Remover coisa",
-     "control_editing": "Editar coisa",
      "export_message": "Este arquivo foi exportado pelo Traero",
      "update_message": "atualizou a lista no Traero",
      "update_item_txt": "elemento",
@@ -54,10 +63,6 @@ var languages = {
      "bt_export": "Exporter",
      "bt_import": "Importer",
      "about_title": "Informations",
-     "controls_title": "Instructions",
-     "control_add": "Ajouter un élément",
-     "control_delete": "Supprimer l'élément",
-     "control_editing": "Modifier la chose",
      "export_message": "Ce fichier a été exporté par Traero",
      "update_message": "a mis à jour la liste dans Traero",
      "update_item_txt": "élément",
@@ -70,10 +75,6 @@ var languages = {
      "bt_export": "Esporta",
      "bt_import": "Importa",
      "about_title": "Informazioni",
-     "controls_title": "Istruzioni",
-     "control_add": "Aggiungi cosa",
-     "control_delete": "Rimuovi cosa",
-     "control_editing": "Modifica cosa",
      "export_message": "Questo file è stato esportato da Traero",
      "update_message": "ha aggiornato l'elenco in Traero",
      "update_item_txt": "elemento",
@@ -86,14 +87,20 @@ var languages = {
     "bt_export": "Exportieren",
     "bt_import": "Importieren",
     "about_title": "Über",
-    "controls_title": "Bedienung",
-    "control_add": "Item hinzufügen",
-    "control_delete": "Item löschen",
-    "control_editing": "Item editieren",
     "export_message": "Diese Datei ist aus Traero exportiert",
     "update_message": "hat die Liste in Traero aktualisiert",
     "update_item_txt": "Eintrag",
-    "update_items_txt": "Einträge"
+    "update_items_txt": "Einträge",
+
+    //Tutorial
+    "tutorial_button_cancel": "Beenden",
+    "tutorial_button_next": "Fertig",
+    "tutorial_add": "Gib unten einen Namen für etwas was du kaufen möchtest ein.",
+    "tutorial_edit": "Sehr gut, jetzt drück länger auf deinen Gegenstand.",
+    "tutorial_edit_change": "Jetzt bist du im Editierungsmodus und kannst deinen Gegenstand anpassen.\nSchreib hierzu hinter deinen Gegenstand mit einem Komma getrennt wieviel du von ihm kaufen möchtest.",
+    "tutorial_check": "Klick nun auf deinen Gegenstand um zu sagen, dass du ihn gekauft hast.",
+    "tutorial_remove": "Perfekt! Jetzt ist er in deiner Kaufhistorie um ihn für das nächste mal schneller zu finden.\n Drücke nun länger auf deinen Gegenstand um ihn vollständig zu entfernen.",
+    "tutorial_close": "Das war das Tutorial mit allen wichtigen funktionen.\nViel spaß bei deinem nächsten Einkaufen!"
   },
   "nl": {
      "kopen": "Kopen",
@@ -166,19 +173,7 @@ function translate(name)
   var lang = navigator.language.split("-")[0];
   if (lang in languages && name in languages[lang])
   {
-    return languages[lang][name];
+    return languages[lang][name].replace("\n", "<br/>");
   }
-  return languages.en[name];
-}
-
-function update_language(lang)
-{
-  document.getElementById("buy_title").innerHTML = translate("buy");
-  document.getElementById("last_title").innerHTML = translate("last");
-  document.getElementById("new_item_input").placeholder = translate("search");
-
-  document.getElementById("bt_about").innerHTML = translate("about_title");
-  document.getElementById("bt_controls").innerHTML = translate("controls_title");
-  document.getElementById("bt_export").innerHTML = translate("bt_export");
-  document.getElementById("bt_import").innerHTML = translate("bt_import");
+  return languages.en[name].replace("\n", "<br/>");
 }

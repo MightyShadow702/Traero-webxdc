@@ -64,25 +64,7 @@ function show_about()
   content.appendChild(license);
 }
 
-function show_controls()
+function show_tutorial()
 {
-  var content = show_activity(translate("controls_title"));
-  content.classList.add("control_viewer");
-
-  function add_image(title, src)
-  {
-    var element = document.createElement("div");
-    element.classList.add("image");
-    var title_txt = document.createElement("p");
-    title_txt.innerHTML = title;
-    element.appendChild(title_txt);
-    var img = document.createElement("img");
-    img.src = src;
-    element.appendChild(img);
-    content.appendChild(element);
-  }
-
-  add_image(translate("control_add"), "assets/controls/adding.gif");
-  add_image(translate("control_delete"), "assets/controls/deleting.gif");
-  add_image(translate("control_editing"), "assets/controls/editing.gif");
+  window.location.replace("/tutorial.html");
 }

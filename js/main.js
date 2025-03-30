@@ -27,6 +27,18 @@ function update_handler(data)
   update_list();
 }
 
+function update_language(lang)
+{
+  document.getElementById("buy_title").innerHTML = translate("buy");
+  document.getElementById("last_title").innerHTML = translate("last");
+  document.getElementById("new_item_input").placeholder = translate("search");
+
+  document.getElementById("bt_about").innerHTML = translate("about_title");
+  document.getElementById("bt_tutorial").innerHTML = translate("tutorial_title");
+  document.getElementById("bt_export").innerHTML = translate("bt_export");
+  document.getElementById("bt_import").innerHTML = translate("bt_import");
+}
+
 function onload()
 {
   update_language();
