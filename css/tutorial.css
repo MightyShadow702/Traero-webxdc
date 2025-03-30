@@ -32,6 +32,7 @@
 }
 #tutorial_popup button:hover {
   background-color: #92AAA2FF;
+  cursor: pointer;
 }
 
 #tutorial_popup #cancel {
