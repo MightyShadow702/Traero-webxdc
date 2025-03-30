@@ -3,7 +3,7 @@
 	padding:0px;
 }
 :root {
-    --input_scale: 9vw;
+		--input_scale: 10vw;
     --item_scale: 27vw;
 }
 body {

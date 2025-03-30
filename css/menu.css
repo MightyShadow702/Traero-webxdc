@@ -88,7 +88,7 @@
   height: min(var(--menu_button_size), 100px);
   overflow: hidden;
   background-color: #80908E;
-  font-size: min(2.5vw, 25px);
+  font-size: min(3vw, 25px);
   color: white;
   border: 0px;
   border-radius: 25px;
