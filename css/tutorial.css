@@ -1,0 +1,50 @@
+:root {
+  --tutorial_button_height: 50px;
+}
+#tutorial_popup {
+  position: fixed;
+  bottom: calc(10% + var(--input_scale));
+  left: 10%;
+  width: 80%;
+  background-color: #80908E;
+  z-index: 1000;
+  border-radius: 25px;
+  padding-bottom: calc(var(--tutorial_button_height) + 5px);
+}
+
+#tutorial_popup p {
+  text-align: center;
+  font-size: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+#tutorial_popup #title {
+  font-size: 150%;
+  margin: 5px;
+}
+
+#tutorial_popup button {
+  background-color: #909F9DFF;
+  width: 100px;
+  height: var(--tutorial_button_height);
+  border: 0px;
+}
+#tutorial_popup button:hover {
+  background-color: #92AAA2FF;
+  cursor: pointer;
+}
+
+#tutorial_popup #cancel {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-radius: 0px 25px 0px 25px;
+}
+
+#tutorial_popup #next {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 25px 0px 25px 0px;
+}
