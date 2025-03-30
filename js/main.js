@@ -7,6 +7,19 @@ var objects = []
 var editing = false;
 var name_backup = "";
 
+var mouse_x = -1;
+var mouse_y = -1;
+
+//drag current position (touch)
+document.addEventListener('touchmove', function(event) {
+  if (event.changedTouches && event.changedTouches.length > 0) {
+      var touch = event.changedTouches[0];
+      mouse_x = touch.pageX;
+      mouse_y = touch.pageY;
+  }
+});
+
+
 function save_metadata()
 {
     var item_count = 0;
@@ -93,24 +106,32 @@ class Item
     this.dom.onclick = function(){
       obj.Toggle();
     }
+
     var delete_timer = -1;
+
     function startPress()
     {
+      var start_mouse_x = mouse_x;
+      var start_mouse_y = mouse_y;
       delete_timer = setInterval(function(){
-      obj.dom.remove();
-      if (metadata[name].active)
-      {
-        editing = true;
-        name_backup = name;
-        search_string = name;
-        document.getElementById("new_item_input").value = name;
-        document.getElementById("new_item_input").focus();
-        update_search();
-      }
-      delete metadata[name];
-      objects.splice(objects.indexOf(obj), 1);
-      save_metadata();
-      clearInterval(delete_timer);
+        //check if screen moved (touch), else just true
+        if (Math.abs(start_mouse_x - mouse_x) < 5 && Math.abs(start_mouse_y - mouse_y) < 5)
+        {
+          obj.dom.remove();
+          if (metadata[name].active)
+          {
+            editing = true;
+            name_backup = name;
+            search_string = name;
+            document.getElementById("new_item_input").value = name;
+            document.getElementById("new_item_input").focus();
+            update_search();
+          }
+          delete metadata[name];
+          objects.splice(objects.indexOf(obj), 1);
+          save_metadata();
+        }
+        clearInterval(delete_timer);
       }, 1000);
     }
     function cancelPress()
