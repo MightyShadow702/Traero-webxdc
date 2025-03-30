@@ -170,3 +170,15 @@ function translate(name)
   }
   return languages.en[name];
 }
+
+function update_language(lang)
+{
+  document.getElementById("buy_title").innerHTML = translate("buy");
+  document.getElementById("last_title").innerHTML = translate("last");
+  document.getElementById("new_item_input").placeholder = translate("search");
+
+  document.getElementById("bt_about").innerHTML = translate("about_title");
+  document.getElementById("bt_controls").innerHTML = translate("controls_title");
+  document.getElementById("bt_export").innerHTML = translate("bt_export");
+  document.getElementById("bt_import").innerHTML = translate("bt_import");
+}
