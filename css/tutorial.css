@@ -14,11 +14,11 @@
 
 #tutorial_popup p {
   text-align: center;
-  font-size: 125%;
+  font-size: 100%;
   color: white;
 }
 #tutorial_popup #title {
-  font-size: 175%;
+  font-size: 150%;
   margin: 5px;
 }
 
