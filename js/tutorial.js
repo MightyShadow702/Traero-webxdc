@@ -29,7 +29,7 @@ function tutorial_popup(next_fn, text="", show_next=false)
   bt_cancel.innerHTML = translate("tutorial_button_cancel");
   bt_cancel.id = "cancel";
   bt_cancel.onclick = function(){
-    window.location.replace("/");
+    window.location.replace("/index.html");
   }
   footer.appendChild(bt_cancel);
   if (show_next)
@@ -61,7 +61,7 @@ var current_step;
 
 function tutorial_end()
 {
-  window.location.replace("/");
+  window.location.replace("/index.html");
 }
 
 function tutorial_close()
