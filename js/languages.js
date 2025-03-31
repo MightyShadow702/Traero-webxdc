@@ -11,6 +11,12 @@ var languages = {
     "update_item_txt": "item",
     "update_items_txt": "items",
 
+    //toasts
+    "toast_fist_start": "Do you want the tutorial?",
+    "toast_fist_start_confirm": "Yes!",
+    "toast_undo": "Made a mistake?",
+    "toast_undo_confirm": "Undo!",
+
     //Tutorial
     "tutorial_title": "Tutorial",
     "tutorial_button_cancel": "Cancel",
@@ -121,6 +127,12 @@ var languages = {
     "update_message": "hat die Liste in Traero aktualisiert",
     "update_item_txt": "Eintrag",
     "update_items_txt": "Einträge",
+
+    //toasts
+    "toast_fist_start": "Möchtest du das Tutorial machen?",
+    "toast_fist_start_confirm": "Ja!",
+    "toast_undo": "Fehler gemacht?",
+    "toast_undo_confirm": "Rückgängig machen!",
 
     //Tutorial
     "tutorial_button_cancel": "Beenden",
