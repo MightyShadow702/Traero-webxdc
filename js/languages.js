@@ -40,6 +40,12 @@ var languages = {
     "update_item_txt": "elemento",
     "update_items_txt": "elementos",
 
+    //toasts
+    "toast_fist_start": "¿Quieres hacer un tutorial?",
+    "toast_fist_start_confirm": "Sí!",
+    "toast_undo": "¿Estuvo un accidente?",
+    "toast_undo_confirm": "Deshace!",
+
     //Tutorial
     "tutorial_button_cancel": "Cancelar",
     "tutorial_button_next": "Listo",
@@ -62,6 +68,12 @@ var languages = {
      "update_item_txt": "elemento",
      "update_items_txt": "elementos",
 
+     //toasts
+     "toast_fist_start": "Você quer fazer um tutorial?",
+     "toast_fist_start_confirm": "Sim!",
+     "toast_undo": "Houve um acidente?",
+     "toast_undo_confirm": "Desfazer!",
+
      //Tutorial
      "tutorial_button_cancel": "Cancelar",
      "tutorial_button_next": "Preparar",
@@ -73,9 +85,9 @@ var languages = {
      "tutorial_close": "Esse foi o tutorial completo com todos os recursos importantes.\nSerá um prazer ajudar você na sua próxima compra!"
    },
    "fr": {
-     "acheter": "Acheter",
+     "buy": "Acheter",
      "last": "Dernièrement utilisé",
-     "recherche": "Quelque chose dont j'ai besoin...",
+     "search": "Quelque chose dont j'ai besoin...",
      "bt_export": "Exporter",
      "bt_import": "Importer",
      "about_title": "Informations",
@@ -83,6 +95,12 @@ var languages = {
      "update_message": "a mis à jour la liste dans Traero",
      "update_item_txt": "élément",
      "update_items_txt": "éléments",
+
+     //toasts
+     "toast_fist_start": "Vous souhaitez réaliser un tutoriel?",
+     "toast_fist_start_confirm": "Ouais!",
+     "toast_undo": "Y a-t-il eu un accident?",
+     "toast_undo_confirm": "Défaire!",
 
      //Tutorial
      "tutorial_button_cancel": "Annuler",
@@ -95,9 +113,9 @@ var languages = {
      "tutorial_close": "C'était l'intégralité du tutoriel avec toutes les fonctionnalités importantes.\nAu plaisir de vous aider pour votre prochain achat!"
    },
    "it": {
-     "acquistare": "Acquista",
+     "buy": "Acquista",
      "last": "Ultimamente utilizzato",
-     "cerca": "Qualcosa di cui ho bisogno...",
+     "search": "Qualcosa di cui ho bisogno...",
      "bt_export": "Esporta",
      "bt_import": "Importa",
      "about_title": "Informazioni",
@@ -105,6 +123,12 @@ var languages = {
      "update_message": "ha aggiornato l'elenco in Traero",
      "update_item_txt": "elemento",
      "update_items_txt": "elementi",
+
+     //toasts
+     "toast_fist_start": "Vuoi realizzare un tutorial?",
+     "toast_fist_start_confirm": "Sì!",
+     "toast_undo": "C'è stato un incidente?",
+     "toast_undo_confirm": "Disfare!",
 
      //Tutorial
      "tutorial_button_cancel": "Cancellare",
@@ -145,9 +169,9 @@ var languages = {
     "tutorial_close": "Das war das Tutorial mit allen wichtigen Funktionen.\nViel Spaß bei deinem nächsten Einkaufen!"
   },
   "nl": {
-     "kopen": "Kopen",
+     "buy": "Kopen",
      "last": "Laatst gebruikt",
-     "zoeken": "Ik heb nodig...",
+     "search": "Ik heb nodig...",
      "bt_export": "Exporteurs",
      "bt_import": "Importeurs",
      "about_title": "Over",
@@ -155,6 +179,12 @@ var languages = {
      "update_message": "heeft de lijst in Traero bijgewerkt",
      "update_item_txt": "item",
      "update_items_txt": "items",
+
+     //toasts
+     "toast_fist_start": "Wil je de tutorial doen?",
+     "toast_fist_start_confirm": "Ja!",
+     "toast_undo": "Een fout gemaakt?",
+     "toast_undo_confirm": "Ongedaan maken!",
 
      //Tutorial
      "tutorial_button_cancel": "Finish",
@@ -177,6 +207,12 @@ var languages = {
       "update_message": "обновил список в Traero",
       "update_item_txt": "Запись",
       "update_items_txt": "Записи",
+
+      //toasts
+      "toast_fist_start": "Хотите пройти обучение?",
+      "toast_fist_start_confirm": "Да!",
+      "toast_undo": "Сделали ошибку?",
+      "toast_undo_confirm": "Отменить!",
 
       //Tutorial
       "tutorial_title": "Учебник",
@@ -201,6 +237,12 @@ var languages = {
        "update_item_txt": "物品",
        "update_items_txt": "项目",
 
+       //toasts
+       "toast_fist_start": "您想参加这个教程吗？",
+       "toast_fist_start_confirm": "是的！",
+       "toast_undo": "犯了错误？",
+       "toast_undo_confirm": "撤消！",
+
        //Tutorial
        "tutorial_title": "教程",
        "tutorial_button_cancel": "取消",
@@ -224,6 +266,11 @@ var languages = {
         "update_item_txt": "غرض",
         "update_items_txt": "أغراض",
 
+        //toasts
+        "toast_fist_start": "هل ترغب في القيام بالبرنامج التعليمي؟",
+        "toast_fist_start_confirm": "نعم!",
+        "toast_undo": "هل ارتكبت خطأ؟",
+        "toast_undo_confirm": "التراجع!",
 
         //Tutorial
         "tutorial_title": "برنامج تعليمي",
@@ -240,7 +287,8 @@ var languages = {
 
 function translate(name)
 {
-  var lang = navigator.language.split("-")[0];
+  const qp = new URLSearchParams(window.location.search);
+  var lang = qp.get("lang") != null ? qp.get("lang") : navigator.language.split("-")[0];
   if (lang in languages && name in languages[lang])
   {
     return languages[lang][name].replace("\n", "<br/>");
