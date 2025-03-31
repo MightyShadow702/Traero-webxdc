@@ -43,4 +43,9 @@ function onload()
 {
   update_language();
   window.webxdc.setUpdateListener(update_handler);
+  if (localStorage.firstSession == undefined)
+  {
+    localStorage.firstSession = false;
+    traero_toast(translate("toast_fist_start"), 5000, translate("toast_fist_start_confirm"), ()=>window.location.replace("/tutorial.html"));
+  }
 }
