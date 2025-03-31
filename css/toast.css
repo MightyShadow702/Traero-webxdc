@@ -1,5 +1,5 @@
 :root {
-  --toast-size: 9vw;
+  --toast-size: 10vw;
 }
 
 #toast {
@@ -18,7 +18,7 @@
 
 #toast #message {
   width: calc(100% - var(--toast-size)*2);
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   text-align: center;
   z-index: 1;
 }
@@ -36,7 +36,7 @@
   background-color: transparent;
   z-index: 2;
   cursor: pointer;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 #toast #timer_bg {

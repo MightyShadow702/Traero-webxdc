@@ -10,10 +10,13 @@ function traero_toast(msg, mstime, button_text=null, button_onclick=undefined)
   text.id = "message";
   text.innerHTML = msg;
   toast.appendChild(text);
-  var bt_confirm = document.createElement("button");
-  bt_confirm.innerHTML = button_text;
-  bt_confirm.id = "bt_confirm";
-  toast.appendChild(bt_confirm);
+  if (button_text != null)
+  {
+    var bt_confirm = document.createElement("button");
+    bt_confirm.innerHTML = button_text;
+    bt_confirm.id = "bt_confirm";
+    toast.appendChild(bt_confirm);
+  }
 
   var current_time = 0;
   var timer_updater = setInterval(function(){
@@ -26,14 +29,18 @@ function traero_toast(msg, mstime, button_text=null, button_onclick=undefined)
     clearInterval(timer_updater);
     toast.remove();
   }, mstime+100);
-  bt_confirm.onclick = function()
+  if (button_text != null)
   {
-    clearInterval(id);
-    clearInterval(timer_updater);
-    toast.remove();
-    if (button_onclick != undefined)
+    bt_confirm.onclick = function()
     {
-      button_onclick();
+      clearInterval(id);
+      clearInterval(timer_updater);
+      toast.remove();
+      if (button_onclick != undefined)
+      {
+        button_onclick();
+      }
     }
+    text.style.width = "calc(100% - " + bt_confirm.offsetWidth + "*2px)";
   }
 }
