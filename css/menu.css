@@ -10,15 +10,14 @@
 }
 
 :root{
-  --menu_background: #485858;
   --menu_button_size: min(9vw, 100px);
 }
 
 @media screen and (orientation: portrait) {
   .menu_open {
     width: 50%;
-    animation: menu_slide 1s;
-    background-color: var(--menu_background);
+    animation: menu_slide 500ms;
+    background-color: var(--menu);
   }
   .menu_close #menucontet{
     display: none;
@@ -37,7 +36,7 @@
   .menu_open {
     width: 33%;
     animation: menu_slide 1s;
-    background-color: var(--menu_background);
+    background-color: var(--menu);
   }
   .menu_close #menucontet{
     display: none;
@@ -87,7 +86,7 @@
   width: calc(100% - 10px);
   height: min(var(--menu_button_size), 100px);
   overflow: hidden;
-  background-color: #80908E;
+  background-color: var(--menu-button);
   font-size: min(3vw, 25px);
   color: white;
   border: 0px;
@@ -96,7 +95,7 @@
   margin-left: 5px;
 }
 #menucontent button:hover {
-  background-color: #92AAA2FF;
+  background-color: var(--menu-button-hover);
 }
 
 .about_screen {

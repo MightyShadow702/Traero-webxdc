@@ -48,3 +48,19 @@
   width: 100%;
   height: calc(100% - 50px);
 }
+
+#popup #content button {
+  width: calc(100% - 10px);
+  font-size: min(3vw, 25px);
+  height: min(var(--menu_button_size), 100px);
+  margin: 5px;
+  border: 0px;
+  border-radius: 25px;
+  background-color: var(--popup-button);
+  color: var(--popup-button-text);
+}
+
+#popup #content button:hover {
+  background-color: var(--popup-button-hover);
+  cursor: pointer;
+}

@@ -2,7 +2,17 @@ class traero_popup
 {
   add(object)
   {
-    this.dom.appendChild(object);
+    this.content.appendChild(object);
+  }
+  add_button(name, func)
+  {
+    var bt = document.createElement("button");
+    bt.innerHTML = name;
+    if (func)
+    {
+      bt.onclick = function(event) {func(bt, event);};
+    }
+    this.add(bt);
   }
   constructor(title)
   {
@@ -20,16 +30,20 @@ class traero_popup
     if (title)
     {
       var txt_title = document.createElement("p");
+      this._title = txt_title;
       txt_title.id = "title";
       txt_title.innerHTML = title;
       dom.appendChild(txt_title);
     }
     var content = document.createElement("div");
+    this.content = content;
     content.id = "content";
     dom.appendChild(content);
     document.body.appendChild(dom);
   }
 }
+
+
 function show_popup(title=undefined)
 {
   var frame = document.createElement("div");
