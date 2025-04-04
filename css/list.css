@@ -14,7 +14,6 @@
 	cursor: pointer;
 }
 #item #title {
-    color: white;
     font-size: 4vw;
     margin: 5px;
 }
@@ -54,17 +53,25 @@
 	font-size: 5vw;
 	margin: 15px;
 	text-align: center;
-	color: white;
+	color: var(--list-text);
 }
 
 #last_items #item {
-	background-color: #68B8A8;
+	background-color: var(--list-last);
+	color: var(--list-last-text);
 }
 #last_items #item:hover
 {
-	background-color: #B4CDC9;
+	background-color: var(--list-last-hover);
+	color: var(--list-last-hover-text);
 }
 
 #current_items #item {
-    background-color: #F06870;
+	background-color: var(--list-active);
+	color: var(--list-active-text);
+}
+
+#current_items #item:hover {
+	background-color: var(--list-active-hover);
+	color: var(--list-active-hover-text);
 }

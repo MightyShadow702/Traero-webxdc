@@ -88,7 +88,7 @@
   overflow: hidden;
   background-color: var(--menu-button);
   font-size: min(3vw, 25px);
-  color: white;
+  color: var(--menu-button-text);
   border: 0px;
   border-radius: 25px;
   cursor: pointer;
@@ -96,6 +96,7 @@
 }
 #menucontent button:hover {
   background-color: var(--menu-button-hover);
+  color: var(--menu-button-hover-text);
 }
 
 .about_screen {
@@ -116,7 +117,7 @@
 }
 
 .about_screen p {
-  color: white;
+  color: var(--popup-text);
   font-size: 18px;
 }
 

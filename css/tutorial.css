@@ -33,6 +33,7 @@
 }
 #tutorial_popup button:hover {
   background-color: var(--popup-button-hover);
+  color: var(--popup-button-hover-text);
   cursor: pointer;
 }
 
