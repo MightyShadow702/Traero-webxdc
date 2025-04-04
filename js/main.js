@@ -46,6 +46,6 @@ function onload()
   if (localStorage.firstSession == undefined)
   {
     localStorage.firstSession = false;
-    traero_toast(translate("toast_fist_start"), 5000, translate("toast_fist_start_confirm"), ()=>window.location.replace("/tutorial.html"));
+    traero_toast(translate("toast_fist_start"), 5000, true, ()=>window.location.replace("/tutorial.html"));
   }
 }

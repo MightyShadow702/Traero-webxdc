@@ -12,10 +12,8 @@ var languages = {
     "update_items_txt": "items",
 
     //toasts
-    "toast_fist_start": "Do you want the tutorial?",
-    "toast_fist_start_confirm": "Yes!",
+    "toast_fist_start": "Open tutorial?",
     "toast_undo": "Made a mistake?",
-    "toast_undo_confirm": "Undo!",
 
     //Tutorial
     "tutorial_title": "Tutorial",
@@ -41,10 +39,8 @@ var languages = {
     "update_items_txt": "elementos",
 
     //toasts
-    "toast_fist_start": "¿Quieres hacer un tutorial?",
-    "toast_fist_start_confirm": "Sí!",
+    "toast_fist_start": "¿Abrir el tutorial?",
     "toast_undo": "¿Estuvo un accidente?",
-    "toast_undo_confirm": "Deshace!",
 
     //Tutorial
     "tutorial_button_cancel": "Cancelar",
@@ -69,10 +65,8 @@ var languages = {
      "update_items_txt": "elementos",
 
      //toasts
-     "toast_fist_start": "Você quer fazer um tutorial?",
-     "toast_fist_start_confirm": "Sim!",
+     "toast_fist_start": "Abrir o tutorial?",
      "toast_undo": "Houve um acidente?",
-     "toast_undo_confirm": "Desfazer!",
 
      //Tutorial
      "tutorial_button_cancel": "Cancelar",
@@ -97,10 +91,8 @@ var languages = {
      "update_items_txt": "éléments",
 
      //toasts
-     "toast_fist_start": "Vous souhaitez réaliser un tutoriel?",
-     "toast_fist_start_confirm": "Ouais!",
+     "toast_fist_start": "Ouvrir le tutoriel?",
      "toast_undo": "Y a-t-il eu un accident?",
-     "toast_undo_confirm": "Défaire!",
 
      //Tutorial
      "tutorial_button_cancel": "Annuler",
@@ -125,10 +117,8 @@ var languages = {
      "update_items_txt": "elementi",
 
      //toasts
-     "toast_fist_start": "Vuoi realizzare un tutorial?",
-     "toast_fist_start_confirm": "Sì!",
+     "toast_fist_start": "Vuoi aprire il tutorial?",
      "toast_undo": "C'è stato un incidente?",
-     "toast_undo_confirm": "Disfare!",
 
      //Tutorial
      "tutorial_button_cancel": "Cancellare",
@@ -153,10 +143,8 @@ var languages = {
     "update_items_txt": "Einträge",
 
     //toasts
-    "toast_fist_start": "Möchtest du das Tutorial machen?",
-    "toast_fist_start_confirm": "Ja!",
+    "toast_fist_start": "Tutorial öffnen?",
     "toast_undo": "Fehler gemacht?",
-    "toast_undo_confirm": "Rückgängig machen!",
 
     //Tutorial
     "tutorial_button_cancel": "Beenden",
@@ -181,10 +169,8 @@ var languages = {
      "update_items_txt": "items",
 
      //toasts
-     "toast_fist_start": "Wil je de tutorial doen?",
-     "toast_fist_start_confirm": "Ja!",
+     "toast_fist_start": "Handleiding openen?",
      "toast_undo": "Een fout gemaakt?",
-     "toast_undo_confirm": "Ongedaan maken!",
 
      //Tutorial
      "tutorial_button_cancel": "Finish",
@@ -209,10 +195,8 @@ var languages = {
       "update_items_txt": "Записи",
 
       //toasts
-      "toast_fist_start": "Хотите пройти обучение?",
-      "toast_fist_start_confirm": "Да!",
+      "toast_fist_start": "Открыть учебник?",
       "toast_undo": "Сделали ошибку?",
-      "toast_undo_confirm": "Отменить!",
 
       //Tutorial
       "tutorial_title": "Учебник",
@@ -238,10 +222,8 @@ var languages = {
        "update_items_txt": "项目",
 
        //toasts
-       "toast_fist_start": "您想参加这个教程吗？",
-       "toast_fist_start_confirm": "是的！",
+       "toast_fist_start": "开放教程吗？",
        "toast_undo": "犯了错误？",
-       "toast_undo_confirm": "撤消！",
 
        //Tutorial
        "tutorial_title": "教程",
@@ -267,10 +249,8 @@ var languages = {
         "update_items_txt": "أغراض",
 
         //toasts
-        "toast_fist_start": "هل ترغب في القيام بالبرنامج التعليمي؟",
-        "toast_fist_start_confirm": "نعم!",
+        "toast_fist_start": "فتح البرنامج التعليمي؟",
         "toast_undo": "هل ارتكبت خطأ؟",
-        "toast_undo_confirm": "التراجع!",
 
         //Tutorial
         "tutorial_title": "برنامج تعليمي",
