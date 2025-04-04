@@ -6,7 +6,7 @@
   bottom: calc(10% + var(--input_scale));
   left: 10%;
   width: 80%;
-  background-color: #80908E;
+  background-color: var(--popup);
   z-index: 1000;
   border-radius: 25px;
   padding-bottom: calc(var(--tutorial_button_height) + 5px);
@@ -14,6 +14,7 @@
 
 #tutorial_popup p {
   text-align: center;
+  color: var(--popup-button-text);
   font-size: 100%;
   margin-left: 5px;
   margin-right: 5px;
@@ -24,13 +25,14 @@
 }
 
 #tutorial_popup button {
-  background-color: #909F9DFF;
+  background-color: var(--popup-button);
+  color: var(--popup-button-text);
   width: 100px;
   height: var(--tutorial_button_height);
   border: 0px;
 }
 #tutorial_popup button:hover {
-  background-color: #92AAA2FF;
+  background-color: var(--popup-button-hover);
   cursor: pointer;
 }
 
