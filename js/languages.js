@@ -15,6 +15,11 @@ var languages = {
     "toast_fist_start": "Open tutorial?",
     "toast_undo": "Made a mistake?",
 
+    //languages
+    "language_title": "Language",
+    "bt_automatic": "Automatic",
+    "language_name": "English",
+
     //Tutorial
     "tutorial_title": "Tutorial",
     "tutorial_button_cancel": "Cancel",
@@ -42,6 +47,11 @@ var languages = {
     "toast_fist_start": "¿Abrir el tutorial?",
     "toast_undo": "¿Estuvo un accidente?",
 
+    //languages
+    "language_title": "Idioma",
+    "bt_automatic": "automáticamente",
+    "language_name": "Español",
+
     //Tutorial
     "tutorial_button_cancel": "Cancelar",
     "tutorial_button_next": "Listo",
@@ -67,6 +77,11 @@ var languages = {
      //toasts
      "toast_fist_start": "Abrir o tutorial?",
      "toast_undo": "Houve um acidente?",
+
+     //languages
+     "language_title": "Linguagem",
+     "bt_automatic": "Automaticamente",
+     "language_name": "Português",
 
      //Tutorial
      "tutorial_button_cancel": "Cancelar",
@@ -94,6 +109,11 @@ var languages = {
      "toast_fist_start": "Ouvrir le tutoriel?",
      "toast_undo": "Y a-t-il eu un accident?",
 
+     //languages
+     "language_title": "Langue",
+     "bt_automatic": "Automatiquement",
+     "language_name": "Français",
+
      //Tutorial
      "tutorial_button_cancel": "Annuler",
      "tutorial_button_next": "Prêt",
@@ -119,6 +139,11 @@ var languages = {
      //toasts
      "toast_fist_start": "Vuoi aprire il tutorial?",
      "toast_undo": "C'è stato un incidente?",
+
+     //languages
+     "language_title": "Lingua",
+     "bt_automatic": "Automaticamente",
+     "language_name": "Italiano",
 
      //Tutorial
      "tutorial_button_cancel": "Cancellare",
@@ -146,6 +171,11 @@ var languages = {
     "toast_fist_start": "Tutorial öffnen?",
     "toast_undo": "Fehler gemacht?",
 
+    //languages
+    "language_title": "Sprache",
+    "bt_automatic": "Automatisch",
+    "language_name": "Deutsch",
+
     //Tutorial
     "tutorial_button_cancel": "Beenden",
     "tutorial_button_next": "Fertig",
@@ -172,6 +202,11 @@ var languages = {
      "toast_fist_start": "Handleiding openen?",
      "toast_undo": "Een fout gemaakt?",
 
+     //languages
+     "language_title": "Taal",
+     "bt_automatic": "Automatisch",
+     "language_name": "Nederlands",
+
      //Tutorial
      "tutorial_button_cancel": "Finish",
      "tutorial_button_next": "Klaar",
@@ -197,6 +232,11 @@ var languages = {
       //toasts
       "toast_fist_start": "Открыть учебник?",
       "toast_undo": "Сделали ошибку?",
+
+      //languages
+      "language_title": "Язык",
+      "bt_automatic": "Автоматически",
+      "language_name": "Русский",
 
       //Tutorial
       "tutorial_title": "Учебник",
@@ -225,6 +265,11 @@ var languages = {
        "toast_fist_start": "开放教程吗？",
        "toast_undo": "犯了错误？",
 
+       //languages
+       "language_title": "语言",
+       "bt_automatic": "自动地",
+       "language_name": "简体中文",
+
        //Tutorial
        "tutorial_title": "教程",
        "tutorial_button_cancel": "取消",
@@ -252,6 +297,11 @@ var languages = {
         "toast_fist_start": "فتح البرنامج التعليمي؟",
         "toast_undo": "هل ارتكبت خطأ؟",
 
+        //languages
+        "language_title": "غة",
+        "bt_automatic": "تلقائيا",
+        "language_name": "عربي",
+
         //Tutorial
         "tutorial_title": "برنامج تعليمي",
         "tutorial_button_cancel": "إلغاء",
@@ -267,11 +317,17 @@ var languages = {
 
 function translate(name)
 {
-  const qp = new URLSearchParams(window.location.search);
-  var lang = qp.get("lang") != null ? qp.get("lang") : navigator.language.split("-")[0];
+  var lang = localStorage.selectedLanguage != undefined ? localStorage.selectedLanguage : navigator.language.split("-")[0];
   if (lang in languages && name in languages[lang])
   {
     return languages[lang][name].replace("\n", "<br/>");
   }
-  return languages.en[name].replace("\n", "<br/>");
+  else if (name in languages.en)
+  {
+    return languages.en[name].replace("\n", "<br/>");
+  }
+  else
+  {
+    return "{"+name+"}"
+  }
 }

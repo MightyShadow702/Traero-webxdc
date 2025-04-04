@@ -14,7 +14,11 @@ class traero_popup
     }
     this.add(bt);
   }
-  constructor(title)
+  close()
+  {
+    this.dom.remove();
+  }
+  constructor(title, classes=[])
   {
     var dom = document.createElement("div");
     this.dom = dom;
@@ -39,6 +43,10 @@ class traero_popup
     this.content = content;
     content.id = "content";
     dom.appendChild(content);
+    for (var i in classes)
+    {
+      content.classList.add(classes[i]);
+    }
     document.body.appendChild(dom);
   }
 }

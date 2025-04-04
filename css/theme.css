@@ -1,24 +1,6 @@
-/*
 :root {
   --popup: #80908E;
-  --popup-close: #909F9DFF;
-  --popup-close-hover: #92AAA2FF;
-  --popup-close-text: black;
-
-  --popup-button: #909F9DFF;
-  --popup-button-text: black;
-  --popup-button-hover: #92AAA2FF;
-
-  --menu: #485858;
-  --menu-button: #80908E;
-  --menu-button-hover: #92AAA2FF;
-  --menu-button-text: white;
-}
-*/
-
-:root {
-  --popup: #80908E;
-  --popup-title: white;
+  --popup-text: white;
   --popup-close: #909F9DFF;
   --popup-close-text: white;
   --popup-close-hover: #92AAA2FF;
