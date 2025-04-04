@@ -59,6 +59,7 @@ class Item
     {
       this.toLast();
     }
+    document.body.focus();
   }
   Toggle()
   {
