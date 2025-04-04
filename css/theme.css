@@ -1,0 +1,9 @@
+:root {
+  /*
+    popup colores
+  */
+  --popup: #80908E;
+  --popup-close: #909F9DFF;
+  --popup-close-hover: #92AAA2FF;
+  --popup-close-text: black;
+}

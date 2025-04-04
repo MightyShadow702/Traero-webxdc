@@ -13,35 +13,9 @@ function toggle_menu()
   }
 }
 
-function show_activity(title=undefined)
-{
-  var frame = document.createElement("div");
-  frame.id = "activity";
-  var bt_close = document.createElement("button");
-  bt_close.id = "bt_close";
-  bt_close.innerHTML = "X";
-  bt_close.onclick = function()
-  {
-    frame.remove();
-  }
-  frame.appendChild(bt_close);
-  if (title)
-  {
-    var txt_title = document.createElement("p");
-    txt_title.id = "title";
-    txt_title.innerHTML = title;
-    frame.appendChild(txt_title);
-  }
-  var content = document.createElement("div");
-  content.id = "content";
-  frame.appendChild(content);
-  document.body.appendChild(frame);
-  return content;
-}
-
 function show_about()
 {
-  var content = show_activity(translate("about_title"));
+  var content = show_popup(translate("about_title"));
   content.classList.add("about_screen");
   var img = document.createElement("img");
   img.id = "appicon";
