@@ -54,7 +54,7 @@ function show_languages()
     languages_dialog.close();
   }
   var sys_lang = navigator.language.split("-")[0];
-  var sys_lang_name = sys_lang in languages ? languages[sys_lang].language_name : sys_lang.toUpperCase();
+  var sys_lang_name = sys_lang in languages ? languages[sys_lang].language_name : languages.en.language_name;
   languages_dialog.add_button(translate("bt_automatic") + " ("+sys_lang_name+")", () => setLanguage(null));
   for (var code in languages)
   {
