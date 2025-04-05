@@ -46,6 +46,11 @@ function onload()
 
   window.webxdc.setUpdateListener(update_handler);
 
+  if (localStorage.selectedTheme != undefined)
+  {
+    changeTheme(themes[localStorage.selectedTheme]);
+  }
+
   if (localStorage.firstSession == undefined)
   {
     localStorage.firstSession = false;
