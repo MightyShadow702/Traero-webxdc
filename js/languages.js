@@ -12,10 +12,17 @@ var languages = {
     "update_items_txt": "items",
 
     //toasts
-    "toast_fist_start": "Do you want the tutorial?",
-    "toast_fist_start_confirm": "Yes!",
+    "toast_fist_start": "Open tutorial?",
     "toast_undo": "Made a mistake?",
-    "toast_undo_confirm": "Undo!",
+
+    //languages
+    "language_title": "Language",
+    "bt_automatic": "Automatic",
+    "language_name": "English",
+
+    //themes
+    "themes_title": "Style",
+    "bt_default_theme": "Default",
 
     //Tutorial
     "tutorial_title": "Tutorial",
@@ -41,10 +48,17 @@ var languages = {
     "update_items_txt": "elementos",
 
     //toasts
-    "toast_fist_start": "¿Quieres hacer un tutorial?",
-    "toast_fist_start_confirm": "Sí!",
+    "toast_fist_start": "¿Abrir el tutorial?",
     "toast_undo": "¿Estuvo un accidente?",
-    "toast_undo_confirm": "Deshace!",
+
+    //languages
+    "language_title": "Idioma",
+    "bt_automatic": "automáticamente",
+    "language_name": "Español",
+
+    //themes
+    "themes_title": "Estilo",
+    "bt_default_theme": "Estándar",
 
     //Tutorial
     "tutorial_button_cancel": "Cancelar",
@@ -69,10 +83,17 @@ var languages = {
      "update_items_txt": "elementos",
 
      //toasts
-     "toast_fist_start": "Você quer fazer um tutorial?",
-     "toast_fist_start_confirm": "Sim!",
+     "toast_fist_start": "Abrir o tutorial?",
      "toast_undo": "Houve um acidente?",
-     "toast_undo_confirm": "Desfazer!",
+
+     //languages
+     "language_title": "Linguagem",
+     "bt_automatic": "Automaticamente",
+     "language_name": "Português",
+
+     //themes
+     "themes_title": "Estilo",
+     "bt_default_theme": "Padrão",
 
      //Tutorial
      "tutorial_button_cancel": "Cancelar",
@@ -97,10 +118,17 @@ var languages = {
      "update_items_txt": "éléments",
 
      //toasts
-     "toast_fist_start": "Vous souhaitez réaliser un tutoriel?",
-     "toast_fist_start_confirm": "Ouais!",
+     "toast_fist_start": "Ouvrir le tutoriel?",
      "toast_undo": "Y a-t-il eu un accident?",
-     "toast_undo_confirm": "Défaire!",
+
+     //languages
+     "language_title": "Langue",
+     "bt_automatic": "Automatiquement",
+     "language_name": "Français",
+
+     //themes
+     "themes_title": "Style",
+     "bt_default_theme": "Standard",
 
      //Tutorial
      "tutorial_button_cancel": "Annuler",
@@ -125,10 +153,17 @@ var languages = {
      "update_items_txt": "elementi",
 
      //toasts
-     "toast_fist_start": "Vuoi realizzare un tutorial?",
-     "toast_fist_start_confirm": "Sì!",
+     "toast_fist_start": "Vuoi aprire il tutorial?",
      "toast_undo": "C'è stato un incidente?",
-     "toast_undo_confirm": "Disfare!",
+
+     //languages
+     "language_title": "Lingua",
+     "bt_automatic": "Automaticamente",
+     "language_name": "Italiano",
+
+     //themes
+     "themes_title": "Stile",
+     "bt_default_theme": "Standard",
 
      //Tutorial
      "tutorial_button_cancel": "Cancellare",
@@ -153,10 +188,17 @@ var languages = {
     "update_items_txt": "Einträge",
 
     //toasts
-    "toast_fist_start": "Möchtest du das Tutorial machen?",
-    "toast_fist_start_confirm": "Ja!",
+    "toast_fist_start": "Tutorial öffnen?",
     "toast_undo": "Fehler gemacht?",
-    "toast_undo_confirm": "Rückgängig machen!",
+
+    //languages
+    "language_title": "Sprache",
+    "bt_automatic": "Automatisch",
+    "language_name": "Deutsch",
+
+    //themes
+    "themes_title": "Stil",
+    "bt_default_theme": "Standard",
 
     //Tutorial
     "tutorial_button_cancel": "Beenden",
@@ -181,10 +223,17 @@ var languages = {
      "update_items_txt": "items",
 
      //toasts
-     "toast_fist_start": "Wil je de tutorial doen?",
-     "toast_fist_start_confirm": "Ja!",
+     "toast_fist_start": "Handleiding openen?",
      "toast_undo": "Een fout gemaakt?",
-     "toast_undo_confirm": "Ongedaan maken!",
+
+     //languages
+     "language_title": "Taal",
+     "bt_automatic": "Automatisch",
+     "language_name": "Nederlands",
+
+     //themes
+     "themes_title": "Stijl",
+     "bt_default_theme": "Standaard",
 
      //Tutorial
      "tutorial_button_cancel": "Finish",
@@ -209,10 +258,17 @@ var languages = {
       "update_items_txt": "Записи",
 
       //toasts
-      "toast_fist_start": "Хотите пройти обучение?",
-      "toast_fist_start_confirm": "Да!",
+      "toast_fist_start": "Открыть учебник?",
       "toast_undo": "Сделали ошибку?",
-      "toast_undo_confirm": "Отменить!",
+
+      //languages
+      "language_title": "Язык",
+      "bt_automatic": "Автоматически",
+      "language_name": "Русский",
+
+      //themes
+      "themes_title": "Стиль",
+      "bt_default_theme": "Стандарт",
 
       //Tutorial
       "tutorial_title": "Учебник",
@@ -238,10 +294,17 @@ var languages = {
        "update_items_txt": "项目",
 
        //toasts
-       "toast_fist_start": "您想参加这个教程吗？",
-       "toast_fist_start_confirm": "是的！",
+       "toast_fist_start": "开放教程吗？",
        "toast_undo": "犯了错误？",
-       "toast_undo_confirm": "撤消！",
+
+       //languages
+       "language_title": "语言",
+       "bt_automatic": "自动地",
+       "language_name": "简体中文",
+
+       //themes
+       "themes_title": "风格",
+       "bt_default_theme": "标准",
 
        //Tutorial
        "tutorial_title": "教程",
@@ -267,10 +330,17 @@ var languages = {
         "update_items_txt": "أغراض",
 
         //toasts
-        "toast_fist_start": "هل ترغب في القيام بالبرنامج التعليمي؟",
-        "toast_fist_start_confirm": "نعم!",
+        "toast_fist_start": "فتح البرنامج التعليمي؟",
         "toast_undo": "هل ارتكبت خطأ؟",
-        "toast_undo_confirm": "التراجع!",
+
+        //languages
+        "language_title": "غة",
+        "bt_automatic": "تلقائيا",
+        "language_name": "عربي",
+
+        //themes
+        "themes_title": "أسلوب",
+        "bt_default_theme": "معيار",
 
         //Tutorial
         "tutorial_title": "برنامج تعليمي",
@@ -287,11 +357,17 @@ var languages = {
 
 function translate(name)
 {
-  const qp = new URLSearchParams(window.location.search);
-  var lang = qp.get("lang") != null ? qp.get("lang") : navigator.language.split("-")[0];
+  var lang = localStorage.selectedLanguage != undefined ? localStorage.selectedLanguage : navigator.language.split("-")[0];
   if (lang in languages && name in languages[lang])
   {
     return languages[lang][name].replace("\n", "<br/>");
   }
-  return languages.en[name].replace("\n", "<br/>");
+  else if (name in languages.en)
+  {
+    return languages.en[name].replace("\n", "<br/>");
+  }
+  else
+  {
+    return "{"+name+"}"
+  }
 }

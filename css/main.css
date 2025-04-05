@@ -9,7 +9,7 @@
 body {
 	height: 100%;
 	width: 100%;
-	background-color: #49595D;
+	background-color: var(--list);
 	-webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -35,7 +35,8 @@ body {
 	border: 0px;
 	font-size: 3.5vw;
 	color: black;
-	background-color: white;
+	background-color: var(--search);
+	color: var(--search-text);
 }
 
 #inputarea input {
@@ -52,10 +53,13 @@ body {
 	right: 0px;
 	top: 0px;
 	width: var(--input_scale);
+	background-color: var(--search-button);
+	color: var(--search-button-text);
 	z-index: 1;
 }
 
 #inputarea button:hover {
 	cursor: pointer;
-	background-color: rgb(222, 222, 222);
+	background-color: var(--search-button-hover);
+	color: var(--search-button-hover-text);
 }

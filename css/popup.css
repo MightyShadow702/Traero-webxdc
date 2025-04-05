@@ -1,0 +1,68 @@
+#popup {
+  position: fixed;
+  top: 5%;
+  bottom: 5%;
+  right: 5%;
+  left: 5%;
+  background-color: var(--popup);
+  z-index: 50;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+#popup #bt_close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 0px 25px 0px 25px;
+  border: 0px;
+  background-color: var(--popup-close);
+  color: var(--popup-close-text);
+  font-size: 16px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#popup #bt_close:hover {
+  background-color: var(--popup-close-hover);
+  color: var(--popup-close-hover-text);
+}
+
+#popup #title {
+  color: var(--popup-text);
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  z-index: 0;
+}
+
+#popup #content {
+  margin-top: 50px;
+  overflow-y: auto;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+#popup #content button {
+  width: calc(100% - 10px);
+  font-size: min(3vw, 25px);
+  height: min(var(--menu_button_size), 100px);
+  margin: 5px;
+  border: 0px;
+  border-radius: 25px;
+  background-color: var(--popup-button);
+  color: var(--popup-button-text);
+}
+
+#popup #content button:hover {
+  background-color: var(--popup-button-hover);
+  color: var(--popup-button-hover-text);
+  cursor: pointer;
+}

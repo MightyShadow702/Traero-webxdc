@@ -27,7 +27,7 @@ function update_handler(data)
   update_list();
 }
 
-function update_language(lang)
+function update_language()
 {
   document.getElementById("buy_title").innerHTML = translate("buy");
   document.getElementById("last_title").innerHTML = translate("last");
@@ -35,6 +35,8 @@ function update_language(lang)
 
   document.getElementById("bt_about").innerHTML = translate("about_title");
   document.getElementById("bt_tutorial").innerHTML = translate("tutorial_title");
+  document.getElementById("bt_language").innerHTML = translate("language_title");
+  document.getElementById("bt_themes").innerHTML = translate("themes_title");
   document.getElementById("bt_export").innerHTML = translate("bt_export");
   document.getElementById("bt_import").innerHTML = translate("bt_import");
 }
@@ -42,10 +44,17 @@ function update_language(lang)
 function onload()
 {
   update_language();
+
   window.webxdc.setUpdateListener(update_handler);
+
+  if (localStorage.selectedTheme != undefined)
+  {
+    changeTheme(themes[localStorage.selectedTheme]);
+  }
+
   if (localStorage.firstSession == undefined)
   {
     localStorage.firstSession = false;
-    traero_toast(translate("toast_fist_start"), 5000, translate("toast_fist_start_confirm"), ()=>window.location.replace("/tutorial.html"));
+    traero_toast(translate("toast_fist_start"), 5000, true, ()=>window.location.replace("/tutorial.html"));
   }
 }

@@ -1,0 +1,43 @@
+:root {
+  --popup: #80908E;
+  --popup-text: white;
+  --popup-close: #909F9DFF;
+  --popup-close-text: white;
+  --popup-close-hover: #92AAA2FF;
+  --popup-close-hover-text: white;
+
+  --popup-button: #909F9DFF;
+  --popup-button-text: black;
+  --popup-button-hover: #92AAA2FF;
+  --popup-button-hover-text: black;
+
+  --menu: #485858;
+  --menu-toggle: noset;
+  --menu-button: #80908E;
+  --menu-button-text: white;
+  --menu-button-hover: #92AAA2FF;
+  --menu-button-hover-text: white;
+
+  --list: #49595D;
+  --list-text: white;
+
+  --list-active: #F06870;
+  --list-active-text: white;
+  --list-active-hover: #f27b81ff;
+  --list-active-hover-text: white;
+
+  --list-last: #68B8A8;
+  --list-last-text: white;
+  --list-last-hover: #79beb1ff;
+  --list-last-hover-text: white;
+
+  --search: white;
+  --search-text: black;
+  --search-hover: white;
+  --search-hover-text: black;
+
+  --search-button: white;
+  --search-button-text: black;
+  --search-button-hover: rgb(222, 222, 222);
+  --search-button-hover-text: black;
+}
