@@ -36,6 +36,7 @@ function update_language()
   document.getElementById("bt_about").innerHTML = translate("about_title");
   document.getElementById("bt_tutorial").innerHTML = translate("tutorial_title");
   document.getElementById("bt_language").innerHTML = translate("language_title");
+  document.getElementById("bt_themes").innerHTML = translate("themes_title");
   document.getElementById("bt_export").innerHTML = translate("bt_export");
   document.getElementById("bt_import").innerHTML = translate("bt_import");
 }

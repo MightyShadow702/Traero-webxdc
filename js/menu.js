@@ -64,6 +64,23 @@ function show_languages()
   }
 }
 
+function show_themes()
+{
+  var themes_dialog = new traero_popup(translate("themes_title"));
+  themes_dialog.add_button(translate("bt_default_theme"), () => setTheme("default"));
+  for (var name in themes)
+  {
+    if (name != "default")
+    {
+      function lambda(name)
+      {
+        themes_dialog.add_button(name, () => setTheme(name));
+      }
+      lambda(name);
+    }
+  }
+}
+
 function show_tutorial()
 {
   window.location.replace("/tutorial.html");

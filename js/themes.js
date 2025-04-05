@@ -35,7 +35,7 @@ var themes = {
     "search-button-hover": null,
     "search-button-hover-text": null
   },
-  oled: {
+  OLED: {
     "popup": "rgba(20, 20, 20)",
     "popup-text": "white",
     "popup-close": "rgba(40, 40, 40)",
@@ -93,6 +93,13 @@ function setTheme(name)
   if (name in themes)
   {
     changeTheme(themes[name]);
-    localStorage.selectedTheme = name;
+    if (name == "default")
+    {
+      delete localStorage.selectedTheme;
+    }
+    else
+    {
+      localStorage.selectedTheme = name;
+    }
   }
 }
