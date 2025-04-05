@@ -353,6 +353,114 @@ var languages = {
         "tutorial_remove": "رائع! الآن هو موجود في سجل مشترياتك، لتتمكن من العثور عليه بشكل أسرع في المرة القادمة.\nاضغط الآن مرة أخرى على المنتج لإزالته تمامًا من سجل المشتريات.",
         "tutorial_close": "كان هذا هو البرنامج التعليمي الكامل بكل أهمية وظائفه.\nاستمتع بجولة تسوقك القادمة!"
       },
+      "tr": {
+        "buy": "Satın al",
+        "last": "Son kullanılan",
+        "search": "İhtiyacım olan bir şey...",
+        "bt_export": "Dışa aktar",
+        "bt_import": "İçe aktar",
+        "about_title": "Hakkında",
+        "export_message": "Bu dosya Traero tarafından dışa aktarıldı",
+        "update_message": ", Traero'daki listeyi güncelledi",
+        "update_item_txt": "öğe",
+        "update_items_txt": "öğeler",
+
+        //toasts
+        "toast_fist_start": "Eğitimi aç?",
+        "toast_undo": "Bir hata mı yaptın?",
+
+        //languages
+        "language_title": "Dil",
+        "bt_automatic": "Otomatik",
+        "language_name": "Türkçe",
+
+        //themes
+        "themes_title": "Stil",
+        "bt_default_theme": "Varsayılan",
+
+        //Tutorial
+        "tutorial_title": "Eğitmen",
+        "tutorial_button_cancel": "İptal",
+        "tutorial_button_next": "Bitir",
+        "tutorial_add": "Altına satın almak istediğin bir şeyin adını ekle.",
+        "tutorial_edit": "Harika, şimdi bir an için eşyanın düğmesine bas.",
+        "tutorial_edit_change": "Şimdi eşyanda bazı değişiklikler yapabileceğin Düzenleme modundasın.\nVarsayılan olarak satın almak istediğin şeyleri virgülle ayırarak yaz.",
+        "tutorial_check": "Satın alındı ​​olarak işaretlemek için eşyanın üzerine tıkla.",
+        "tutorial_remove": "Harika! Artık alışveriş geçmişinde, böylece bir dahaki sefere daha hızlı bulabilirsin.\nŞimdi eşyanın üzerine tekrar bir an için bas ve onu alışveriş geçmişinden tamamen kaldır.",
+        "tutorial_close": "Bu, tüm işlevlerinin önemiyle birlikte eksiksiz bir eğitimdi.\nBir sonraki alışveriş turunuzda eğlenin!"
+      },
+      "qu": {
+        "buy": "Rantiy",
+        "last": "Qhipa kaq llamk’achisqa",
+        "search": "Imapas necesitasqay...",
+        "bt_export": "Hawaman apachiy",
+        "bt_import": "Yaykuchimuy",
+        "about_title": "Sobre",
+        "export_message": "Kay willañiqiqa Traero nisqap hawa mama llaqtakunaman apachisqanmi",
+        "update_message": "qupdated chay lista Traeropi",
+        "update_item_txt": "ima",
+        "update_items_txt": "imakuna",
+
+        //toasts
+        "toast_fist_start": "Kichasqa yachachikuy?",
+        "toast_undo": "¿Pantarqankichu?",
+
+        //languages
+        "language_title": "Simi",
+        "bt_automatic": "Kikinmanta",
+        "language_name": "Runasimi",
+
+        //themes
+        "themes_title": "Rikchay",
+        "bt_default_theme": "Ñawpaqchasqa",
+
+        //Tutorial
+        "tutorial_title": "Yachachiy",
+        "tutorial_button_cancel": "Sayachiy",
+        "tutorial_button_next": "Tukuy",
+        "tutorial_add": "Uraypiqa ima rantiy munasqaykipa sutinta yapay.",
+        "tutorial_edit": "Hatun, kunanqa huk ratulla imaykipa botonninta ñitiy.",
+        "tutorial_edit_change": "Kunanqa Llamk'apuy-modo kaqpi kachkanki maypi wakin tikraykunata ruwayta atikunki imaykiman.\nQillqay, comamanta t’aqasqa, hayk’a imakunata rantiyta munasqaykita.",
+        "tutorial_check": "Chayta ñit’iy rantisqa hina marcanaykipaq.",
+        "tutorial_remove": "Kusa! Kunanqa rantikuy historiaykipi kachkan, chaymi hamuq kutipi aswan utqaylla tarinki.\nKunanqa huk ratulla imaykipi ñit’iy, rantiymanta historiamanta llapanta hurqunaykipaq.",
+        "tutorial_close": "Kaymi karqan hunt'asqa yachachiy llapan ruwayninpa chaninchayninwan.\n¡Kusikuy qatiqnin rantikuy puriyniykipi!"
+      },
+      "pl": {
+        "buy": "Kup",
+        "last": "Ostatnio używane",
+        "search": "Coś, czego potrzebuję...",
+        "bt_export": "Eksport",
+        "bt_import": "Import",
+        "about_title": "Informacje",
+        "export_message": "Ten plik został wyeksportowany przez Traero",
+        "update_message": "qudated the list in Traero",
+        "update_item_txt": "item",
+        "update_items_txt": "items",
+
+        //toasts
+        "toast_fist_start": "Otwarty samouczek?",
+        "toast_undo": "Popełniłeś błąd?",
+
+        //languages
+        "language_title": "Język",
+        "bt_automatic": "Automatyczny",
+        "language_name": "Polski",
+
+        //themes
+        "themes_title": "Styl",
+        "bt_default_theme": "Domyślny",
+
+        //Tutorial
+        "tutorial_title": "Samouczek",
+        "tutorial_button_cancel": "Anuluj",
+        "tutorial_button_next": "Zakończ",
+        "tutorial_add": "Dodaj na dole nazwę czegoś, co chcesz kupić.",
+        "tutorial_edit": "Świetnie, teraz naciśnij przycisk swojej rzeczy na chwilę.",
+        "tutorial_edit_change": "Teraz jesteś w trybie edycji, w którym możesz wprowadzić pewne modyfikacje swojej rzeczy.\nWpisz, rozdzielając przecinkiem, ile rzeczy chcesz kupić.",
+        "tutorial_check": "Kliknij rzecz, aby oznaczyć ją jako kupioną.",
+        "tutorial_remove": "Doskonale! Teraz jest w historii zakupów, więc następnym razem możesz ją szybciej znaleźć.\nTeraz naciśnij ponownie na chwilę swoją rzecz, aby całkowicie usunąć ją z historii zakupów.",
+        "tutorial_close": "To był kompletny samouczek ze wszystkimi jego funkcjami.\nBaw się dobrze podczas następnej wycieczki zakupowej!"
+      }
 }
 
 function translate(name)
