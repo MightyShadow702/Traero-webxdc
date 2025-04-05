@@ -20,6 +20,10 @@ var languages = {
     "bt_automatic": "Automatic",
     "language_name": "English",
 
+    //themes
+    "themes_title": "Style",
+    "bt_default_theme": "Default",
+
     //Tutorial
     "tutorial_title": "Tutorial",
     "tutorial_button_cancel": "Cancel",
@@ -52,6 +56,10 @@ var languages = {
     "bt_automatic": "automáticamente",
     "language_name": "Español",
 
+    //themes
+    "themes_title": "Estilo",
+    "bt_default_theme": "Estándar",
+
     //Tutorial
     "tutorial_button_cancel": "Cancelar",
     "tutorial_button_next": "Listo",
@@ -82,6 +90,10 @@ var languages = {
      "language_title": "Linguagem",
      "bt_automatic": "Automaticamente",
      "language_name": "Português",
+
+     //themes
+     "themes_title": "Estilo",
+     "bt_default_theme": "Padrão",
 
      //Tutorial
      "tutorial_button_cancel": "Cancelar",
@@ -114,6 +126,10 @@ var languages = {
      "bt_automatic": "Automatiquement",
      "language_name": "Français",
 
+     //themes
+     "themes_title": "Style",
+     "bt_default_theme": "Standard",
+
      //Tutorial
      "tutorial_button_cancel": "Annuler",
      "tutorial_button_next": "Prêt",
@@ -144,6 +160,10 @@ var languages = {
      "language_title": "Lingua",
      "bt_automatic": "Automaticamente",
      "language_name": "Italiano",
+
+     //themes
+     "themes_title": "Stile",
+     "bt_default_theme": "Standard",
 
      //Tutorial
      "tutorial_button_cancel": "Cancellare",
@@ -176,6 +196,10 @@ var languages = {
     "bt_automatic": "Automatisch",
     "language_name": "Deutsch",
 
+    //themes
+    "themes_title": "Stil",
+    "bt_default_theme": "Standard",
+
     //Tutorial
     "tutorial_button_cancel": "Beenden",
     "tutorial_button_next": "Fertig",
@@ -207,6 +231,10 @@ var languages = {
      "bt_automatic": "Automatisch",
      "language_name": "Nederlands",
 
+     //themes
+     "themes_title": "Stijl",
+     "bt_default_theme": "Standaard",
+
      //Tutorial
      "tutorial_button_cancel": "Finish",
      "tutorial_button_next": "Klaar",
@@ -237,6 +265,10 @@ var languages = {
       "language_title": "Язык",
       "bt_automatic": "Автоматически",
       "language_name": "Русский",
+
+      //themes
+      "themes_title": "Стиль",
+      "bt_default_theme": "Стандарт",
 
       //Tutorial
       "tutorial_title": "Учебник",
@@ -270,6 +302,10 @@ var languages = {
        "bt_automatic": "自动地",
        "language_name": "简体中文",
 
+       //themes
+       "themes_title": "风格",
+       "bt_default_theme": "标准",
+
        //Tutorial
        "tutorial_title": "教程",
        "tutorial_button_cancel": "取消",
@@ -301,6 +337,10 @@ var languages = {
         "language_title": "غة",
         "bt_automatic": "تلقائيا",
         "language_name": "عربي",
+
+        //themes
+        "themes_title": "أسلوب",
+        "bt_default_theme": "معيار",
 
         //Tutorial
         "tutorial_title": "برنامج تعليمي",
