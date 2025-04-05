@@ -56,8 +56,10 @@ function show_languages()
   var sys_lang = navigator.language.split("-")[0];
   var sys_lang_name = sys_lang in languages ? languages[sys_lang].language_name : languages.en.language_name;
   languages_dialog.add_button(translate("bt_automatic") + " ("+sys_lang_name+")", () => setLanguage(null));
-  for (var code in languages)
+  var sorted_langs = Object.keys(languages).sort();
+  for (var codes in sorted_langs)
   {
+    var code = sorted_langs[codes];
     function lambda(lang_code, lang_name)
     {
       languages_dialog.add_button(lang_name, () => setLanguage(lang_code));
