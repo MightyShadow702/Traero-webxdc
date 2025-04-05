@@ -460,7 +460,79 @@ var languages = {
         "tutorial_check": "Kliknij rzecz, aby oznaczyć ją jako kupioną.",
         "tutorial_remove": "Doskonale! Teraz jest w historii zakupów, więc następnym razem możesz ją szybciej znaleźć.\nTeraz naciśnij ponownie na chwilę swoją rzecz, aby całkowicie usunąć ją z historii zakupów.",
         "tutorial_close": "To był kompletny samouczek ze wszystkimi jego funkcjami.\nBaw się dobrze podczas następnej wycieczki zakupowej!"
-      }
+      },
+      "ja": {
+        "buy": "購入",
+        "last": "最後に使用したアイテム",
+        "search": "必要なもの...",
+        "bt_export": "エクスポート",
+        "bt_import": "インポート",
+        "about_title": "概要",
+        "export_message": "このファイルは Traero によってエクスポートされました",
+        "update_message": "Sascha が Traero のリストを更新しました",
+        "update_item_txt": "アイテム",
+        "update_items_txt": "アイテム",
+
+        //toasts
+        "toast_fist_start": "チュートリアルを開きますか?",
+        "toast_undo": "間違いを犯しましたか?",
+
+        //languages
+        "language_title": "言語",
+        "bt_automatic": "自動",
+        "language_name": "日本語",
+
+        //themes
+        "themes_title": "スタイル",
+        "bt_default_theme": "デフォルト",
+
+        //Tutorial
+        "tutorial_title": "チュートリアル",
+        "tutorial_button_cancel": "キャンセル",
+        "tutorial_button_next": "完了",
+        "tutorial_add": "購入したいものの名前を一番下に追加します。",
+        "tutorial_edit": "よし、今度はアイテムのボタンをしばらく押します。",
+        "tutorial_edit_change": "これで編集モードになり、アイテムに変更を加えることができます。\n購入したいアイテムの数を、コンマで区切って入力します。",
+        "tutorial_check": "アイテムをクリックして購入済みとしてマークします。",
+        "tutorial_remove": "完璧です! これでショッピング履歴に追加されるので、次回はより早く見つけることができます。\nもう一度、アイテムをしばらく押して、ショッピング履歴から完全に削除します。",
+        "tutorial_close": "これは、すべての機能の重要性を網羅した完全なチュートリアルでした。\n次のショッピング ツアーを楽しんでください!"
+      },
+      "sv": {
+        "buy": "Köpa",
+        "last": "Senast använd",
+        "search": "Något jag behöver...",
+        "bt_export": "Exportera",
+        "bt_import": "Importera",
+        "about_title": "Om",
+        "export_message": "Den här filen exporterades av Traero",
+        "update_message": "uppdaterade listan i Traero",
+        "update_item_txt": "punkt",
+        "update_items_txt": "föremål",
+
+        //toasts
+        "toast_fist_start": "Öppna handledning?",
+        "toast_undo": "Gjorde ett misstag?",
+
+        //languages
+        "language_title": "Språk",
+        "bt_automatic": "Automatisk",
+        "language_name": "Svenska",
+
+        //themes
+        "themes_title": "Stil",
+        "bt_default_theme": "Standard",
+
+        //Tutorial
+        "tutorial_title": "Handledning",
+        "tutorial_button_cancel": "Avboka",
+        "tutorial_button_next": "Avsluta",
+        "tutorial_add": "Lägg till ett namn längst ner på något du vill köpa.",
+        "tutorial_edit": "Bra, tryck nu på knappen på din sak ett ögonblick.",
+        "tutorial_edit_change": "Nu är du i redigeringsläget där du kan göra några ändringar i din grej.\nSkriv, separerat efter ett kommatecken, hur många saker du vill köpa.",
+        "tutorial_check": "Klicka på saken för att markera den som köpt.",
+        "tutorial_remove": "Perfekt! Nu finns det i din shoppinghistorik, så du kan hitta det snabbare nästa gång.\nTryck nu en gång till på din sak för att ta bort den helt från shoppinghistoriken.",
+        "tutorial_close": "Detta var den kompletta handledningen med alla dess funktions betydelse.\nHa kul på din nästa shoppingtur!"
+      },
 }
 
 function translate(name)
