@@ -53,7 +53,7 @@ var languages = {
 
     //languages
     "language_title": "Idioma",
-    "bt_automatic": "automáticamente",
+    "bt_automatic": "Automáticamente",
     "language_name": "Español",
 
     //themes
@@ -300,7 +300,7 @@ var languages = {
        //languages
        "language_title": "语言",
        "bt_automatic": "自动地",
-       "language_name": "简体中文",
+       "language_name": "普通话",
 
        //themes
        "themes_title": "风格",
@@ -336,7 +336,7 @@ var languages = {
         //languages
         "language_title": "غة",
         "bt_automatic": "تلقائيا",
-        "language_name": "عربي",
+        "language_name": "اَلْعَرَبِيَّةُ",
 
         //themes
         "themes_title": "أسلوب",
@@ -500,7 +500,7 @@ var languages = {
       "sv": {
         "buy": "Köpa",
         "last": "Senast använd",
-        "search": "Något jag behöver...",
+        "search": "Jag behöver...",
         "bt_export": "Exportera",
         "bt_import": "Importera",
         "about_title": "Om",
@@ -536,7 +536,7 @@ var languages = {
       "da": {
         "buy": "Købe",
         "last": "Sidst brugt",
-        "search": "Noget jeg har brug for...",
+        "search": "jeg har brug for...",
         "bt_export": "Eksportere",
         "bt_import": "Importere",
         "about_title": "Om",
@@ -604,6 +604,114 @@ var languages = {
         "tutorial_check": "Kliknite na stvar da biste je označili kao kupljenu.",
         "tutorial_remove": "Savršen! Sada je u vašoj povijesti kupovine, tako da ga sljedeći put možete brže pronaći.\nSada ponovno pritisnite na trenutak svoju stvar kako biste je potpuno uklonili iz povijesti kupovine.",
         "tutorial_close": "Ovo je bio potpuni vodič sa svom važnošću njegove funkcije.\nZabavite se na svom sljedećem shopping obilasku!"
+      },
+      "uk": {
+        "buy": "купити",
+        "last": "Останнє використання",
+        "search": "мені потрібно...",
+        "bt_export": "Експорт",
+        "bt_import": "Імпорт",
+        "about_title": "про",
+        "export_message": "Цей файл експортовано Traero",
+        "update_message": "оновив список у Traero",
+        "update_item_txt": "пункт",
+        "update_items_txt": "елементи",
+
+        //toasts
+        "toast_fist_start": "Відкрити підручник?",
+        "toast_undo": "Зробив помилку?",
+
+        //languages
+        "language_title": "Мова",
+        "bt_automatic": "Автоматичний",
+        "language_name": "Українська",
+
+        //themes
+        "themes_title": "Стиль",
+        "bt_default_theme": "За замовчуванням",
+
+        //Tutorial
+        "tutorial_title": "Підручник",
+        "tutorial_button_cancel": "Скасувати",
+        "tutorial_button_next": "Закінчити",
+        "tutorial_add": "Додайте внизу назву того, що ви хочете купити.",
+        "tutorial_edit": "Чудово, тепер натисніть на мить кнопку вашої речі.",
+        "tutorial_edit_change": "Тепер ви перебуваєте в режимі редагування, де ви можете внести деякі зміни до вашої речі.\nНапишіть через кому, скільки речей ви бажаєте купити.",
+        "tutorial_check": "Натисніть на річ, щоб позначити її як куплену.",
+        "tutorial_remove": "Ідеально! Тепер він у вашій історії покупок, тож ви зможете швидше знайти його наступного разу.\nТепер знову натисніть на мить на свою річ, щоб повністю видалити її з історії покупок.",
+        "tutorial_close": "Це був повний підручник з усією важливістю його функцій.\nПриємного вам наступного шопінг-туру!"
+      },
+      "hi": {
+        "buy": "खरीदें",
+        "last": "अंतिम बार उपयोग किया गया",
+        "search": "मुझे चाहिए...",
+        "bt_export": "निर्यात करें",
+        "bt_import": "आयात करें",
+        "about_title": "के बारे में",
+        "export_message": "यह फ़ाइल Traero द्वारा निर्यात की गई थी",
+        "update_message": "ने Traero में सूची अपडेट की",
+        "update_item_txt": "आइटम",
+        "update_items_txt": "आइटम",
+
+        //toasts
+        "toast_fist_start": "ट्यूटोरियल खोलें?",
+        "toast_undo": "कोई गलती हुई?",
+
+        //languages
+        "language_title": "भाषा",
+        "bt_automatic": "स्वचालित",
+        "language_name": "हिंदी",
+
+        //themes
+        "themes_title": "शैली",
+        "bt_default_theme": "डिफ़ॉल्ट",
+
+        //Tutorial
+        "tutorial_title": "ट्यूटोरियल",
+        "tutorial_button_cancel": "रद्द करें",
+        "tutorial_button_next": "समाप्त करें",
+        "tutorial_add": "नीचे उस चीज़ का नाम जोड़ें जिसे आप खरीदना चाहते हैं.",
+        "tutorial_edit": "बढ़िया, अब अपनी चीज़ के बटन को एक पल के लिए दबाएँ.",
+        "tutorial_edit_change": "अब आप संपादन-मोड में हैं जहाँ आप अपनी चीज़ में कुछ संशोधन कर सकते हैं.\nकॉमा के बाद अलग करके लिखें कि आप कितनी चीज़ें खरीदना चाहते हैं.",
+        "tutorial_check": "चीज़ को खरीदा हुआ चिह्नित करने के लिए उस पर क्लिक करें.",
+        "tutorial_remove": "बढ़िया! अब यह आपके शॉपिंग इतिहास में है, इसलिए आप इसे अगली बार तेज़ी से ढूँढ़ सकते हैं.\nअब अपनी चीज़ को शॉपिंग हिस्ट्री से पूरी तरह से हटाने के लिए उस पर फिर से एक पल के लिए दबाएँ।",
+        "tutorial_close": "यह पूरा ट्यूटोरियल था जिसमें इसके सभी फ़ंक्शन का महत्व बताया गया था।\nअपने अगले शॉपिंग टूर का मज़ा लें!"
+      },
+      "bn": {
+        "buy": "কিনুন",
+        "last": "শেষবার ব্যবহার করা হয়েছে",
+        "search": "আমার প্রয়োজন...",
+        "bt_export": "রপ্তানি",
+        "bt_import": "আমদানি",
+        "about_title": "সম্পর্কে",
+        "export_message": "এই ফাইলটি Traero দ্বারা রপ্তানি করা হয়েছে",
+        "update_message": "Traero-তে তালিকা আপডেট করেছে",
+        "update_item_txt": "আইটেম",
+        "update_items_txt": "আইটেম",
+
+        //toasts
+        "toast_fist_start": "টিউটোরিয়াল খুলুন?",
+        "toast_undo": "ভুল করেছেন?",
+
+        //languages
+        "language_title": "ভাষা",
+        "bt_automatic": "স্বয়ংক্রিয়",
+        "language_name": "বাংলা",
+
+        //themes
+        "themes_title": "স্টাইল",
+        "bt_default_theme": "ডিফল্ট",
+
+        //Tutorial
+        "tutorial_title": "টিউটোরিয়াল",
+        "tutorial_button_cancel": "বাতিল করুন",
+        "tutorial_button_next": "শেষ করুন",
+        "tutorial_add": "নীচে আপনি যে জিনিসটি কিনতে চান তার নাম যোগ করুন।",
+        "tutorial_edit": "দারুন, এখন কিছুক্ষণের জন্য আপনার জিনিসের বোতাম টিপুন।",
+        "tutorial_edit_change": "এখন আপনি সম্পাদনা-মোডে আছেন যেখানে আপনি আপনার জিনিসটিতে কিছু পরিবর্তন করতে পারেন।\nকমা পরে আলাদা করে লিখুন, আপনি কতগুলি জিনিস কিনতে চান।",
+        "tutorial_check": "জিনিসটিকে কেনা হিসাবে চিহ্নিত করতে ক্লিক করুন।",
+        "tutorial_remove": "নিখুঁত! এখন এটি আপনার কেনাকাটার ইতিহাসে রয়েছে, যাতে আপনি পরের বার এটি দ্রুত খুঁজে পেতে পারেন।\nএখন আপনার জিনিসটি কেনাকাটার ইতিহাস থেকে সম্পূর্ণরূপে মুছে ফেলার জন্য আবার কিছুক্ষণের জন্য টিপুন।",
+        "tutorial_close": "এটি ছিল এর সমস্ত কার্যকারিতার গুরুত্ব সহ সম্পূর্ণ টিউটোরিয়াল।\nআপনার পরবর্তী শপিং ট্যুরে মজা করুন!"
       },
 }
 
