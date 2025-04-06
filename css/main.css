@@ -26,6 +26,7 @@ body {
 	left: 10%;
 	bottom: 5%;
 	height: var(--input_scale);
+	border: var(--search-border);
 	border-radius: 25px;
 	overflow: hidden;
 	z-index: 10;
@@ -46,12 +47,18 @@ body {
 	width: 100%;
 	z-index: 0;
 }
+#inputarea input:hover {
+	background-color: var(--search-hover);
+	color: var(--search-hover-text);
+}
+
 #inputarea button {
 	height: 100%;
 	display: none;
 	position: relative;
 	right: 0px;
 	top: 0px;
+	border-left: var(--search-button-border);
 	width: var(--input_scale);
 	background-color: var(--search-button);
 	color: var(--search-button-text);
@@ -60,6 +67,7 @@ body {
 
 #inputarea button:hover {
 	cursor: pointer;
+	border-left: var(--search-button-hover-border);
 	background-color: var(--search-button-hover);
 	color: var(--search-button-hover-text);
 }

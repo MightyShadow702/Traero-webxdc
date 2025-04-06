@@ -2,7 +2,6 @@
 	width: var(--item_scale);
 	height: var(--item_scale);
 	border-radius: 25px;
-	border: 0px;
 	-ms-word-break: break-all;
 	word-break: break-all;
 	 word-break: break-word;
@@ -19,7 +18,6 @@
 }
 
 #item #meta {
-		color: var(--list-meta);
     font-size: 3vw;
 }
 
@@ -59,19 +57,40 @@
 #last_items #item {
 	background-color: var(--list-last);
 	color: var(--list-last-text);
+	border: var(--list-last-border);
 }
+
+#last_items #item #meta {
+	color: var(--list-last-meta);
+}
+
 #last_items #item:hover
 {
 	background-color: var(--list-last-hover);
 	color: var(--list-last-hover-text);
+	border: var(--list-last-hover-border);
+}
+
+#last_items #item:hover > #meta {
+	color: var(--list-last-hover-meta);
 }
 
 #current_items #item {
 	background-color: var(--list-active);
 	color: var(--list-active-text);
+	border: var(--list-active-border);
+}
+
+#current_items #item #meta {
+	color: var(--list-active-meta);
 }
 
 #current_items #item:hover {
 	background-color: var(--list-active-hover);
 	color: var(--list-active-hover-text);
+	border: var(--list-active-hover-border);
+}
+
+#current_items #item:hover > #meta {
+	color: var(--list-active-hover-meta);
 }
