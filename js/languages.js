@@ -2,7 +2,7 @@ var languages = {
   "en": {
     "buy": "Buy",
     "last": "Last used",
-    "search": "Something I need...",
+    "search": "I need...",
     "bt_export": "Export",
     "bt_import": "Import",
     "about_title": "About",
@@ -38,7 +38,7 @@ var languages = {
   "es": {
     "buy": "Compra",
     "last": "Últimamente usado",
-    "search": "Algo que necesito...",
+    "search": "Necesito...",
     "bt_export": "Exportación",
     "bt_import": "Importación",
     "about_title": "Informaciones",
@@ -73,7 +73,7 @@ var languages = {
   "pt": {
      "buy": "Comprar",
      "last": "Usado pela última vez",
-     "search": "Algo que eu preciso...",
+     "search": "Eu preciso...",
      "bt_export": "Exportar",
      "bt_import": "Importar",
      "about_title": "Informações",
@@ -108,7 +108,7 @@ var languages = {
    "fr": {
      "buy": "Acheter",
      "last": "Dernièrement utilisé",
-     "search": "Quelque chose dont j'ai besoin...",
+     "search": "J'ai besoin...",
      "bt_export": "Exporter",
      "bt_import": "Importer",
      "about_title": "Informations",
@@ -143,7 +143,7 @@ var languages = {
    "it": {
      "buy": "Acquista",
      "last": "Ultimamente utilizzato",
-     "search": "Qualcosa di cui ho bisogno...",
+     "search": "Ho bisogno...",
      "bt_export": "Esporta",
      "bt_import": "Importa",
      "about_title": "Informazioni",
@@ -532,6 +532,78 @@ var languages = {
         "tutorial_check": "Klicka på saken för att markera den som köpt.",
         "tutorial_remove": "Perfekt! Nu finns det i din shoppinghistorik, så du kan hitta det snabbare nästa gång.\nTryck nu en gång till på din sak för att ta bort den helt från shoppinghistoriken.",
         "tutorial_close": "Detta var den kompletta handledningen med alla dess funktions betydelse.\nHa kul på din nästa shoppingtur!"
+      },
+      "da": {
+        "buy": "Købe",
+        "last": "Sidst brugt",
+        "search": "Noget jeg har brug for...",
+        "bt_export": "Eksportere",
+        "bt_import": "Importere",
+        "about_title": "Om",
+        "export_message": "Denne fil blev eksporteret af Traero",
+        "update_message": "opdaterede listen i Traero",
+        "update_item_txt": "punkt",
+        "update_items_txt": "genstande",
+
+        //toasts
+        "toast_fist_start": "Åbn selvstudiet?",
+        "toast_undo": "lavet en fejl?",
+
+        //languages
+        "language_title": "Sprog",
+        "bt_automatic": "Automatisk",
+        "language_name": "Dansk",
+
+        //themes
+        "themes_title": "Stil",
+        "bt_default_theme": "Misligholdelse",
+
+        //Tutorial
+        "tutorial_title": "Tutorial",
+        "tutorial_button_cancel": "Ophæve",
+        "tutorial_button_next": "Slutte",
+        "tutorial_add": "Tilføj i bunden et navn på noget, du vil købe.",
+        "tutorial_edit": "Super, tryk nu på knappen på din ting et øjeblik.",
+        "tutorial_edit_change": "Nu er du i redigeringstilstanden, hvor du kan lave nogle ændringer til din ting.\nSkriv, adskilt efter et komma, hvor mange ting du ønsker at købe.",
+        "tutorial_check": "Klik på tingen for at markere den som købt.",
+        "tutorial_remove": "Perfektionere! Nu er det i din indkøbshistorik, så du kan finde det hurtigere næste gang.\nTryk nu igen et øjeblik på din ting for at fjerne den helt fra indkøbshistorikken.",
+        "tutorial_close": "Dette var den komplette tutorial med alle dens funktions betydning.\nGod fornøjelse på din næste shoppingtur!"
+      },
+      "hr": {
+        "buy": "Kupiti",
+        "last": "Zadnje korišteno",
+        "search": "Trebam...",
+        "bt_export": "Izvoz",
+        "bt_import": "Uvoz",
+        "about_title": "Oko",
+        "export_message": "Ovu je datoteku izvezao Traero",
+        "update_message": "je ažurirao popis u Traeru",
+        "update_item_txt": "artikal",
+        "update_items_txt": "stavke",
+
+        //toasts
+        "toast_fist_start": "Otvoriti vodič?",
+        "toast_undo": "Pogriješili ste?",
+
+        //languages
+        "language_title": "Jezik",
+        "bt_automatic": "Automatski",
+        "language_name": "Hrvatski",
+
+        //themes
+        "themes_title": "Stil",
+        "bt_default_theme": "Zadana vrijednost",
+
+        //Tutorial
+        "tutorial_title": "Tutorial",
+        "tutorial_button_cancel": "Otkazati",
+        "tutorial_button_next": "Završiti",
+        "tutorial_add": "Dodajte na dno naziv nečega što želite kupiti.",
+        "tutorial_edit": "Super, sada na trenutak pritisnite tipku svoje stvari.",
+        "tutorial_edit_change": "Sada ste u modu za uređivanje gdje možete napraviti neke izmjene na svojoj stvari.\nNapišite, odvojeno iza zareza, koliko stvari želite kupiti.",
+        "tutorial_check": "Kliknite na stvar da biste je označili kao kupljenu.",
+        "tutorial_remove": "Savršen! Sada je u vašoj povijesti kupovine, tako da ga sljedeći put možete brže pronaći.\nSada ponovno pritisnite na trenutak svoju stvar kako biste je potpuno uklonili iz povijesti kupovine.",
+        "tutorial_close": "Ovo je bio potpuni vodič sa svom važnošću njegove funkcije.\nZabavite se na svom sljedećem shopping obilasku!"
       },
 }
 
