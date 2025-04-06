@@ -19,7 +19,7 @@
 }
 
 #item #meta {
-    color: rgb(235, 235, 235);
+		color: var(--list-meta);
     font-size: 3vw;
 }
 
