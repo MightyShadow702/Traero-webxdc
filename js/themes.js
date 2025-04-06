@@ -102,7 +102,7 @@ var themes = {
     "menu-button-text": "white",
 
     "menu-button-hover": "rgba(20, 20, 20)",
-    "menu-button-hover-text": null,
+    "menu-button-hover-border": null,
     "menu-button-hover-text": "white",
 
     "list": "black",
