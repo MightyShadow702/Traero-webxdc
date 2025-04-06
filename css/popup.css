@@ -6,6 +6,7 @@
   left: 5%;
   background-color: var(--popup);
   z-index: 50;
+  border: var(--popup-border);
   border-radius: 25px;
   overflow: hidden;
 }
@@ -16,8 +17,10 @@
   top: 0px;
   width: 50px;
   height: 50px;
-  border-radius: 0px 25px 0px 25px;
+  border-radius: 0px 0px 0px 25px;
   border: 0px;
+  border-left: var(--popup-close-border);
+  border-bottom: var(--popup-close-border);
   background-color: var(--popup-close);
   color: var(--popup-close-text);
   font-size: 16px;
@@ -26,6 +29,9 @@
 }
 
 #popup #bt_close:hover {
+  border: 0px;
+  border-left: var(--popup-close-hover-border);
+  border-bottom: var(--popup-close-hover-border);
   background-color: var(--popup-close-hover);
   color: var(--popup-close-hover-text);
 }
@@ -55,7 +61,7 @@
   font-size: min(3vw, 25px);
   height: min(var(--menu_button_size), 100px);
   margin: 5px;
-  border: 0px;
+  border: var(--popup-button-border);
   border-radius: 25px;
   background-color: var(--popup-button);
   color: var(--popup-button-text);
@@ -64,5 +70,6 @@
 #popup #content button:hover {
   background-color: var(--popup-button-hover);
   color: var(--popup-button-hover-text);
+  border: var(--popup-button-hover-border);
   cursor: pointer;
 }

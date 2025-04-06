@@ -1,43 +1,71 @@
 :root {
   --popup: #80908E;
+  --popup-border: 0px;
   --popup-text: white;
+
   --popup-close: #909F9DFF;
+  --popup-close-border: 0px;
   --popup-close-text: white;
+
   --popup-close-hover: #92AAA2FF;
+  --popup-close-hover-border: 0px;
   --popup-close-hover-text: white;
 
   --popup-button: #909F9DFF;
+  --popup-button-border: 0px;
   --popup-button-text: black;
+
   --popup-button-hover: #92AAA2FF;
+  --popup-button-hover-border: 0px;
   --popup-button-hover-text: black;
 
   --menu: #485858;
+  --menu-border: 0px;
   --menu-toggle: noset;
+
   --menu-button: #80908E;
+  --menu-button-border: 0px;
   --menu-button-text: white;
+
   --menu-button-hover: #92AAA2FF;
+  --menu-button-hover-border: 0px;
   --menu-button-hover-text: white;
 
   --list: #49595D;
   --list-text: white;
 
   --list-active: #F06870;
+  --list-active-border: 0px;
   --list-active-text: white;
+  --list-active-meta: rgb(235, 235, 235);
+
   --list-active-hover: #f27b81ff;
+  --list-active-hover-border: 0px;
   --list-active-hover-text: white;
+  --list-active-hover-meta: rgb(235, 235, 235);
 
   --list-last: #68B8A8;
+  --list-last-border: 0px;
   --list-last-text: white;
+  --list-last-meta: rgb(235, 235, 235);
+
   --list-last-hover: #79beb1ff;
+  --list-last-hover-border: 0px;
   --list-last-hover-text: white;
+  --list-last-hover-meta: rgb(235, 235, 235);
 
   --search: white;
+  --search-border: 0px;
   --search-text: black;
+
   --search-hover: white;
   --search-hover-text: black;
 
   --search-button: white;
+  --search-button-border: 0px;
   --search-button-text: black;
+
   --search-button-hover: rgb(222, 222, 222);
+  --search-button-hover-border: 0px;
   --search-button-hover-text: black;
 }

@@ -25,7 +25,7 @@ function show_about()
   title.innerHTML = "Traero";
   about_dialog.add(title);
   var version_number = document.createElement("p");
-  version_number.innerHTML = "Version: 0.8.0";
+  version_number.innerHTML = "Version: 0.8.1";
   about_dialog.add(version_number);
   var license_txt = document.createElement("p");
   license_txt.id = "license_title";
@@ -56,8 +56,10 @@ function show_languages()
   var sys_lang = navigator.language.split("-")[0];
   var sys_lang_name = sys_lang in languages ? languages[sys_lang].language_name : languages.en.language_name;
   languages_dialog.add_button(translate("bt_automatic") + " ("+sys_lang_name+")", () => setLanguage(null));
-  for (var code in languages)
+  var sorted_langs = Object.keys(languages).sort();
+  for (var codes in sorted_langs)
   {
+    var code = sorted_langs[codes];
     function lambda(lang_code, lang_name)
     {
       languages_dialog.add_button(lang_name, () => setLanguage(lang_code));

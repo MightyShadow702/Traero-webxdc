@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   position: fixed;
+  border-right: var(--menu-border);
   left: 0px;
   top: 0px;
   height: 100%;
@@ -90,13 +91,14 @@
   background-color: var(--menu-button);
   font-size: min(3vw, 25px);
   color: var(--menu-button-text);
-  border: 0px;
+  border: var(--menu-button-border);
   border-radius: 25px;
   cursor: pointer;
   margin-left: 5px;
 }
 #menucontent button:hover {
   background-color: var(--menu-button-hover);
+  border: var(--menu-button-hover-border);
   color: var(--menu-button-hover-text);
 }
 
