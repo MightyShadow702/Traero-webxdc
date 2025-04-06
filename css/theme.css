@@ -68,4 +68,13 @@
   --search-button-hover: rgb(222, 222, 222);
   --search-button-hover-border: 0px;
   --search-button-hover-text: black;
+
+  --toast: #80908E;
+  --toast-progress: #92AAA2FF;
+  --toast-border: 0px;
+  --toast-text: black;
+
+  --toast-button: grey;
+  --toast-button-border: 0px;
+  --toast-button-text: black;
 }

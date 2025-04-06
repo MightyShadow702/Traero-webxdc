@@ -70,7 +70,15 @@ var themes = {
 
     "search-button-hover": null,
     "search-button-hover-border": null,
-    "search-button-hover-text": null
+    "search-button-hover-text": null,
+
+    "toast": null,
+    "toast-progress": null,
+    "toast-border": null,
+    "toast-text": null,
+
+    "toast-button-border": null,
+    "toast-button-text": null,
   },
   OLED: {
     "popup": "rgba(20, 20, 20)",
@@ -141,7 +149,15 @@ var themes = {
 
     "search-button-hover": "rgba(40, 40, 40)",
     "search-button-hover-border": null,
-    "search-button-hover-text": "white"
+    "search-button-hover-text": "white",
+
+    "toast": "rgba(20, 20, 20)",
+    "toast-progress": "rgba(40, 40, 40)",
+    "toast-border": null,
+    "toast-text": "white",
+
+    "toast-button-border": null,
+    "toast-button-text": "white",
   },
   Light: {
     "popup": "rgba(220, 220, 220)",
@@ -212,7 +228,15 @@ var themes = {
 
     "search-button-hover": "rgba(220, 220, 220)",
     "search-button-hover-border": null,
-    "search-button-hover-text": "black"
+    "search-button-hover-text": "black",
+
+    "toast": "rgba(220, 220, 220)",
+    "toast-progress": "rgba(240, 240, 240)",
+    "toast-border": null,
+    "toast-text": null,
+
+    "toast-button-border": null,
+    "toast-button-text": null,
   },
   YBStyle: {
     "popup": null,
@@ -283,7 +307,15 @@ var themes = {
 
     "search-button-hover": null,
     "search-button-hover-border": null,
-    "search-button-hover-text": null
+    "search-button-hover-text": null,
+
+    "toast": null,
+    "toast-progress": null,
+    "toast-border": null,
+    "toast-text": null,
+
+    "toast-button-border": null,
+    "toast-button-text": null,
   },
   Eink: {
     "popup": "white",
@@ -355,7 +387,15 @@ var themes = {
 
     "search-button-hover": "rgba(128, 128, 128)",
     "search-button-hover-border": null,
-    "search-button-hover-text": "white"
+    "search-button-hover-text": "white",
+
+    "toast": "white",
+    "toast-progress": "rgba(128, 128, 128)",
+    "toast-border": "5px solid black",
+    "toast-text": "black",
+
+    "toast-button-border": "5px solid black",
+    "toast-button-text": "black",
   },
 }
 
