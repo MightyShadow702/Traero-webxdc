@@ -85,7 +85,7 @@ var languages = {
   },
   "pt": {
      "buy": "Comprar",
-     "last": "Usado pela última vez",
+     "last": "Comprado recentemente",
      "search": "Eu preciso...",
      "bt_export": "Exportar",
      "bt_import": "Importar",
@@ -126,7 +126,7 @@ var languages = {
    },
    "fr": {
      "buy": "Acheter",
-     "last": "Dernièrement utilisé",
+     "last": "Récemment acheté",
      "search": "J'ai besoin...",
      "bt_export": "Exporter",
      "bt_import": "Importer",
@@ -161,7 +161,7 @@ var languages = {
    },
    "it": {
      "buy": "Acquista",
-     "last": "Ultimamente utilizzato",
+     "last": "Acquistato di recente",
      "search": "Ho bisogno...",
      "bt_export": "Esporta",
      "bt_import": "Importa",
@@ -244,7 +244,7 @@ var languages = {
   },
   "nl": {
      "buy": "Kopen",
-     "last": "Laatst gebruikt",
+     "last": "Onlangs gekocht",
      "search": "Ik heb nodig...",
      "bt_export": "Exporteurs",
      "bt_import": "Importeurs",
@@ -285,7 +285,7 @@ var languages = {
    },
    "ru": {
       "buy": "Купить",
-      "last": "Последний использованный",
+      "last": "Недавно куплено",
       "search": "Мне нужно...",
       "bt_export": "Экспорт",
       "bt_import": "Импорт",
@@ -327,7 +327,7 @@ var languages = {
     },
     "zh": {
        "buy": "买",
-       "last": "最后使用",
+       "last": "最近购买",
        "search": "我需要一些东西…",
        "bt_export": "出口",
        "bt_import": "进口",
@@ -369,7 +369,7 @@ var languages = {
      },
      "ar": {
         "buy": "يشتري",
-        "last": "آخر استخدام",
+        "last": "تم شراؤها مؤخرًا",
         "search": "شيئ أحتاجه...",
         "bt_export": "يصدّر",
         "bt_import": "ستورد",
@@ -411,7 +411,7 @@ var languages = {
       },
       "tr": {
         "buy": "Satın al",
-        "last": "Son kullanılan",
+        "last": "Son zamanlarda satın alındı",
         "search": "İhtiyacım olan bir şey...",
         "bt_export": "Dışa aktar",
         "bt_import": "İçe aktar",
@@ -453,7 +453,7 @@ var languages = {
       },
       "qu": {
         "buy": "Rantiy",
-        "last": "Qhipa kaq llamk’achisqa",
+        "last": "Chayllaraq rantisqa",
         "search": "Imapas necesitasqay...",
         "bt_export": "Hawaman apachiy",
         "bt_import": "Yaykuchimuy",
@@ -495,7 +495,7 @@ var languages = {
       },
       "pl": {
         "buy": "Kup",
-        "last": "Ostatnio używane",
+        "last": "Niedawno kupione",
         "search": "Coś, czego potrzebuję...",
         "bt_export": "Eksport",
         "bt_import": "Import",
@@ -537,7 +537,7 @@ var languages = {
       },
       "ja": {
         "buy": "購入",
-        "last": "最後に使用したアイテム",
+        "last": "最近購入したもの",
         "search": "必要なもの...",
         "bt_export": "エクスポート",
         "bt_import": "インポート",
@@ -579,7 +579,7 @@ var languages = {
       },
       "sv": {
         "buy": "Köpa",
-        "last": "Senast använd",
+        "last": "nyligen köpt",
         "search": "Jag behöver...",
         "bt_export": "Exportera",
         "bt_import": "Importera",
@@ -621,7 +621,7 @@ var languages = {
       },
       "da": {
         "buy": "Købe",
-        "last": "Sidst brugt",
+        "last": "nyligt købt",
         "search": "jeg har brug for...",
         "bt_export": "Eksportere",
         "bt_import": "Importere",
@@ -663,7 +663,7 @@ var languages = {
       },
       "hr": {
         "buy": "Kupiti",
-        "last": "Zadnje korišteno",
+        "last": "nedavno kupljeno",
         "search": "Trebam...",
         "bt_export": "Izvoz",
         "bt_import": "Uvoz",
@@ -705,7 +705,7 @@ var languages = {
       },
       "uk": {
         "buy": "купити",
-        "last": "Останнє використання",
+        "last": "нещодавно придбаний",
         "search": "мені потрібно...",
         "bt_export": "Експорт",
         "bt_import": "Імпорт",
@@ -747,7 +747,7 @@ var languages = {
       },
       "hi": {
         "buy": "खरीदें",
-        "last": "अंतिम बार उपयोग किया गया",
+        "last": "हाल ही में खरीदा गया",
         "search": "मुझे चाहिए...",
         "bt_export": "निर्यात करें",
         "bt_import": "आयात करें",
@@ -789,7 +789,7 @@ var languages = {
       },
       "bn": {
         "buy": "কিনুন",
-        "last": "শেষবার ব্যবহার করা হয়েছে",
+        "last": "সম্প্রতি কেনাে",
         "search": "আমার প্রয়োজন...",
         "bt_export": "রপ্তানি",
         "bt_import": "আমদানি",
