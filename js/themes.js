@@ -2,151 +2,360 @@
 var themes = {
   default: {
     "popup": null,
+    "popup-border": null,
     "popup-text": null,
+
     "popup-close": null,
+    "popup-close-border": null,
     "popup-close-text": null,
+
     "popup-close-hover": null,
+    "popup-close-hover-border": null,
     "popup-close-hover-text": null,
+
     "popup-button": null,
+    "popup-button-border": null,
     "popup-button-text": null,
+
     "popup-button-hover": null,
+    "popup-button-hover-border": null,
     "popup-button-hover-text": null,
+
     "menu": null,
+    "menu-border": null,
     "menu-toggle": null,
+
     "menu-button": null,
+    "menu-button-border": null,
     "menu-button-text": null,
+
     "menu-button-hover": null,
+    "menu-button-hover-border": null,
     "menu-button-hover-text": null,
+
     "list": null,
     "list-text": null,
-    "list-meta": null,
+
     "list-active": null,
+    "list-active-border": null,
     "list-active-text": null,
+    "list-active-meta": null,
+
     "list-active-hover": null,
+    "list-active-hover-border": null,
     "list-active-hover-text": null,
+    "list-active-hover-meta": null,
+
     "list-last": null,
+    "list-last-border": null,
     "list-last-text": null,
+    "list-last-meta": null,
+
     "list-last-hover": null,
+    "list-last-hover-border": null,
     "list-last-hover-text": null,
+    "list-last-hover-meta": null,
+
     "search": null,
+    "search-border": null,
     "search-text": null,
+
     "search-hover": null,
+    "search-hover-border": null,
     "search-hover-text": null,
+
     "search-button": null,
+    "search-button-border": null,
     "search-button-text": null,
+
     "search-button-hover": null,
+    "search-button-hover-border": null,
     "search-button-hover-text": null
   },
   OLED: {
     "popup": "rgba(20, 20, 20)",
+    "popup-border": null,
     "popup-text": "white",
+
     "popup-close": "rgba(40, 40, 40)",
+    "popup-close-border": null,
     "popup-close-text": "white",
+
     "popup-close-hover": "rgba(30, 30, 30)",
+    "popup-close-hover-border": null,
     "popup-close-hover-text": "white",
+
     "popup-button": "rgba(40, 40, 40)",
+    "popup-button-border": null,
     "popup-button-text": "white",
+
     "popup-button-hover": "rgba(30, 30, 30)",
+    "popup-button-hover-border": null,
     "popup-button-hover-text": "white",
+
     "menu": "rgba(10, 10, 10)",
+    "menu-border": null,
     "menu-toggle": null,
+
     "menu-button": "rgba(30, 30, 30)",
+    "menu-button-border": null,
     "menu-button-text": "white",
+
     "menu-button-hover": "rgba(20, 20, 20)",
+    "menu-button-hover-text": null,
     "menu-button-hover-text": "white",
+
     "list": "black",
     "list-text": "white",
-    "list-meta": "rgba(200, 200, 200)",
+
     "list-active": "rgba(100, 0, 0)",
+    "list-active-border": null,
     "list-active-text": "white",
+    "list-active-meta": "rgba(200, 200, 200)",
+
     "list-active-hover": "rgba(85, 0, 0)",
+    "list-active-hover-border": null,
     "list-active-hover-text": "white",
+    "list-active-hover-meta": "rgba(200, 200, 200)",
+
     "list-last": "rgba(0, 65, 0)",
+    "list-last-border": null,
     "list-last-text": "white",
+    "list-last-meta": "rgba(200, 200, 200)",
+
     "list-last-hover": "rgba(0, 50, 0)",
+    "list-last-hover-border": null,
     "list-last-hover-text": "white",
-    "search": "rgba(20, 20, 20)",
+    "list-last-hover-meta": "rgba(200, 200, 200)",
+
+    "search": "rgba(30, 30, 30)",
+    "search-border": null,
     "search-text": "white",
-    "search-hover": null,
-    "search-hover-text": null,
-    "search-button": "rgba(20, 20, 20)",
+
+    "search-hover": "rgba(40, 40, 40)",
+    "search-hover-text": "white",
+
+    "search-button": "rgba(30, 30, 30)",
+    "search-button-border": null,
     "search-button-text": "white",
-    "search-button-hover": "rgba(30, 30, 30)",
+
+    "search-button-hover": "rgba(40, 40, 40)",
+    "search-button-hover-border": null,
     "search-button-hover-text": "white"
   },
-  LIGHT: {
+  Light: {
     "popup": "rgba(220, 220, 220)",
+    "popup-border": null,
     "popup-text": "black",
+
     "popup-close": "rgba(240, 240, 240)",
+    "popup-close-border": null,
     "popup-close-text": "black",
+
     "popup-close-hover": "rgba(252, 252, 252)",
+    "popup-close-hover-border": null,
     "popup-close-hover-text": "black",
+
     "popup-button": "rgba(240, 240, 240)",
+    "popup-button-border": null,
     "popup-button-text": "black",
+
     "popup-button-hover": "white",
+    "popup-button-hover-border": null,
     "popup-button-hover-text": "black",
+
     "menu": "rgba(220, 220, 220)",
+    "menu-border": null,
     "menu-toggle": "invert(100%)",
+
     "menu-button": "rgba(240, 240, 240)",
+    "menu-button-border": null,
     "menu-button-text": "black",
+
     "menu-button-hover": "white",
+    "menu-button-hover-border": null,
     "menu-button-hover-text": "black",
+
     "list": "white",
     "list-text": "black",
-    "list-meta": "rgba(80, 80, 80)",
+
     "list-active": "rgba(255, 180, 180)",
+    "list-active-border": null,
     "list-active-text": "black",
+    "list-active-meta": "rgba(80, 80, 80)",
+
     "list-active-hover": "rgba(255, 210, 210)",
+    "list-active-hover-border": null,
     "list-active-hover-text": "black",
+    "list-active-hover-meta": "rgba(80, 80, 80)",
+
     "list-last": "rgba(180, 255, 180)",
+    "list-last-border": null,
     "list-last-text": "black",
+    "list-last-meta": "rgba(80, 80, 80)",
+
     "list-last-hover": "rgba(210, 255, 210)",
+    "list-last-hover-border": null,
     "list-last-hover-text": "black",
+    "list-last-hover-meta": "rgba(80, 80, 80)",
+
     "search": "rgba(200, 200, 200)",
+    "search-border": null,
     "search-text": "black",
-    "search-hover": null,
-    "search-hover-text": null,
+
+    "search-hover": "rgba(220, 220, 220)",
+    "search-hover-text": "black",
+
     "search-button": "rgba(200, 200, 200)",
-    "search-button-text": null,
-    "search-button-hover": null,
-    "search-button-hover-text": null
+    "search-button-border": null,
+    "search-button-text": "black",
+
+    "search-button-hover": "rgba(220, 220, 220)",
+    "search-button-hover-border": null,
+    "search-button-hover-text": "black"
   },
   YBStyle: {
     "popup": null,
+    "popup-border": null,
     "popup-text": null,
+
     "popup-close": null,
+    "popup-close-border": null,
     "popup-close-text": null,
+
     "popup-close-hover": null,
+    "popup-close-hover-border": null,
     "popup-close-hover-text": null,
+
     "popup-button": null,
+    "popup-button-border": null,
     "popup-button-text": null,
+
     "popup-button-hover": null,
+    "popup-button-hover-border": null,
     "popup-button-hover-text": null,
+
     "menu": null,
+    "menu-border": null,
     "menu-toggle": null,
+
     "menu-button": null,
+    "menu-button-border": null,
     "menu-button-text": null,
+
     "menu-button-hover": null,
+    "menu-button-hover-border": null,
     "menu-button-hover-text": null,
+
     "list": null,
     "list-text": null,
-    "list-meta": null,
+
     "list-active": "rgba(180, 180, 0)",
+    "list-active-border": null,
     "list-active-text": null,
+    "list-active-meta": null,
+
     "list-active-hover": "rgba(200, 200, 0)",
+    "list-active-hover-border": null,
     "list-active-hover-text": null,
+    "list-active-hover-meta": null,
+
     "list-last": "rgba(0, 180, 180)",
+    "list-last-border": null,
     "list-last-text": null,
+    "list-last-meta": null,
+
     "list-last-hover": "rgba(0, 200, 200)",
+    "list-last-hover-border": null,
     "list-last-hover-text": null,
+    "list-last-hover-meta": null,
+
     "search": null,
+    "search-border": null,
     "search-text": null,
+
     "search-hover": null,
     "search-hover-text": null,
+
     "search-button": null,
+    "search-button-border": null,
     "search-button-text": null,
+
     "search-button-hover": null,
+    "search-button-hover-border": null,
     "search-button-hover-text": null
+  },
+  Eink: {
+    "popup": "white",
+    "popup-border": "5px solid black",
+    "popup-text": "black",
+
+    "popup-close": "black",
+    "popup-close-border": "5px solid black",
+    "popup-close-text": "white",
+
+    "popup-close-hover": "rgba(128, 128, 128)",
+    "popup-close-hover-border": "5px solid black",
+    "popup-close-hover-text": "white",
+
+    "popup-button": "black",
+    "popup-button-border": null,
+    "popup-button-text": "white",
+
+    "popup-button-hover": "rgba(128, 128, 128)",
+    "popup-button-hover-border": "5px solid black",
+    "popup-button-hover-text": "white",
+
+    "menu": "white",
+    "menu-border": "5px solid black",
+    "menu-toggle": "invert(100%)",
+
+    "menu-button": "black",
+    "menu-button-border": null,
+    "menu-button-text": "white",
+
+    "menu-button-hover": "rgba(128, 128, 128)",
+    "menu-button-hover-border": "5px solid black",
+    "menu-button-hover-text": "white",
+
+    "list": "white",
+    "list-text": "black",
+
+    "list-active": "black",
+    "list-active-border": null,
+    "list-active-text": "white",
+    "list-active-meta": "white",
+
+    "list-active-hover": "rgba(128, 128, 128)",
+    "list-active-hover-border": "5px solid black",
+    "list-active-hover-text": "white",
+    "list-active-hover-meta": "black",
+
+    "list-last": "white",
+    "list-last-border": "5px solid black",
+    "list-last-text": "black",
+    "list-last-meta": "black",
+
+    "list-last-hover": "rgba(128, 128, 128)",
+    "list-last-hover-border": "5px solid black",
+    "list-last-hover-text": "white",
+    "list-last-hover-meta": "black",
+
+    "search": "white",
+    "search-border": "5px solid black",
+    "search-text": "black",
+
+    "search-hover": null,
+    "search-hover-border": null,
+    "search-hover-text": null,
+
+    "search-button": "black",
+    "search-button-border": null,
+    "search-button-text": "white",
+
+    "search-button-hover": "rgba(128, 128, 128)",
+    "search-button-hover-border": null,
+    "search-button-hover-text": "white"
   },
 }
 
