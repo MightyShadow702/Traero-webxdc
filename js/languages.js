@@ -7,7 +7,7 @@ var languages = {
     "bt_import": "Import",
     "about_title": "About",
     "export_message": "This file was exported by Traero",
-    "update_message": "updated the list in Traero",
+    "update_message": "{0} updated the list in Traero",
     "update_item_txt": "item",
     "update_items_txt": "items",
 
@@ -43,7 +43,7 @@ var languages = {
     "bt_import": "Importación",
     "about_title": "Informaciones",
     "export_message": "Este archivo estuvo exportado por Traero",
-    "update_message": "actualizó la lista en Traero",
+    "update_message": "{0} actualizó la lista en Traero",
     "update_item_txt": "elemento",
     "update_items_txt": "elementos",
 
@@ -78,7 +78,7 @@ var languages = {
      "bt_import": "Importar",
      "about_title": "Informações",
      "export_message": "Este arquivo foi exportado pelo Traero",
-     "update_message": "atualizou a lista no Traero",
+     "update_message": "{0} atualizou a lista no Traero",
      "update_item_txt": "elemento",
      "update_items_txt": "elementos",
 
@@ -113,7 +113,7 @@ var languages = {
      "bt_import": "Importer",
      "about_title": "Informations",
      "export_message": "Ce fichier a été exporté par Traero",
-     "update_message": "a mis à jour la liste dans Traero",
+     "update_message": "{0} a mis à jour la liste dans Traero",
      "update_item_txt": "élément",
      "update_items_txt": "éléments",
 
@@ -148,7 +148,7 @@ var languages = {
      "bt_import": "Importa",
      "about_title": "Informazioni",
      "export_message": "Questo file è stato esportato da Traero",
-     "update_message": "ha aggiornato l'elenco in Traero",
+     "update_message": "{0} ha aggiornato l'elenco in Traero",
      "update_item_txt": "elemento",
      "update_items_txt": "elementi",
 
@@ -183,7 +183,7 @@ var languages = {
     "bt_import": "Importieren",
     "about_title": "Über",
     "export_message": "Diese Datei ist aus Traero exportiert",
-    "update_message": "hat die Liste in Traero aktualisiert",
+    "update_message": "{0} hat die Liste in Traero aktualisiert",
     "update_item_txt": "Eintrag",
     "update_items_txt": "Einträge",
 
@@ -218,7 +218,7 @@ var languages = {
      "bt_import": "Importeurs",
      "about_title": "Over",
      "export_message": "Dit bestand is geëxporteerd vanuit Traero",
-     "update_message": "heeft de lijst in Traero bijgewerkt",
+     "update_message": "{0} heeft de lijst in Traero bijgewerkt",
      "update_item_txt": "item",
      "update_items_txt": "items",
 
@@ -253,7 +253,7 @@ var languages = {
       "bt_import": "Импорт",
       "about_title": "О нас",
       "export_message": "Этот файл экспортирован из Traero",
-      "update_message": "обновил список в Traero",
+      "update_message": "{0} обновил список в Traero",
       "update_item_txt": "Запись",
       "update_items_txt": "Записи",
 
@@ -289,7 +289,7 @@ var languages = {
        "bt_import": "进口",
        "about_title": "关于",
        "export_message": "该文件由 Traero 导出",
-       "update_message": "更新了 Traero 中的列表",
+       "update_message": "{0} 更新了 Traero 中的列表",
        "update_item_txt": "物品",
        "update_items_txt": "项目",
 
@@ -325,7 +325,7 @@ var languages = {
         "bt_import": "ستورد",
         "about_title": "ن",
         "export_message": "تم تصدير هذا الملف بواسطة Traero",
-        "update_message": "updated the list in Traero",
+        "update_message": "{0} updated the list in Traero",
         "update_item_txt": "غرض",
         "update_items_txt": "أغراض",
 
@@ -361,7 +361,7 @@ var languages = {
         "bt_import": "İçe aktar",
         "about_title": "Hakkında",
         "export_message": "Bu dosya Traero tarafından dışa aktarıldı",
-        "update_message": ", Traero'daki listeyi güncelledi",
+        "update_message": "{0}, Traero'daki listeyi güncelledi",
         "update_item_txt": "öğe",
         "update_items_txt": "öğeler",
 
@@ -397,7 +397,7 @@ var languages = {
         "bt_import": "Yaykuchimuy",
         "about_title": "Sobre",
         "export_message": "Kay willañiqiqa Traero nisqap hawa mama llaqtakunaman apachisqanmi",
-        "update_message": "qupdated chay lista Traeropi",
+        "update_message": "{0}qa Traero llaqtapi listata musuqyachirqa",
         "update_item_txt": "ima",
         "update_items_txt": "imakuna",
 
@@ -433,7 +433,7 @@ var languages = {
         "bt_import": "Import",
         "about_title": "Informacje",
         "export_message": "Ten plik został wyeksportowany przez Traero",
-        "update_message": "qudated the list in Traero",
+        "update_message": "{0} zaktualizował listę w Traero",
         "update_item_txt": "item",
         "update_items_txt": "items",
 
@@ -469,7 +469,7 @@ var languages = {
         "bt_import": "インポート",
         "about_title": "概要",
         "export_message": "このファイルは Traero によってエクスポートされました",
-        "update_message": "Sascha が Traero のリストを更新しました",
+        "update_message": "{0} が Traero のリストを更新しました",
         "update_item_txt": "アイテム",
         "update_items_txt": "アイテム",
 
@@ -505,7 +505,7 @@ var languages = {
         "bt_import": "Importera",
         "about_title": "Om",
         "export_message": "Den här filen exporterades av Traero",
-        "update_message": "uppdaterade listan i Traero",
+        "update_message": "{0} uppdaterade listan i Traero",
         "update_item_txt": "punkt",
         "update_items_txt": "föremål",
 
@@ -541,7 +541,7 @@ var languages = {
         "bt_import": "Importere",
         "about_title": "Om",
         "export_message": "Denne fil blev eksporteret af Traero",
-        "update_message": "opdaterede listen i Traero",
+        "update_message": "{0} opdaterede listen i Traero",
         "update_item_txt": "punkt",
         "update_items_txt": "genstande",
 
@@ -577,7 +577,7 @@ var languages = {
         "bt_import": "Uvoz",
         "about_title": "Oko",
         "export_message": "Ovu je datoteku izvezao Traero",
-        "update_message": "je ažurirao popis u Traeru",
+        "update_message": "{0} je ažurirao popis u Traeru",
         "update_item_txt": "artikal",
         "update_items_txt": "stavke",
 
@@ -613,7 +613,7 @@ var languages = {
         "bt_import": "Імпорт",
         "about_title": "про",
         "export_message": "Цей файл експортовано Traero",
-        "update_message": "оновив список у Traero",
+        "update_message": "{0} оновив список у Traero",
         "update_item_txt": "пункт",
         "update_items_txt": "елементи",
 
@@ -649,7 +649,7 @@ var languages = {
         "bt_import": "आयात करें",
         "about_title": "के बारे में",
         "export_message": "यह फ़ाइल Traero द्वारा निर्यात की गई थी",
-        "update_message": "ने Traero में सूची अपडेट की",
+        "update_message": "{0} ने Traero में सूची अपडेट की",
         "update_item_txt": "आइटम",
         "update_items_txt": "आइटम",
 
@@ -685,7 +685,7 @@ var languages = {
         "bt_import": "আমদানি",
         "about_title": "সম্পর্কে",
         "export_message": "এই ফাইলটি Traero দ্বারা রপ্তানি করা হয়েছে",
-        "update_message": "Traero-তে তালিকা আপডেট করেছে",
+        "update_message": "{0} Traero-তে তালিকা আপডেট করেছে",
         "update_item_txt": "আইটেম",
         "update_items_txt": "আইটেম",
 
@@ -715,19 +715,26 @@ var languages = {
       },
 }
 
-function translate(name)
+function translate(name, replaces=[])
 {
   var lang = localStorage.selectedLanguage != undefined ? localStorage.selectedLanguage : navigator.language.split("-")[0];
+  var ret = "{"+name+"}";
   if (lang in languages && name in languages[lang])
   {
-    return languages[lang][name].replace("\n", "<br/>");
+    ret = languages[lang][name];
   }
   else if (name in languages.en)
   {
-    return languages.en[name].replace("\n", "<br/>");
+    ret = languages.en[name];
   }
-  else
+
+  ret = ret.replace("\n", "<br/>");
+
+  for (var i in replaces)
   {
-    return "{"+name+"}"
+    ret = ret.replace("{"+i+"}", replaces[i]);
   }
+  console.log(ret);
+
+  return ret;
 }
