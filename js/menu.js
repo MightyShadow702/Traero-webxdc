@@ -72,13 +72,15 @@ function show_themes()
 {
   var themes_dialog = new traero_popup(translate("themes_title"));
   themes_dialog.add_button(translate("bt_default_theme"), () => setTheme("default"));
-  for (var name in themes)
+  var sorted_themes = Object.keys(themes).sort();
+  for (var i in sorted_themes)
   {
+    var name = sorted_themes[i];
     if (name != "default")
     {
       function lambda(name)
       {
-        themes_dialog.add_button(name, () => setTheme(name));
+        themes_dialog.add_button(translate("style_"+name), () => setTheme(name));
       }
       lambda(name);
     }

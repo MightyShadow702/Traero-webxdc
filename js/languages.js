@@ -1,7 +1,7 @@
 var languages = {
   "en": {
-    "buy": "Buy",
-    "last": "Last used",
+    "buy": "To buy",
+    "last": "Recently purchased",
     "search": "I need...",
     "bt_export": "Export",
     "bt_import": "Import",
@@ -21,8 +21,15 @@ var languages = {
     "language_name": "English",
 
     //themes
-    "themes_title": "Style",
+    "themes_title": "Themes",
     "bt_default_theme": "Default",
+
+    //styles
+    "style_oled": "Dark (OLED)",
+    "style_dark": "Dark",
+    "style_light": "Bright",
+    "style_yb": "Yellow-Blue",
+    "style_eink": "E-Ink",
 
     //Tutorial
     "tutorial_title": "Tutorial",
@@ -37,7 +44,7 @@ var languages = {
   },
   "es": {
     "buy": "Compra",
-    "last": "Últimamente usado",
+    "last": "Comprado recientemente",
     "search": "Necesito...",
     "bt_export": "Exportación",
     "bt_import": "Importación",
@@ -59,6 +66,12 @@ var languages = {
     //themes
     "themes_title": "Estilo",
     "bt_default_theme": "Estándar",
+
+    //styles
+    "style_oled": "Oscuro (OLED)",
+    "style_dark": "Oscuro",
+    "style_light": "Brillante",
+    "style_yb": "Amarillo-Azúl",
 
     //Tutorial
     "tutorial_button_cancel": "Cancelar",
@@ -94,6 +107,12 @@ var languages = {
      //themes
      "themes_title": "Estilo",
      "bt_default_theme": "Padrão",
+
+     //styles
+     "style_oled": "Escuro (OLED)",
+     "style_dark": "Escuro",
+     "style_light": "Brilhante",
+     "style_yb": "Amarelo-Azul",
 
      //Tutorial
      "tutorial_button_cancel": "Cancelar",
@@ -165,6 +184,12 @@ var languages = {
      "themes_title": "Stile",
      "bt_default_theme": "Standard",
 
+     //styles
+     "style_oled": "Scuro (OLED)",
+     "style_dark": "Scuro",
+     "style_light": "Luminoso",
+     "style_yb": "Giallo-Blu",
+
      //Tutorial
      "tutorial_button_cancel": "Cancellare",
      "tutorial_button_next": "Pronto",
@@ -176,8 +201,8 @@ var languages = {
      "tutorial_close": "Questo era il tutorial completo con tutte le funzionalità importanti.\nSarà un piacere aiutarti con il tuo prossimo acquisto!"
     },
   "de": {
-    "buy": "Kaufen",
-    "last": "Zuletzt genutzt",
+    "buy": "Zu kaufen",
+    "last": "Zuletzt gekauft",
     "search": "Ich brauche...",
     "bt_export": "Exportieren",
     "bt_import": "Importieren",
@@ -199,6 +224,13 @@ var languages = {
     //themes
     "themes_title": "Stil",
     "bt_default_theme": "Standard",
+
+    //styles
+    "style_oled": "Dunkel (OLED)",
+    "style_dark": "Dunkel",
+    "style_light": "Hell",
+    "style_yb": "Gelb-Blau",
+
 
     //Tutorial
     "tutorial_button_cancel": "Beenden",
@@ -235,6 +267,12 @@ var languages = {
      "themes_title": "Stijl",
      "bt_default_theme": "Standaard",
 
+     //styles
+     "style_oled": "Donker (OLED)",
+     "style_dark": "Donker",
+     "style_light": "Helder",
+     "style_yb": "Geel-Blauw",
+
      //Tutorial
      "tutorial_button_cancel": "Finish",
      "tutorial_button_next": "Klaar",
@@ -269,6 +307,12 @@ var languages = {
       //themes
       "themes_title": "Стиль",
       "bt_default_theme": "Стандарт",
+
+      //styles
+      "style_oled": "Темный (OLED)",
+      "style_dark": "Темный",
+      "style_light": "Яркий",
+      "style_yb": "Желто-синий",
 
       //Tutorial
       "tutorial_title": "Учебник",
@@ -306,6 +350,12 @@ var languages = {
        "themes_title": "风格",
        "bt_default_theme": "标准",
 
+       //styles
+       "style_oled": "暗色 (OLED)",
+       "style_dark": "黑暗的",
+       "style_light": "明亮的",
+       "style_yb": "黄色-蓝色",
+
        //Tutorial
        "tutorial_title": "教程",
        "tutorial_button_cancel": "取消",
@@ -341,6 +391,12 @@ var languages = {
         //themes
         "themes_title": "أسلوب",
         "bt_default_theme": "معيار",
+
+        //styles
+        "style_oled": "داكن (OLED)",
+        "style_dark": "مظلم",
+        "style_light": "ساطع",
+        "style_yb": "الأصفر والأزرق",
 
         //Tutorial
         "tutorial_title": "برنامج تعليمي",
@@ -378,6 +434,12 @@ var languages = {
         "themes_title": "Stil",
         "bt_default_theme": "Varsayılan",
 
+        //styles
+        "style_oled": "Koyu (OLED)",
+        "style_dark": "Koyu",
+        "style_light": "Parlak",
+        "style_yb": "Sarı-Mavi",
+
         //Tutorial
         "tutorial_title": "Eğitmen",
         "tutorial_button_cancel": "İptal",
@@ -413,6 +475,12 @@ var languages = {
         //themes
         "themes_title": "Rikchay",
         "bt_default_theme": "Ñawpaqchasqa",
+
+        //styles
+        "style_oled": "Tutayaq (OLED)",
+        "style_dark": "Tutayasqa",
+        "style_light": "Kanchay",
+        "style_yb": "Q’illu-Azul",
 
         //Tutorial
         "tutorial_title": "Yachachiy",
@@ -450,6 +518,12 @@ var languages = {
         "themes_title": "Styl",
         "bt_default_theme": "Domyślny",
 
+        //styles
+        "style_oled": "Ciemny (OLED)",
+        "style_dark": "Ciemny",
+        "style_light": "Jasny",
+        "style_yb": "Żółto-niebieski",
+
         //Tutorial
         "tutorial_title": "Samouczek",
         "tutorial_button_cancel": "Anuluj",
@@ -485,6 +559,12 @@ var languages = {
         //themes
         "themes_title": "スタイル",
         "bt_default_theme": "デフォルト",
+
+        //styles
+        "style_oled": "暗い（OLED)",
+        "style_dark": "暗い",
+        "style_light": "明るい",
+        "style_yb": "黄色と青",
 
         //Tutorial
         "tutorial_title": "チュートリアル",
@@ -522,6 +602,12 @@ var languages = {
         "themes_title": "Stil",
         "bt_default_theme": "Standard",
 
+        //styles
+        "style_oled": "Mörk (OLED)",
+        "style_dark": "Mörk",
+        "style_light": "Ljus",
+        "style_yb": "Gul-Blå",
+
         //Tutorial
         "tutorial_title": "Handledning",
         "tutorial_button_cancel": "Avboka",
@@ -557,6 +643,12 @@ var languages = {
         //themes
         "themes_title": "Stil",
         "bt_default_theme": "Misligholdelse",
+
+        //styles
+        "style_oled": "Mørk (OLED)",
+        "style_dark": "Mørk",
+        "style_light": "Lyse",
+        "style_yb": "Gul-Blå",
 
         //Tutorial
         "tutorial_title": "Tutorial",
@@ -594,6 +686,12 @@ var languages = {
         "themes_title": "Stil",
         "bt_default_theme": "Zadana vrijednost",
 
+        //styles
+        "style_oled": "Tamno (OLED)",
+        "style_dark": "tamno",
+        "style_light": "Svijetla",
+        "style_yb": "Žuto-plavi",
+
         //Tutorial
         "tutorial_title": "Tutorial",
         "tutorial_button_cancel": "Otkazati",
@@ -629,6 +727,12 @@ var languages = {
         //themes
         "themes_title": "Стиль",
         "bt_default_theme": "За замовчуванням",
+
+        //styles
+        "style_oled": "Темний (OLED)",
+        "style_dark": "Темний",
+        "style_light": "Яскравий",
+        "style_yb": "Жовто-Синій",
 
         //Tutorial
         "tutorial_title": "Підручник",
@@ -666,6 +770,12 @@ var languages = {
         "themes_title": "शैली",
         "bt_default_theme": "डिफ़ॉल्ट",
 
+        //styles
+        "style_oled": "डार्क (OLED)",
+        "style_dark": "अँधेरा",
+        "style_light": "चमकदार",
+        "style_yb": "पीले, नीले",
+
         //Tutorial
         "tutorial_title": "ट्यूटोरियल",
         "tutorial_button_cancel": "रद्द करें",
@@ -702,6 +812,12 @@ var languages = {
         "themes_title": "স্টাইল",
         "bt_default_theme": "ডিফল্ট",
 
+        //styles
+        "style_oled": "গাঢ় (OLED)",
+        "style_dark": "অন্ধকার",
+        "style_light": "উজ্জ্বল",
+        "style_yb": "হলুদ-নীল",
+
         //Tutorial
         "tutorial_title": "টিউটোরিয়াল",
         "tutorial_button_cancel": "বাতিল করুন",
@@ -734,7 +850,6 @@ function translate(name, replaces=[])
   {
     ret = ret.replace("{"+i+"}", replaces[i]);
   }
-  console.log(ret);
 
   return ret;
 }
