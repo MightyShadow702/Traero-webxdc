@@ -9,7 +9,9 @@
   align-items: center;
   width: 80%;
   height: var(--toast-size);
-  background-color: #80908E;
+  color: var(--toast-text);
+  background-color: var(--toast);
+  border: var(--toast-border);
   bottom: calc(10% + var(--input_scale));
   left: 10%;
   border-radius: 25px;
@@ -18,12 +20,13 @@
 }
 
 #toast #message {
-  display: table;
+  display: flex;
   width: calc(100% - var(--toast-size)*2);
   height: 100%;
-  line-height: 100px;
   font-size: 3vw;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -36,6 +39,8 @@
   height: var(--toast-size);
   border-radius: 0px 25px 25px 0px;
   border: 0px;
+  color: var(--toast-button-text);
+  border-left: var(--toast-button-border);
   background-color: transparent;
   z-index: 2;
   font-size: 3vw;
@@ -47,5 +52,5 @@
   top: 0px;
   left: 0px;
   bottom: 0px;
-  background-color: #92AAA2FF;
+  background-color: var(--toast-progress);
 }

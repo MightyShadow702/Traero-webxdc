@@ -44,13 +44,12 @@ function update_language()
 function onload()
 {
   update_language();
-
-  window.webxdc.setUpdateListener(update_handler);
-
   if (localStorage.selectedTheme != undefined)
   {
     changeTheme(themes[localStorage.selectedTheme]);
   }
+
+  window.webxdc.setUpdateListener(update_handler);
 
   if (localStorage.firstSession == undefined)
   {

@@ -1,7 +1,7 @@
 var languages = {
   "en": {
-    "buy": "Buy",
-    "last": "Last used",
+    "buy": "To buy",
+    "last": "Recently purchased",
     "search": "I need...",
     "bt_export": "Export",
     "bt_import": "Import",
@@ -21,8 +21,15 @@ var languages = {
     "language_name": "English",
 
     //themes
-    "themes_title": "Style",
+    "themes_title": "Themes",
     "bt_default_theme": "Default",
+
+    //styles
+    "style_oled": "Dark (OLED)",
+    "style_dark": "Dark",
+    "style_light": "Bright",
+    "style_yb": "Yellow-Blue",
+    "style_eink": "E-Ink",
 
     //Tutorial
     "tutorial_title": "Tutorial",
@@ -37,7 +44,7 @@ var languages = {
   },
   "es": {
     "buy": "Compra",
-    "last": "Últimamente usado",
+    "last": "Comprado recientemente",
     "search": "Necesito...",
     "bt_export": "Exportación",
     "bt_import": "Importación",
@@ -60,6 +67,12 @@ var languages = {
     "themes_title": "Estilo",
     "bt_default_theme": "Estándar",
 
+    //styles
+    "style_oled": "Oscuro (OLED)",
+    "style_dark": "Oscuro",
+    "style_light": "Brillante",
+    "style_yb": "Amarillo-Azúl",
+
     //Tutorial
     "tutorial_button_cancel": "Cancelar",
     "tutorial_button_next": "Listo",
@@ -72,7 +85,7 @@ var languages = {
   },
   "pt": {
      "buy": "Comprar",
-     "last": "Usado pela última vez",
+     "last": "Comprado recentemente",
      "search": "Eu preciso...",
      "bt_export": "Exportar",
      "bt_import": "Importar",
@@ -95,6 +108,12 @@ var languages = {
      "themes_title": "Estilo",
      "bt_default_theme": "Padrão",
 
+     //styles
+     "style_oled": "Escuro (OLED)",
+     "style_dark": "Escuro",
+     "style_light": "Brilhante",
+     "style_yb": "Amarelo-Azul",
+
      //Tutorial
      "tutorial_button_cancel": "Cancelar",
      "tutorial_button_next": "Preparar",
@@ -107,7 +126,7 @@ var languages = {
    },
    "fr": {
      "buy": "Acheter",
-     "last": "Dernièrement utilisé",
+     "last": "Récemment acheté",
      "search": "J'ai besoin...",
      "bt_export": "Exporter",
      "bt_import": "Importer",
@@ -142,7 +161,7 @@ var languages = {
    },
    "it": {
      "buy": "Acquista",
-     "last": "Ultimamente utilizzato",
+     "last": "Acquistato di recente",
      "search": "Ho bisogno...",
      "bt_export": "Esporta",
      "bt_import": "Importa",
@@ -165,6 +184,12 @@ var languages = {
      "themes_title": "Stile",
      "bt_default_theme": "Standard",
 
+     //styles
+     "style_oled": "Scuro (OLED)",
+     "style_dark": "Scuro",
+     "style_light": "Luminoso",
+     "style_yb": "Giallo-Blu",
+
      //Tutorial
      "tutorial_button_cancel": "Cancellare",
      "tutorial_button_next": "Pronto",
@@ -176,8 +201,8 @@ var languages = {
      "tutorial_close": "Questo era il tutorial completo con tutte le funzionalità importanti.\nSarà un piacere aiutarti con il tuo prossimo acquisto!"
     },
   "de": {
-    "buy": "Kaufen",
-    "last": "Zuletzt genutzt",
+    "buy": "Zu kaufen",
+    "last": "Zuletzt gekauft",
     "search": "Ich brauche...",
     "bt_export": "Exportieren",
     "bt_import": "Importieren",
@@ -200,6 +225,13 @@ var languages = {
     "themes_title": "Stil",
     "bt_default_theme": "Standard",
 
+    //styles
+    "style_oled": "Dunkel (OLED)",
+    "style_dark": "Dunkel",
+    "style_light": "Hell",
+    "style_yb": "Gelb-Blau",
+
+
     //Tutorial
     "tutorial_button_cancel": "Beenden",
     "tutorial_button_next": "Fertig",
@@ -212,7 +244,7 @@ var languages = {
   },
   "nl": {
      "buy": "Kopen",
-     "last": "Laatst gebruikt",
+     "last": "Onlangs gekocht",
      "search": "Ik heb nodig...",
      "bt_export": "Exporteurs",
      "bt_import": "Importeurs",
@@ -235,6 +267,12 @@ var languages = {
      "themes_title": "Stijl",
      "bt_default_theme": "Standaard",
 
+     //styles
+     "style_oled": "Donker (OLED)",
+     "style_dark": "Donker",
+     "style_light": "Helder",
+     "style_yb": "Geel-Blauw",
+
      //Tutorial
      "tutorial_button_cancel": "Finish",
      "tutorial_button_next": "Klaar",
@@ -247,7 +285,7 @@ var languages = {
    },
    "ru": {
       "buy": "Купить",
-      "last": "Последний использованный",
+      "last": "Недавно куплено",
       "search": "Мне нужно...",
       "bt_export": "Экспорт",
       "bt_import": "Импорт",
@@ -270,6 +308,12 @@ var languages = {
       "themes_title": "Стиль",
       "bt_default_theme": "Стандарт",
 
+      //styles
+      "style_oled": "Темный (OLED)",
+      "style_dark": "Темный",
+      "style_light": "Яркий",
+      "style_yb": "Желто-синий",
+
       //Tutorial
       "tutorial_title": "Учебник",
       "tutorial_button_cancel": "Отмена",
@@ -283,7 +327,7 @@ var languages = {
     },
     "zh": {
        "buy": "买",
-       "last": "最后使用",
+       "last": "最近购买",
        "search": "我需要一些东西…",
        "bt_export": "出口",
        "bt_import": "进口",
@@ -306,6 +350,12 @@ var languages = {
        "themes_title": "风格",
        "bt_default_theme": "标准",
 
+       //styles
+       "style_oled": "暗色 (OLED)",
+       "style_dark": "黑暗的",
+       "style_light": "明亮的",
+       "style_yb": "黄色-蓝色",
+
        //Tutorial
        "tutorial_title": "教程",
        "tutorial_button_cancel": "取消",
@@ -319,7 +369,7 @@ var languages = {
      },
      "ar": {
         "buy": "يشتري",
-        "last": "آخر استخدام",
+        "last": "تم شراؤها مؤخرًا",
         "search": "شيئ أحتاجه...",
         "bt_export": "يصدّر",
         "bt_import": "ستورد",
@@ -342,6 +392,12 @@ var languages = {
         "themes_title": "أسلوب",
         "bt_default_theme": "معيار",
 
+        //styles
+        "style_oled": "داكن (OLED)",
+        "style_dark": "مظلم",
+        "style_light": "ساطع",
+        "style_yb": "الأصفر والأزرق",
+
         //Tutorial
         "tutorial_title": "برنامج تعليمي",
         "tutorial_button_cancel": "إلغاء",
@@ -355,7 +411,7 @@ var languages = {
       },
       "tr": {
         "buy": "Satın al",
-        "last": "Son kullanılan",
+        "last": "Son zamanlarda satın alındı",
         "search": "İhtiyacım olan bir şey...",
         "bt_export": "Dışa aktar",
         "bt_import": "İçe aktar",
@@ -378,6 +434,12 @@ var languages = {
         "themes_title": "Stil",
         "bt_default_theme": "Varsayılan",
 
+        //styles
+        "style_oled": "Koyu (OLED)",
+        "style_dark": "Koyu",
+        "style_light": "Parlak",
+        "style_yb": "Sarı-Mavi",
+
         //Tutorial
         "tutorial_title": "Eğitmen",
         "tutorial_button_cancel": "İptal",
@@ -391,7 +453,7 @@ var languages = {
       },
       "qu": {
         "buy": "Rantiy",
-        "last": "Qhipa kaq llamk’achisqa",
+        "last": "Chayllaraq rantisqa",
         "search": "Imapas necesitasqay...",
         "bt_export": "Hawaman apachiy",
         "bt_import": "Yaykuchimuy",
@@ -414,6 +476,12 @@ var languages = {
         "themes_title": "Rikchay",
         "bt_default_theme": "Ñawpaqchasqa",
 
+        //styles
+        "style_oled": "Tutayaq (OLED)",
+        "style_dark": "Tutayasqa",
+        "style_light": "Kanchay",
+        "style_yb": "Q’illu-Azul",
+
         //Tutorial
         "tutorial_title": "Yachachiy",
         "tutorial_button_cancel": "Sayachiy",
@@ -427,7 +495,7 @@ var languages = {
       },
       "pl": {
         "buy": "Kup",
-        "last": "Ostatnio używane",
+        "last": "Niedawno kupione",
         "search": "Coś, czego potrzebuję...",
         "bt_export": "Eksport",
         "bt_import": "Import",
@@ -450,6 +518,12 @@ var languages = {
         "themes_title": "Styl",
         "bt_default_theme": "Domyślny",
 
+        //styles
+        "style_oled": "Ciemny (OLED)",
+        "style_dark": "Ciemny",
+        "style_light": "Jasny",
+        "style_yb": "Żółto-niebieski",
+
         //Tutorial
         "tutorial_title": "Samouczek",
         "tutorial_button_cancel": "Anuluj",
@@ -463,7 +537,7 @@ var languages = {
       },
       "ja": {
         "buy": "購入",
-        "last": "最後に使用したアイテム",
+        "last": "最近購入したもの",
         "search": "必要なもの...",
         "bt_export": "エクスポート",
         "bt_import": "インポート",
@@ -486,6 +560,12 @@ var languages = {
         "themes_title": "スタイル",
         "bt_default_theme": "デフォルト",
 
+        //styles
+        "style_oled": "暗い（OLED)",
+        "style_dark": "暗い",
+        "style_light": "明るい",
+        "style_yb": "黄色と青",
+
         //Tutorial
         "tutorial_title": "チュートリアル",
         "tutorial_button_cancel": "キャンセル",
@@ -499,7 +579,7 @@ var languages = {
       },
       "sv": {
         "buy": "Köpa",
-        "last": "Senast använd",
+        "last": "nyligen köpt",
         "search": "Jag behöver...",
         "bt_export": "Exportera",
         "bt_import": "Importera",
@@ -522,6 +602,12 @@ var languages = {
         "themes_title": "Stil",
         "bt_default_theme": "Standard",
 
+        //styles
+        "style_oled": "Mörk (OLED)",
+        "style_dark": "Mörk",
+        "style_light": "Ljus",
+        "style_yb": "Gul-Blå",
+
         //Tutorial
         "tutorial_title": "Handledning",
         "tutorial_button_cancel": "Avboka",
@@ -535,7 +621,7 @@ var languages = {
       },
       "da": {
         "buy": "Købe",
-        "last": "Sidst brugt",
+        "last": "nyligt købt",
         "search": "jeg har brug for...",
         "bt_export": "Eksportere",
         "bt_import": "Importere",
@@ -558,6 +644,12 @@ var languages = {
         "themes_title": "Stil",
         "bt_default_theme": "Misligholdelse",
 
+        //styles
+        "style_oled": "Mørk (OLED)",
+        "style_dark": "Mørk",
+        "style_light": "Lyse",
+        "style_yb": "Gul-Blå",
+
         //Tutorial
         "tutorial_title": "Tutorial",
         "tutorial_button_cancel": "Ophæve",
@@ -571,7 +663,7 @@ var languages = {
       },
       "hr": {
         "buy": "Kupiti",
-        "last": "Zadnje korišteno",
+        "last": "nedavno kupljeno",
         "search": "Trebam...",
         "bt_export": "Izvoz",
         "bt_import": "Uvoz",
@@ -594,6 +686,12 @@ var languages = {
         "themes_title": "Stil",
         "bt_default_theme": "Zadana vrijednost",
 
+        //styles
+        "style_oled": "Tamno (OLED)",
+        "style_dark": "tamno",
+        "style_light": "Svijetla",
+        "style_yb": "Žuto-plavi",
+
         //Tutorial
         "tutorial_title": "Tutorial",
         "tutorial_button_cancel": "Otkazati",
@@ -607,7 +705,7 @@ var languages = {
       },
       "uk": {
         "buy": "купити",
-        "last": "Останнє використання",
+        "last": "нещодавно придбаний",
         "search": "мені потрібно...",
         "bt_export": "Експорт",
         "bt_import": "Імпорт",
@@ -630,6 +728,12 @@ var languages = {
         "themes_title": "Стиль",
         "bt_default_theme": "За замовчуванням",
 
+        //styles
+        "style_oled": "Темний (OLED)",
+        "style_dark": "Темний",
+        "style_light": "Яскравий",
+        "style_yb": "Жовто-Синій",
+
         //Tutorial
         "tutorial_title": "Підручник",
         "tutorial_button_cancel": "Скасувати",
@@ -643,7 +747,7 @@ var languages = {
       },
       "hi": {
         "buy": "खरीदें",
-        "last": "अंतिम बार उपयोग किया गया",
+        "last": "हाल ही में खरीदा गया",
         "search": "मुझे चाहिए...",
         "bt_export": "निर्यात करें",
         "bt_import": "आयात करें",
@@ -666,6 +770,12 @@ var languages = {
         "themes_title": "शैली",
         "bt_default_theme": "डिफ़ॉल्ट",
 
+        //styles
+        "style_oled": "डार्क (OLED)",
+        "style_dark": "अँधेरा",
+        "style_light": "चमकदार",
+        "style_yb": "पीले, नीले",
+
         //Tutorial
         "tutorial_title": "ट्यूटोरियल",
         "tutorial_button_cancel": "रद्द करें",
@@ -679,7 +789,7 @@ var languages = {
       },
       "bn": {
         "buy": "কিনুন",
-        "last": "শেষবার ব্যবহার করা হয়েছে",
+        "last": "সম্প্রতি কেনাে",
         "search": "আমার প্রয়োজন...",
         "bt_export": "রপ্তানি",
         "bt_import": "আমদানি",
@@ -701,6 +811,12 @@ var languages = {
         //themes
         "themes_title": "স্টাইল",
         "bt_default_theme": "ডিফল্ট",
+
+        //styles
+        "style_oled": "গাঢ় (OLED)",
+        "style_dark": "অন্ধকার",
+        "style_light": "উজ্জ্বল",
+        "style_yb": "হলুদ-নীল",
 
         //Tutorial
         "tutorial_title": "টিউটোরিয়াল",
@@ -734,7 +850,6 @@ function translate(name, replaces=[])
   {
     ret = ret.replace("{"+i+"}", replaces[i]);
   }
-  console.log(ret);
 
   return ret;
 }

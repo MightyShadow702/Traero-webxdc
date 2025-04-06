@@ -109,6 +109,10 @@ var tutdbg;
 
 function onload()
 {
-  tutorial_add();
   update_language();
+  if (localStorage.selectedTheme != undefined)
+  {
+    changeTheme(themes[localStorage.selectedTheme]);
+  }
+  tutorial_add();
 }

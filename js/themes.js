@@ -70,9 +70,17 @@ var themes = {
 
     "search-button-hover": null,
     "search-button-hover-border": null,
-    "search-button-hover-text": null
+    "search-button-hover-text": null,
+
+    "toast": null,
+    "toast-progress": null,
+    "toast-border": null,
+    "toast-text": null,
+
+    "toast-button-border": null,
+    "toast-button-text": null,
   },
-  OLED: {
+  oled: {
     "popup": "rgba(20, 20, 20)",
     "popup-border": null,
     "popup-text": "white",
@@ -141,9 +149,97 @@ var themes = {
 
     "search-button-hover": "rgba(40, 40, 40)",
     "search-button-hover-border": null,
-    "search-button-hover-text": "white"
+    "search-button-hover-text": "white",
+
+    "toast": "rgba(20, 20, 20)",
+    "toast-progress": "rgba(40, 40, 40)",
+    "toast-border": null,
+    "toast-text": "white",
+
+    "toast-button-border": null,
+    "toast-button-text": "white",
   },
-  Light: {
+  dark: {
+    "popup": "rgba(70, 70, 70)",
+    "popup-border": null,
+    "popup-text": "white",
+
+    "popup-close": "rgba(90, 90, 90)",
+    "popup-close-border": null,
+    "popup-close-text": "white",
+
+    "popup-close-hover": "rgba(110, 110, 110)",
+    "popup-close-hover-border": null,
+    "popup-close-hover-text": "white",
+
+    "popup-button": "rgba(90, 90, 90)",
+    "popup-button-border": null,
+    "popup-button-text": "white",
+
+    "popup-button-hover": "rgba(110, 110, 110)",
+    "popup-button-hover-border": null,
+    "popup-button-hover-text": "white",
+
+    "menu": "rgba(40, 40, 40)",
+    "menu-border": null,
+    "menu-toggle": null,
+
+    "menu-button": "rgba(60, 60, 60)",
+    "menu-button-border": null,
+    "menu-button-text": null,
+
+    "menu-button-hover": "rgba(80, 80, 80)",
+    "menu-button-hover-border": null,
+    "menu-button-hover-text": null,
+
+    "list": "rgba(50, 50, 50)",
+    "list-text": "white",
+
+    "list-active": "rgba(128, 42, 42)",
+    "list-active-border": null,
+    "list-active-text": "white",
+    "list-active-meta": "rgba(180, 180, 180)",
+
+    "list-active-hover": "rgba(128, 82, 82)",
+    "list-active-hover-border": null,
+    "list-active-hover-text": "white",
+    "list-active-hover-meta": "rgba(180, 180, 180)",
+
+    "list-last": "rgba(52, 128, 52)",
+    "list-last-border": null,
+    "list-last-text": "white",
+    "list-last-meta": "rgba(200, 200, 200)",
+
+    "list-last-hover": "rgba(92, 128, 92)",
+    "list-last-hover-border": null,
+    "list-last-hover-text": "white",
+    "list-last-hover-meta": "rgba(180, 180, 180)",
+
+    "search": "rgba(200, 200, 200)",
+    "search-border": null,
+    "search-text": "black",
+
+    "search-hover": "rgba(220, 220, 220)",
+    "search-hover-border": null,
+    "search-hover-text": "black",
+
+    "search-button": "rgba(200, 200, 200)",
+    "search-button-border": null,
+    "search-button-text": "black",
+
+    "search-button-hover": "rgba(220, 220, 220)",
+    "search-button-hover-border": null,
+    "search-button-hover-text": "black",
+
+    "toast": "rgba(100, 100, 100)",
+    "toast-progress": "rgba(70, 70, 70)",
+    "toast-border": null,
+    "toast-text": "white",
+
+    "toast-button-border": null,
+    "toast-button-text": "white",
+  },
+  light: {
     "popup": "rgba(220, 220, 220)",
     "popup-border": null,
     "popup-text": "black",
@@ -212,9 +308,17 @@ var themes = {
 
     "search-button-hover": "rgba(220, 220, 220)",
     "search-button-hover-border": null,
-    "search-button-hover-text": "black"
+    "search-button-hover-text": "black",
+
+    "toast": "rgba(220, 220, 220)",
+    "toast-progress": "rgba(240, 240, 240)",
+    "toast-border": null,
+    "toast-text": null,
+
+    "toast-button-border": null,
+    "toast-button-text": null,
   },
-  YBStyle: {
+  yb: {
     "popup": null,
     "popup-border": null,
     "popup-text": null,
@@ -283,9 +387,17 @@ var themes = {
 
     "search-button-hover": null,
     "search-button-hover-border": null,
-    "search-button-hover-text": null
+    "search-button-hover-text": null,
+
+    "toast": null,
+    "toast-progress": null,
+    "toast-border": null,
+    "toast-text": null,
+
+    "toast-button-border": null,
+    "toast-button-text": null,
   },
-  Eink: {
+  eink: {
     "popup": "white",
     "popup-border": "5px solid black",
     "popup-text": "black",
@@ -355,7 +467,15 @@ var themes = {
 
     "search-button-hover": "rgba(128, 128, 128)",
     "search-button-hover-border": null,
-    "search-button-hover-text": "white"
+    "search-button-hover-text": "white",
+
+    "toast": "white",
+    "toast-progress": "rgba(128, 128, 128)",
+    "toast-border": "5px solid black",
+    "toast-text": "black",
+
+    "toast-button-border": "5px solid black",
+    "toast-button-text": "black",
   },
 }
 
