@@ -10,7 +10,6 @@
 			-ms-hyphens: auto;
 					hyphens: auto;
 	padding: 5px;
-	cursor: pointer;
 }
 #item #title {
     font-size: 4vw;
@@ -75,6 +74,10 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
+	#item {
+		cursor: pointer;
+	}
+
 	#last_items #item:hover
 	{
 		background-color: var(--list-last-hover);
@@ -85,7 +88,7 @@
 	#last_items #item:hover > #meta {
 		color: var(--list-last-hover-meta);
 	}
-	
+
 	#current_items #item:hover {
 		background-color: var(--list-active-hover);
 		color: var(--list-active-hover-text);

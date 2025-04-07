@@ -67,7 +67,6 @@
   border-radius: 25%;
   border: 0px;
   filter: var(--menu-toggle);
-  cursor: pointer;
 }
 
 #menu #toggle img {
@@ -93,7 +92,6 @@
   color: var(--menu-button-text);
   border: var(--menu-button-border);
   border-radius: 25px;
-  cursor: pointer;
   margin-left: 5px;
 }
 
@@ -132,6 +130,14 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
+  #menu #toggle {
+    cursor: pointer;
+  }
+
+  #menucontent button {
+    cursor: pointer;
+  }
+
   #menucontent button:hover {
     background-color: var(--menu-button-hover);
     border: var(--menu-button-hover-border);
