@@ -28,14 +28,6 @@
   cursor: pointer;
 }
 
-#popup #bt_close:hover {
-  border: 0px;
-  border-left: var(--popup-close-hover-border);
-  border-bottom: var(--popup-close-hover-border);
-  background-color: var(--popup-close-hover);
-  color: var(--popup-close-hover-text);
-}
-
 #popup #title {
   color: var(--popup-text);
   font-size: 25px;
@@ -67,9 +59,19 @@
   color: var(--popup-button-text);
 }
 
-#popup #content button:hover {
-  background-color: var(--popup-button-hover);
-  color: var(--popup-button-hover-text);
-  border: var(--popup-button-hover-border);
-  cursor: pointer;
+@media (hover: hover) and (pointer: fine) {
+  #popup #bt_close:hover {
+    border: 0px;
+    border-left: var(--popup-close-hover-border);
+    border-bottom: var(--popup-close-hover-border);
+    background-color: var(--popup-close-hover);
+    color: var(--popup-close-hover-text);
+  }
+  
+  #popup #content button:hover {
+    background-color: var(--popup-button-hover);
+    color: var(--popup-button-hover-text);
+    border: var(--popup-button-hover-border);
+    cursor: pointer;
+  }
 }

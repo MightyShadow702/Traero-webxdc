@@ -96,11 +96,6 @@
   cursor: pointer;
   margin-left: 5px;
 }
-#menucontent button:hover {
-  background-color: var(--menu-button-hover);
-  border: var(--menu-button-hover-border);
-  color: var(--menu-button-hover-text);
-}
 
 .about_screen {
   display: flex;
@@ -134,4 +129,12 @@
   height: 50%;
   margin: 0px 15px 15px 15px;
   border: 1px solid white;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #menucontent button:hover {
+    background-color: var(--menu-button-hover);
+    border: var(--menu-button-hover-border);
+    color: var(--menu-button-hover-text);
+  }
 }

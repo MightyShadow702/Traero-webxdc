@@ -34,11 +34,6 @@
   height: var(--tutorial_button_height);
   border: 0px;
 }
-#tutorial_popup button:hover {
-  background-color: var(--popup-button-hover);
-  color: var(--popup-button-hover-text);
-  cursor: pointer;
-}
 
 #tutorial_popup #cancel {
   position: absolute;
@@ -47,11 +42,6 @@
   border-radius: 0px 25px 0px 0px;
   border-top: var(--popup-button-border);
   border-right: var(--popup-button-border);
-}
-
-#tutorial_popup #cancel:hover {
-  border-top: var(--popup-button-hover-border);
-  border-right: var(--popup-button-hover-border);
 }
 
 #tutorial_popup #next {
@@ -63,7 +53,20 @@
   border-left: var(--popup-button-border);
 }
 
-#tutorial_popup #next:hover {
-  border-top: var(--popup-button-hover-border);
-  border-left: var(--popup-button-hover-border);
+@media (hover: hover) and (pointer: fine) {
+  #tutorial_popup button:hover {
+    background-color: var(--popup-button-hover);
+    color: var(--popup-button-hover-text);
+    cursor: pointer;
+  }
+
+  #tutorial_popup #cancel:hover {
+    border-top: var(--popup-button-hover-border);
+    border-right: var(--popup-button-hover-border);
+  }
+  
+  #tutorial_popup #next:hover {
+    border-top: var(--popup-button-hover-border);
+    border-left: var(--popup-button-hover-border);
+  }
 }
