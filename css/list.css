@@ -10,7 +10,6 @@
 			-ms-hyphens: auto;
 					hyphens: auto;
 	padding: 5px;
-	cursor: pointer;
 }
 #item #title {
     font-size: 4vw;
@@ -64,17 +63,6 @@
 	color: var(--list-last-meta);
 }
 
-#last_items #item:hover
-{
-	background-color: var(--list-last-hover);
-	color: var(--list-last-hover-text);
-	border: var(--list-last-hover-border);
-}
-
-#last_items #item:hover > #meta {
-	color: var(--list-last-hover-meta);
-}
-
 #current_items #item {
 	background-color: var(--list-active);
 	color: var(--list-active-text);
@@ -85,12 +73,29 @@
 	color: var(--list-active-meta);
 }
 
-#current_items #item:hover {
-	background-color: var(--list-active-hover);
-	color: var(--list-active-hover-text);
-	border: var(--list-active-hover-border);
-}
+@media (hover: hover) and (pointer: fine) {
+	#item {
+		cursor: pointer;
+	}
 
-#current_items #item:hover > #meta {
-	color: var(--list-active-hover-meta);
+	#last_items #item:hover
+	{
+		background-color: var(--list-last-hover);
+		color: var(--list-last-hover-text);
+		border: var(--list-last-hover-border);
+	}
+
+	#last_items #item:hover > #meta {
+		color: var(--list-last-hover-meta);
+	}
+
+	#current_items #item:hover {
+		background-color: var(--list-active-hover);
+		color: var(--list-active-hover-text);
+		border: var(--list-active-hover-border);
+	}
+
+	#current_items #item:hover > #meta {
+		color: var(--list-active-hover-meta);
+	}
 }

@@ -47,10 +47,6 @@ body {
 	width: 100%;
 	z-index: 0;
 }
-#inputarea input:hover {
-	background-color: var(--search-hover);
-	color: var(--search-hover-text);
-}
 
 #inputarea button {
 	height: 100%;
@@ -65,9 +61,16 @@ body {
 	z-index: 1;
 }
 
-#inputarea button:hover {
-	cursor: pointer;
-	border-left: var(--search-button-hover-border);
-	background-color: var(--search-button-hover);
-	color: var(--search-button-hover-text);
+@media (hover: hover) and (pointer: fine) {
+	#inputarea input:hover {
+		background-color: var(--search-hover);
+		color: var(--search-hover-text);
+	}
+	
+	#inputarea button:hover {
+		cursor: pointer;
+		border-left: var(--search-button-hover-border);
+		background-color: var(--search-button-hover);
+		color: var(--search-button-hover-text);
+	}
 }

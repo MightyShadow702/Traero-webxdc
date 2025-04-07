@@ -16,7 +16,6 @@
   left: 10%;
   border-radius: 25px;
   overflow: hidden;
-  cursor: pointer;
 }
 
 #toast #message {
@@ -44,7 +43,6 @@
   background-color: transparent;
   z-index: 2;
   font-size: 3vw;
-  cursor: pointer;
 }
 
 #toast #timer_bg {
@@ -53,4 +51,14 @@
   left: 0px;
   bottom: 0px;
   background-color: var(--toast-progress);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #toast {
+    cursor: pointer;
+  }
+
+  #toast #bt_close {
+    cursor: pointer;
+  }
 }
