@@ -121,15 +121,17 @@
 }
 
 .about_screen #license_title {
-  margin-top: 15px;
   font-size: 15px;
+  margin-top: 15px;
 }
 
 .about_screen #license_view {
-  width: 50%;
+  color: var(--popup-text);
+  width: 80%;
   height: 50%;
   margin: 0px 15px 15px 15px;
-  border: 1px solid white;
+  text-align: center;
+  overflow: auto;
 }
 
 @media (hover: hover) and (pointer: fine) {

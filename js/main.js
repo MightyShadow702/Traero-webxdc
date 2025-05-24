@@ -15,16 +15,18 @@ function save_metadata()
       },
       "summary": item_count + " " + translate(item_count == 1 ? "update_item_txt" : "update_items_txt"),
       "info": translate("update_message", [window.webxdc.selfName])
-    },
-    translate("update_message", [window.webxdc.selfName])
+    }
   );
 }
 
 function update_handler(data)
 {
-  var payload = data.payload;
-  metadata = payload.metadata;
-  update_list();
+  if (data.serial == data.max_serial)
+  {
+      var payload = data.payload;
+      metadata = payload.metadata;
+      update_list();
+  }
 }
 
 function update_language()

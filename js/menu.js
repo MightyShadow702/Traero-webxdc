@@ -25,15 +25,15 @@ function show_about()
   title.innerHTML = "Traero";
   about_dialog.add(title);
   var version_number = document.createElement("p");
-  version_number.innerHTML = "Version: 0.8.3";
+  version_number.innerHTML = "Version: 0.8.4";
   about_dialog.add(version_number);
   var license_txt = document.createElement("p");
   license_txt.id = "license_title";
   license_txt.innerHTML = "License";
   about_dialog.add(license_txt);
-  var license = document.createElement("iframe");
+  var license = document.createElement("div");
   license.id = "license_view"
-  license.src = "LICENSE";
+  fetch("LICENSE").then(res =>  res.text()).then(d => license.innerHTML = d);
   about_dialog.add(license);
 }
 
