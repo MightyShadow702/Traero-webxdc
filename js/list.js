@@ -104,6 +104,19 @@ class Item
             document.getElementById("new_item_input").focus();
             update_search();
           }
+          else
+          {
+              var old_toast = document.getElementById("toast");
+              if (old_toast)
+              {
+                  old_toast.remove();
+              }
+              var undo_element = metadata[name];
+              traero_toast(translate("toast_undo"), 3000, true, ()=>{
+                  metadata[name] = undo_element;
+                  save_metadata();
+              });
+          }
           delete metadata[name];
           objects.splice(objects.indexOf(obj), 1);
           save_metadata();

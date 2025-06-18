@@ -13,7 +13,7 @@ var languages = {
 
     //toasts
     "toast_fist_start": "Open tutorial?",
-    "toast_undo": "Made a mistake?",
+    "toast_undo": "Undo?",
 
     //languages
     "language_title": "Language",
@@ -43,11 +43,11 @@ var languages = {
     "tutorial_close": "This was the complete tutorial with all its function's importance.\nHave fun on your next shopping tour!"
   },
   "es": {
-    "buy": "Compra",
+    "buy": "Compras",
     "last": "Comprado recientemente",
     "search": "Necesito...",
-    "bt_export": "Exportación",
-    "bt_import": "Importación",
+    "bt_export": "Exportar",
+    "bt_import": "Importar",
     "about_title": "Informaciones",
     "export_message": "Este archivo estuvo exportado por Traero",
     "update_message": "{0} actualizó la lista en Traero",
@@ -55,8 +55,8 @@ var languages = {
     "update_items_txt": "elementos",
 
     //toasts
-    "toast_fist_start": "¿Abrir el tutorial?",
-    "toast_undo": "¿Estuvo un accidente?",
+    "toast_fist_start": "¿Abrir tutorial?",
+    "toast_undo": "¿Deshacer?",
 
     //languages
     "language_title": "Idioma",
@@ -97,7 +97,7 @@ var languages = {
 
      //toasts
      "toast_fist_start": "Abrir o tutorial?",
-     "toast_undo": "Houve um acidente?",
+     "toast_undo": "Desfazer?",
 
      //languages
      "language_title": "Linguagem",
@@ -138,7 +138,7 @@ var languages = {
 
      //toasts
      "toast_fist_start": "Ouvrir le tutoriel?",
-     "toast_undo": "Y a-t-il eu un accident?",
+     "toast_undo": "Défaire?",
 
      //languages
      "language_title": "Langue",
@@ -173,7 +173,7 @@ var languages = {
 
      //toasts
      "toast_fist_start": "Vuoi aprire il tutorial?",
-     "toast_undo": "C'è stato un incidente?",
+     "toast_undo": "Disfare?",
 
      //languages
      "language_title": "Lingua",
@@ -214,7 +214,7 @@ var languages = {
 
     //toasts
     "toast_fist_start": "Tutorial öffnen?",
-    "toast_undo": "Fehler gemacht?",
+    "toast_undo": "Rückgängig machen?",
 
     //languages
     "language_title": "Sprache",
@@ -256,7 +256,7 @@ var languages = {
 
      //toasts
      "toast_fist_start": "Handleiding openen?",
-     "toast_undo": "Een fout gemaakt?",
+     "toast_undo": "Ongedaan maken?",
 
      //languages
      "language_title": "Taal",
@@ -297,7 +297,7 @@ var languages = {
 
       //toasts
       "toast_fist_start": "Открыть учебник?",
-      "toast_undo": "Сделали ошибку?",
+      "toast_undo": "Отменить?",
 
       //languages
       "language_title": "Язык",
@@ -339,7 +339,7 @@ var languages = {
 
        //toasts
        "toast_fist_start": "开放教程吗？",
-       "toast_undo": "犯了错误？",
+       "toast_undo": "撤消？",
 
        //languages
        "language_title": "语言",
@@ -381,7 +381,7 @@ var languages = {
 
         //toasts
         "toast_fist_start": "فتح البرنامج التعليمي؟",
-        "toast_undo": "هل ارتكبت خطأ؟",
+        "toast_undo": "التراجع؟",
 
         //languages
         "language_title": "غة",
@@ -423,7 +423,7 @@ var languages = {
 
         //toasts
         "toast_fist_start": "Eğitimi aç?",
-        "toast_undo": "Bir hata mı yaptın?",
+        "toast_undo": "Geri almak mı?",
 
         //languages
         "language_title": "Dil",
@@ -507,7 +507,7 @@ var languages = {
 
         //toasts
         "toast_fist_start": "Otwarty samouczek?",
-        "toast_undo": "Popełniłeś błąd?",
+        "toast_undo": "Anulować?",
 
         //languages
         "language_title": "Język",
@@ -549,7 +549,7 @@ var languages = {
 
         //toasts
         "toast_fist_start": "チュートリアルを開きますか?",
-        "toast_undo": "間違いを犯しましたか?",
+        "toast_undo": "元に戻しますか?",
 
         //languages
         "language_title": "言語",
@@ -591,7 +591,7 @@ var languages = {
 
         //toasts
         "toast_fist_start": "Öppna handledning?",
-        "toast_undo": "Gjorde ett misstag?",
+        "toast_undo": "Ångra?",
 
         //languages
         "language_title": "Språk",
@@ -633,7 +633,7 @@ var languages = {
 
         //toasts
         "toast_fist_start": "Åbn selvstudiet?",
-        "toast_undo": "lavet en fejl?",
+        "toast_undo": "Fortryd?",
 
         //languages
         "language_title": "Sprog",
@@ -675,7 +675,7 @@ var languages = {
 
         //toasts
         "toast_fist_start": "Otvoriti vodič?",
-        "toast_undo": "Pogriješili ste?",
+        "toast_undo": "Poništi?",
 
         //languages
         "language_title": "Jezik",
@@ -717,7 +717,7 @@ var languages = {
 
         //toasts
         "toast_fist_start": "Відкрити підручник?",
-        "toast_undo": "Зробив помилку?",
+        "toast_undo": "Скасувати?",
 
         //languages
         "language_title": "Мова",
@@ -759,7 +759,7 @@ var languages = {
 
         //toasts
         "toast_fist_start": "ट्यूटोरियल खोलें?",
-        "toast_undo": "कोई गलती हुई?",
+        "toast_undo": "पूर्ववत करें?",
 
         //languages
         "language_title": "भाषा",
@@ -801,7 +801,7 @@ var languages = {
 
         //toasts
         "toast_fist_start": "টিউটোরিয়াল খুলুন?",
-        "toast_undo": "ভুল করেছেন?",
+        "toast_undo": "পূর্বাবস্থায় ফেরান?",
 
         //languages
         "language_title": "ভাষা",
