@@ -24,7 +24,7 @@ function update_handler(data)
   if (data.serial == data.max_serial)
   {
       var payload = data.payload;
-      metadata = payload.metadata;
+      Object.assign(metadata, payload.metadata);
       update_list();
   }
 }

@@ -117,8 +117,7 @@ class Item
                   save_metadata();
               });
           }
-          delete metadata[name];
-          objects.splice(objects.indexOf(obj), 1);
+          metadata[name].active = null;
           save_metadata();
         }
         clearInterval(delete_timer);
@@ -237,23 +236,31 @@ function export_metadata()
 function update_list()
 {
   var existing = Object.fromEntries(objects.map(i => [i.name, i]));
-  for (var i in metadata)
+  console.log(existing);
+  for (const [id, item] of Object.entries(metadata))
   {
-    if (!(i in existing))
+    if (!(id in existing))
     {
-      var obj = new Item(i, metadata[i].title, metadata[i].meta);
-      objects.push(obj);
-      obj.Update();
+      if (item.active != null)
+      {
+        var obj = new Item(id, item.title, item.meta);
+        objects.push(obj);
+        obj.Update();
+      }
     }
     else
     {
-      if (metadata[i].active)
+      if (item.active == null)
       {
-        existing[i].toActive();
+        existing[id].remove();
+      }
+      else if (item.active)
+      {
+        existing[id].toActive();
       }
       else
       {
-        existing[i].toLast();
+        existing[id].toLast();
       }
     }
   }
@@ -262,7 +269,6 @@ function update_list()
     if (!(objects[i].name in metadata))
     {
       objects[i].remove();
-      objects.splice(i, 1);
     }
   }
   update_search();
