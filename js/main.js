@@ -1,6 +1,6 @@
 function save_metadata()
 {
-    var item_count = 0;
+  var item_count = 0;
   for (var i in metadata)
   {
       if (metadata[i].active)
@@ -8,10 +8,11 @@ function save_metadata()
           item_count++;
       }
   }
+  localStorage.timestamp = Date.now();
   window.webxdc.sendUpdate(
     {
       "payload": {
-        "metadata": metadata
+        "metadata": {metadata: metadata, timestamp: localStorage.timestamp}
       },
       "summary": item_count + " " + translate(item_count == 1 ? "update_item_txt" : "update_items_txt"),
       "info": translate("update_message", [window.webxdc.selfName])
@@ -24,7 +25,17 @@ function update_handler(data)
   if (data.serial == data.max_serial)
   {
       var payload = data.payload;
-      metadata = payload.metadata;
+      var data = payload.metadata;
+      if (data.timestamp < localStorage.timestamp)
+      {
+        var tmp = data.metadata;
+        Object.assign(tmp, structuredClone(metadata));
+        metadata = tmp;
+      }
+      else
+      {
+        Object.assign(metadata, data.metadata);
+      }
       update_list();
   }
 }
@@ -49,6 +60,11 @@ function onload()
   if (localStorage.selectedTheme != undefined)
   {
     changeTheme(themes[localStorage.selectedTheme]);
+  }
+
+  if (localStorage.timestamp == undefined)
+  {
+    localStorage = 0;
   }
 
   window.webxdc.setUpdateListener(update_handler);

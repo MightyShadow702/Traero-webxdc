@@ -96,6 +96,8 @@ function tutorial_add()
   current_step = tutorial_popup(tutorial_edit, translate("tutorial_add"));
 }
 
+function traero_toast(){};
+
 function save_metadata()
 {
   update_list();

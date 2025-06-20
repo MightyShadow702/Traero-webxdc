@@ -2,7 +2,7 @@ var metadata = {}
 
 var search_string = "";
 
-var objects = []
+var objects = {};
 
 var editing = false;
 var name_backup = "";
@@ -111,14 +111,13 @@ class Item
               {
                   old_toast.remove();
               }
-              var undo_element = metadata[name];
+              const undo_element = structuredClone(metadata[name]);
               traero_toast(translate("toast_undo"), 3000, true, ()=>{
                   metadata[name] = undo_element;
                   save_metadata();
               });
           }
-          delete metadata[name];
-          objects.splice(objects.indexOf(obj), 1);
+          metadata[name].active = null;
           save_metadata();
         }
         clearInterval(delete_timer);
@@ -213,6 +212,17 @@ function input_clear()
   update_search();
 }
 
+function cleanup_metadata()
+{
+  for (const name in metadata)
+  {
+    if (metadata[name].active == null)
+    {
+      delete metadata[name];
+    }
+  }
+}
+
 function import_metadata()
 {
   window.webxdc.importFiles({
@@ -228,6 +238,7 @@ function import_metadata()
 
 function export_metadata()
 {
+  cleanup_metadata();
   window.webxdc.sendToChat({
       file: {plainText: JSON.stringify(metadata), name: "Traero.json"},
       text: translate("export_message")
@@ -236,33 +247,36 @@ function export_metadata()
 
 function update_list()
 {
-  var existing = Object.fromEntries(objects.map(i => [i.name, i]));
-  for (var i in metadata)
+  for (const name in metadata)
   {
-    if (!(i in existing))
+    if (!(name in objects))
     {
-      var obj = new Item(i, metadata[i].title, metadata[i].meta);
-      objects.push(obj);
-      obj.Update();
-    }
-    else
-    {
-      if (metadata[i].active)
+      if (metadata[name].active != null)
       {
-        existing[i].toActive();
+        var obj = new Item(name, metadata[name].title, metadata[name].meta);
+        objects[name] = obj;
+        obj.Update();
       }
       else
       {
-        existing[i].toLast();
+        delete metadata[name];
       }
     }
-  }
-  for (var i in objects)
-  {
-    if (!(objects[i].name in metadata))
+    else
     {
-      objects[i].remove();
-      objects.splice(i, 1);
+      if (metadata[name].active == true)
+      {
+        objects[name].toActive();
+      }
+      else if (metadata[name].active == false)
+      {
+        objects[name].toLast();
+      }
+      else
+      {
+        objects[name].remove();
+        delete metadata[name];
+      }
     }
   }
   update_search();
