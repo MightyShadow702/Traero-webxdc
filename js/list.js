@@ -2,7 +2,7 @@ var metadata = {}
 
 var search_string = "";
 
-var objects = []
+var objects = {};
 
 var editing = false;
 var name_backup = "";
@@ -63,6 +63,7 @@ class Item
   Toggle()
   {
     metadata[this.name].active = !metadata[this.name].active;
+    metadata[this.name].timestamp = Date.now();
     this.Update();
     save_metadata();
   }
@@ -111,14 +112,15 @@ class Item
               {
                   old_toast.remove();
               }
-              var undo_element = metadata[name];
+              const undo_element = structuredClone(metadata[name]);
               traero_toast(translate("toast_undo"), 3000, true, ()=>{
                   metadata[name] = undo_element;
+                  metadata[name].timestamp = Date.now();
                   save_metadata();
               });
           }
-          delete metadata[name];
-          objects.splice(objects.indexOf(obj), 1);
+          metadata[name].active = null;
+          metadata[name].timestamp = Date.now();
           save_metadata();
         }
         clearInterval(delete_timer);
@@ -145,11 +147,12 @@ function add_item(name)
   if (!(name in metadata))
   {
     var content = name.split(",").map(i => i.trim())
-    metadata[name] = {"active": true, "title": content[0], "meta": content.slice(1).join(", ")};
+    metadata[name] = {"active": true, "title": content[0], "meta": content.slice(1).join(", "), "timestamp": Date.now()};
   }
   else
   {
       metadata[name].active = true;
+      metadata.timestamp = Date.now();
   }
   save_metadata();
 }
@@ -213,6 +216,17 @@ function input_clear()
   update_search();
 }
 
+function cleanup_metadata()
+{
+  for (const name in metadata)
+  {
+    if (metadata[name].active == null)
+    {
+      delete metadata[name];
+    }
+  }
+}
+
 function import_metadata()
 {
   window.webxdc.importFiles({
@@ -220,7 +234,12 @@ function import_metadata()
     extensions: [".json"],
   }).then((files) => {
     files[0].text().then(text => {
-      Object.assign(metadata, JSON.parse(text));
+      var timestamp = Date.now();
+      for (const [name, data] of Object.entries(JSON.parse(text)))
+      {
+        data.timestamp = timestamp;
+        metadata[name] = data;
+      }
       save_metadata();
     });
   });
@@ -228,41 +247,50 @@ function import_metadata()
 
 function export_metadata()
 {
+  cleanup_metadata();
+  var file = {};
+  for (const [name, data] of Object.entries(metadata))
+  {
+    file[name] = {active: data.active, title: data.title, meta: data.meta}
+  }
   window.webxdc.sendToChat({
-      file: {plainText: JSON.stringify(metadata), name: "Traero.json"},
+      file: {plainText: JSON.stringify(file), name: "Traero.json"},
       text: translate("export_message")
   });
 }
 
 function update_list()
 {
-  var existing = Object.fromEntries(objects.map(i => [i.name, i]));
-  for (var i in metadata)
+  for (const name in metadata)
   {
-    if (!(i in existing))
+    if (!(name in objects))
     {
-      var obj = new Item(i, metadata[i].title, metadata[i].meta);
-      objects.push(obj);
-      obj.Update();
-    }
-    else
-    {
-      if (metadata[i].active)
+      if (metadata[name].active != null)
       {
-        existing[i].toActive();
+        var obj = new Item(name, metadata[name].title, metadata[name].meta);
+        objects[name] = obj;
+        obj.Update();
       }
       else
       {
-        existing[i].toLast();
+        delete metadata[name];
       }
     }
-  }
-  for (var i in objects)
-  {
-    if (!(objects[i].name in metadata))
+    else
     {
-      objects[i].remove();
-      objects.splice(i, 1);
+      if (metadata[name].active == true)
+      {
+        objects[name].toActive();
+      }
+      else if (metadata[name].active == false)
+      {
+        objects[name].toLast();
+      }
+      else
+      {
+        objects[name].remove();
+        delete metadata[name];
+      }
     }
   }
   update_search();
