@@ -115,10 +115,12 @@ class Item
               const undo_element = structuredClone(metadata[name]);
               traero_toast(translate("toast_undo"), 3000, true, ()=>{
                   metadata[name] = undo_element;
+                  metadata[name].timestamp = Date.now();
                   save_metadata();
               });
           }
           metadata[name].active = null;
+          metadata[name].timestamp = Date.now();
           save_metadata();
         }
         clearInterval(delete_timer);
