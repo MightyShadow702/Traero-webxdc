@@ -34,7 +34,7 @@
   --list: #49595D;
   --list-text: white;
 
-  --list-active: #F06870;
+  --list-active: #AB6A87;
   --list-active-border: 0px;
   --list-active-text: white;
   --list-active-meta: rgb(235, 235, 235);
@@ -44,7 +44,7 @@
   --list-active-hover-text: white;
   --list-active-hover-meta: rgb(235, 235, 235);
 
-  --list-last: #68B8A8;
+  --list-last: #6AAB8E;
   --list-last-border: 0px;
   --list-last-text: white;
   --list-last-meta: rgb(235, 235, 235);
