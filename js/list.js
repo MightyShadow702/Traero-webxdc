@@ -63,6 +63,7 @@ class Item
   Toggle()
   {
     metadata[this.name].active = !metadata[this.name].active;
+    metadata[this.name].timestamp = Date.now();
     this.Update();
     save_metadata();
   }
@@ -144,11 +145,12 @@ function add_item(name)
   if (!(name in metadata))
   {
     var content = name.split(",").map(i => i.trim())
-    metadata[name] = {"active": true, "title": content[0], "meta": content.slice(1).join(", ")};
+    metadata[name] = {"active": true, "title": content[0], "meta": content.slice(1).join(", "), "timestamp": Date.now()};
   }
   else
   {
       metadata[name].active = true;
+      metadata.timestamp = Date.now();
   }
   save_metadata();
 }
@@ -230,7 +232,12 @@ function import_metadata()
     extensions: [".json"],
   }).then((files) => {
     files[0].text().then(text => {
-      Object.assign(metadata, JSON.parse(text));
+      var timestamp = Date.now();
+      for (const [name, data] of Object.entries(JSON.parse(text)))
+      {
+        data.timestamp = timestamp;
+        metadata[name] = data;
+      }
       save_metadata();
     });
   });
@@ -239,8 +246,13 @@ function import_metadata()
 function export_metadata()
 {
   cleanup_metadata();
+  var file = {};
+  for (const [name, data] of Object.entries(metadata))
+  {
+    file[name] = {active: data.active, title: data.title, meta: data.meta}
+  }
   window.webxdc.sendToChat({
-      file: {plainText: JSON.stringify(metadata), name: "Traero.json"},
+      file: {plainText: JSON.stringify(file), name: "Traero.json"},
       text: translate("export_message")
   });
 }
