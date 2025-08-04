@@ -1,6 +1,6 @@
 #item {
-	width: 80%;
-	/* height: var(--item_scale); */
+	width: var(--item_width);
+	height: var(--item_height);
 	border-radius: 25px;
 	-ms-word-break: break-all;
 	word-break: break-all;
