@@ -79,6 +79,10 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": null,
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
   oled: {
     "popup": "rgba(20, 20, 20)",
@@ -158,6 +162,10 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": "white",
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
   dark: {
     "popup": "rgba(70, 70, 70)",
@@ -238,6 +246,10 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": "white",
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
   light: {
     "popup": "rgba(220, 220, 220)",
@@ -317,6 +329,10 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": null,
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
   yb: {
     "popup": null,
@@ -396,6 +412,10 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": null,
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
   eink: {
     "popup": "white",
@@ -476,6 +496,10 @@ var themes = {
 
     "toast-button-border": "5px solid black",
     "toast-button-text": "black",
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
 }
 

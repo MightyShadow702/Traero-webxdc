@@ -77,4 +77,8 @@
   --toast-button: grey;
   --toast-button-border: 0px;
   --toast-button-text: black;
+
+  --item-height: 27vw;
+  --item-width: 27vw;
+  --item-text-align: center;
 }

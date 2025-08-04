@@ -1,6 +1,6 @@
 #item {
-	width: var(--item_width);
-	height: var(--item_height);
+	width: var(--item-width);
+	height: var(--item-height);
 	border-radius: 25px;
 	-ms-word-break: break-all;
 	word-break: break-all;
@@ -14,7 +14,7 @@
 #item #title {
 		font-size: var(--item-title-font-size);
     margin: 5px;
-    text-align: left;
+    text-align: var(--item-text-align);
 }
 
 #item #meta {
