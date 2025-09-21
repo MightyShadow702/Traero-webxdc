@@ -12,12 +12,12 @@
 	padding: 5px;
 }
 #item #title {
-    font-size: 4vw;
+		font-size: var(--item-title-font-size);
     margin: 5px;
 }
 
 #item #meta {
-    font-size: 3vw;
+		font-size: var(--item-meta-font-size);
 }
 
 #item_list {
@@ -47,7 +47,7 @@
 }
 
 .section_title {
-	font-size: 5vw;
+	font-size: var(--title-font-size);
 	margin: 15px;
 	text-align: center;
 	color: var(--list-text);

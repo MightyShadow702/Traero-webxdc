@@ -9,10 +9,6 @@
   content: inherit;
 }
 
-:root{
-  --menu_button_size: min(9vw, 100px);
-}
-
 @media screen and (orientation: portrait) {
   .menu_open {
     width: 50%;
