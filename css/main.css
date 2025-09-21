@@ -7,7 +7,7 @@
 	:root {
 		--item_scale: max(75px, 27vw);
 		--item-title-font-size: max(10px, 4vw);
-		--item-meta-font-size: max(6px, 3vw);
+		--item-meta-font-size: max(8px, 3vw);
 		--input_scale: max(20px, 10vw);
 		--search-font-size: max(10px, 3.5vw);
 		--title-font-size: max(15px, 5vw);
@@ -18,7 +18,7 @@
 	:root {
 		--item_scale: max(75px, min(250px, min(22vw, 22vh)));/*min(27vw, 175px);*/
 		--item-title-font-size: max(10px, min(40px, min(3.5vw, 3.5vh)));
-		--item-meta-font-size: max(6px, min(25px, min(3vw, 3vh)));
+		--item-meta-font-size: max(8px, min(25px, min(2.5vw, 2.5vh)));
 		--input_scale: max(20px, min(100px, min(10vw, 10vh)));
 		--search-font-size: max(10px,min(35px, min(3.5vw, 3.5vh)));
 		--title-font-size: max(15px, min(50px, min(5vw, 5vh)));
