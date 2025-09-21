@@ -2,10 +2,30 @@
 	margin:0px;
 	padding:0px;
 }
-:root {
+
+@media (orientation: portrait) {
+	:root {
+		--item_scale: 27vw;
+		--item-title-font-size: 4vw;
+		--item-meta-font-size: 3vw;
 		--input_scale: 10vw;
-    --item_scale: 27vw;
+		--search-font-size: 3.5vw;
+		--title-font-size: 5vw;
+		--menu_button_size: 9vw;
+	}
 }
+@media (orientation: landscape) {
+	:root {
+		--item_scale: max(75px, min(250px, min(22vw, 22vh)));/*min(27vw, 175px);*/
+		--item-title-font-size: max(10px, min(40px, min(3.5vw, 3.5vh)));
+		--item-meta-font-size: max(6px, min(25px, min(3vw, 3vh)));
+		--input_scale: max(20px, min(100px, min(10vw, 10vh)));
+		--search-font-size: max(10px,min(35px, min(3.5vw, 3.5vh)));
+		--title-font-size: max(15px, min(50px, min(5vw, 5vh)));
+		--menu_button_size: max(25px, min(100px, min(9vw, 9vh)));
+	}
+}
+
 body {
 	height: 100%;
 	width: 100%;
@@ -34,7 +54,7 @@ body {
 
 #inputarea > * {
 	border: 0px;
-	font-size: 3.5vw;
+	font-size: var(--search-font-size);
 	color: black;
 	background-color: var(--search);
 	color: var(--search-text);
@@ -54,6 +74,7 @@ body {
 	position: relative;
 	right: 0px;
 	top: 0px;
+	border: 0px;
 	border-left: var(--search-button-border);
 	width: var(--input_scale);
 	background-color: var(--search-button);
@@ -66,7 +87,7 @@ body {
 		background-color: var(--search-hover);
 		color: var(--search-hover-text);
 	}
-	
+
 	#inputarea button:hover {
 		cursor: pointer;
 		border-left: var(--search-button-hover-border);
