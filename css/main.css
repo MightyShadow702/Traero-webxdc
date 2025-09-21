@@ -5,13 +5,13 @@
 
 @media (orientation: portrait) {
 	:root {
-		--item_scale: 27vw;
-		--item-title-font-size: 4vw;
-		--item-meta-font-size: 3vw;
-		--input_scale: 10vw;
-		--search-font-size: 3.5vw;
-		--title-font-size: 5vw;
-		--menu_button_size: 9vw;
+		--item_scale: max(75px, 27vw);
+		--item-title-font-size: max(10px, 4vw);
+		--item-meta-font-size: max(6px, 3vw);
+		--input_scale: max(20px, 10vw);
+		--search-font-size: max(10px, 3.5vw);
+		--title-font-size: max(15px, 5vw);
+		--menu_button_size: max(25px, 9vw);
 	}
 }
 @media (orientation: landscape) {
