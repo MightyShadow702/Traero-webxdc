@@ -30,6 +30,7 @@ var languages = {
     "style_light": "Bright",
     "style_yb": "Yellow-Blue",
     "style_eink": "E-Ink",
+    "style_zuflucht": "Hotel Zuflucht",
 
     //Tutorial
     "tutorial_title": "Tutorial",
@@ -230,6 +231,7 @@ var languages = {
     "style_dark": "Dunkel",
     "style_light": "Hell",
     "style_yb": "Gelb-Blau",
+    "style_zuflucht": "Hotel Zuflucht",
 
 
     //Tutorial

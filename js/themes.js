@@ -79,6 +79,10 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": null,
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
   oled: {
     "popup": "rgba(20, 20, 20)",
@@ -158,6 +162,10 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": "white",
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
   dark: {
     "popup": "rgba(70, 70, 70)",
@@ -238,6 +246,10 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": "white",
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
   light: {
     "popup": "rgba(220, 220, 220)",
@@ -317,6 +329,10 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": null,
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
   yb: {
     "popup": null,
@@ -396,6 +412,10 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": null,
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
   },
   eink: {
     "popup": "white",
@@ -476,6 +496,94 @@ var themes = {
 
     "toast-button-border": "5px solid black",
     "toast-button-text": "black",
+
+    "item-height": null,
+    "item-width": null,
+    "item-text-align": null,
+  },
+  zuflucht: {
+    "popup": null,
+    "popup-border": null,
+    "popup-text": null,
+
+    "popup-close": null,
+    "popup-close-border": null,
+    "popup-close-text": null,
+
+    "popup-close-hover": null,
+    "popup-close-hover-border": null,
+    "popup-close-hover-text": null,
+
+    "popup-button": null,
+    "popup-button-border": null,
+    "popup-button-text": null,
+
+    "popup-button-hover": null,
+    "popup-button-hover-border": null,
+    "popup-button-hover-text": null,
+
+    "menu": null,
+    "menu-border": null,
+    "menu-toggle": null,
+
+    "menu-button": null,
+    "menu-button-border": null,
+    "menu-button-text": null,
+
+    "menu-button-hover": null,
+    "menu-button-hover-border": null,
+    "menu-button-hover-text": null,
+
+    "list": null,
+    "list-text": null,
+
+    "list-active": null,
+    "list-active-border": null,
+    "list-active-text": null,
+    "list-active-meta": null,
+
+    "list-active-hover-border": null,
+    "list-active-hover-text": null,
+    "list-active-hover-meta": null,
+
+    "list-last-border": null,
+    "list-last-text": null,
+    "list-last-meta": null,
+
+    "list-last-hover": null,
+    "list-last-hover-border": null,
+    "list-last-hover-text": null,
+    "list-last-hover-meta": null,
+
+    "search": null,
+    "search-border": null,
+    "search-text": null,
+
+    "search-hover": null,
+    "search-hover-border": null,
+    "search-hover-text": null,
+
+    "search-button": null,
+    "search-button-border": null,
+    "search-button-text": null,
+
+    "search-button-hover": null,
+    "search-button-hover-border": null,
+    "search-button-hover-text": null,
+
+    "toast": null,
+    "toast-progress": null,
+    "toast-border": null,
+    "toast-text": null,
+
+    "toast-button-border": null,
+    "toast-button-text": null,
+    "item-width": "80%",
+    "item-height": "null",
+
+    "list-last": "rgba(106, 171, 142)",
+    "list-active": "rgba(171, 106, 135)",
+    "item-text-align": "left",
   },
 }
 
