@@ -19,6 +19,8 @@
 
 #item #meta {
 		font-size: var(--item-meta-font-size);
+		margin: 0 5px 0 5px;
+		text-align: var(--item-meta-text-align);
 }
 
 #item_list {

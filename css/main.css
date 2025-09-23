@@ -5,8 +5,8 @@
 
 @media (orientation: portrait) {
 	:root {
-		--item_height: max(75px, 27vw);
-		--item_width: max(75px, 27vw);
+		--item-height: var(--item-height-portrait);
+		--item-width: var(--item-width-portrait);
 		--item-title-font-size: max(10px, 4vw);
 		--item-meta-font-size: max(8px, 3vw);
 		--input_scale: max(20px, 10vw);
@@ -17,8 +17,8 @@
 }
 @media (orientation: landscape) {
 	:root {
-		--item_height: max(75px, min(250px, min(22vw, 22vh)));/*min(27vw, 175px);*/
-		--item_width: max(75px, min(250px, min(22vw, 22vh)));/*min(27vw, 175px);*/
+		--item-height: var(--item-height-landscape);
+		--item-width: var(--item-width-landscape);
 		--item-title-font-size: max(10px, min(40px, min(3.5vw, 3.5vh)));
 		--item-meta-font-size: max(8px, min(25px, min(2.5vw, 2.5vh)));
 		--input_scale: max(20px, min(100px, min(10vw, 10vh)));

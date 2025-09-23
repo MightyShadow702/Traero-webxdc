@@ -34,22 +34,22 @@
   --list: #49595D;
   --list-text: white;
 
-  --list-active: #AB6A87;
+  --list-active: #AD6A87; /*#F06870;*/
   --list-active-border: 0px;
   --list-active-text: white;
   --list-active-meta: rgb(235, 235, 235);
 
-  --list-active-hover: #f27b81ff;
+  --list-active-hover: #C16A87;
   --list-active-hover-border: 0px;
   --list-active-hover-text: white;
   --list-active-hover-meta: rgb(235, 235, 235);
 
-  --list-last: #6AAB8E;
+  --list-last: #6AAB8E;/*#68B8A8;*/
   --list-last-border: 0px;
   --list-last-text: white;
   --list-last-meta: rgb(235, 235, 235);
 
-  --list-last-hover: #79beb1ff;
+  --list-last-hover: #6ABF8E;
   --list-last-hover-border: 0px;
   --list-last-hover-text: white;
   --list-last-hover-meta: rgb(235, 235, 235);
@@ -78,7 +78,11 @@
   --toast-button-border: 0px;
   --toast-button-text: black;
 
-  --item-height: 27vw;
-  --item-width: 27vw;
+  --item-width-landscape: max(75px, min(250px, min(22vw, 22vh)));
+  --item-width-portrait: max(75px, 27vw);
+  --item-height-landscape: max(75px, min(250px, min(22vw, 22vh)));
+  --item-height-portrait: max(75px, 27vw);
+
   --item-text-align: center;
+  --item-meta-text-align: center;
 }

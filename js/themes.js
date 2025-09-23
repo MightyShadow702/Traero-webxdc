@@ -80,9 +80,13 @@ var themes = {
     "toast-button-border": null,
     "toast-button-text": null,
 
-    "item-height": null,
-    "item-width": null,
+    "item-width-landscape": null,
+    "item-width-portrait": null,
+    "item-height-landscape": null,
+    "item-height-portrait": null,
+
     "item-text-align": null,
+    "item-meta-text-align": null,
   },
   oled: {
     "popup": "rgba(20, 20, 20)",
@@ -163,9 +167,13 @@ var themes = {
     "toast-button-border": null,
     "toast-button-text": "white",
 
-    "item-height": null,
-    "item-width": null,
+    "item-width-landscape": null,
+    "item-width-portrait": null,
+    "item-height-landscape": null,
+    "item-height-portrait": null,
+
     "item-text-align": null,
+    "item-meta-text-align": null,
   },
   dark: {
     "popup": "rgba(70, 70, 70)",
@@ -247,9 +255,13 @@ var themes = {
     "toast-button-border": null,
     "toast-button-text": "white",
 
-    "item-height": null,
-    "item-width": null,
+    "item-width-landscape": null,
+    "item-width-portrait": null,
+    "item-height-landscape": null,
+    "item-height-portrait": null,
+
     "item-text-align": null,
+    "item-meta-text-align": null,
   },
   light: {
     "popup": "rgba(220, 220, 220)",
@@ -330,9 +342,13 @@ var themes = {
     "toast-button-border": null,
     "toast-button-text": null,
 
-    "item-height": null,
-    "item-width": null,
+    "item-width-landscape": null,
+    "item-width-portrait": null,
+    "item-height-landscape": null,
+    "item-height-portrait": null,
+
     "item-text-align": null,
+    "item-meta-text-align": null,
   },
   yb: {
     "popup": null,
@@ -413,9 +429,13 @@ var themes = {
     "toast-button-border": null,
     "toast-button-text": null,
 
-    "item-height": null,
-    "item-width": null,
+    "item-width-landscape": null,
+    "item-width-portrait": null,
+    "item-height-landscape": null,
+    "item-height-portrait": null,
+
     "item-text-align": null,
+    "item-meta-text-align": null,
   },
   eink: {
     "popup": "white",
@@ -497,9 +517,13 @@ var themes = {
     "toast-button-border": "5px solid black",
     "toast-button-text": "black",
 
-    "item-height": null,
-    "item-width": null,
+    "item-width-landscape": null,
+    "item-width-portrait": null,
+    "item-height-landscape": null,
+    "item-height-portrait": null,
+
     "item-text-align": null,
+    "item-meta-text-align": null,
   },
   zuflucht: {
     "popup": null,
@@ -537,15 +561,17 @@ var themes = {
     "list": null,
     "list-text": null,
 
-    "list-active": null,
+    "list-active": "rgba(171, 106, 135)",
     "list-active-border": null,
     "list-active-text": null,
     "list-active-meta": null,
 
+    "list-active-hover": null,
     "list-active-hover-border": null,
     "list-active-hover-text": null,
     "list-active-hover-meta": null,
 
+    "list-last": "rgba(106, 171, 142)",
     "list-last-border": null,
     "list-last-text": null,
     "list-last-meta": null,
@@ -578,12 +604,14 @@ var themes = {
 
     "toast-button-border": null,
     "toast-button-text": null,
-    "item-width": "80%",
-    "item-height": "null",
 
-    "list-last": "rgba(106, 171, 142)",
-    "list-active": "rgba(171, 106, 135)",
+    "item-width-landscape": "80%",
+    "item-width-portrait": "80%",
+    "item-height-landscape": null,
+    "item-height-portrait": null,
+
     "item-text-align": "left",
+    "item-meta-text-align": "left",
   },
 }
 
@@ -594,10 +622,12 @@ function changeTheme(theme)
     var value = theme[key];
     if (value != null)
     {
+      console.log("set", key, value);
       document.documentElement.style.setProperty("--"+key, value);
     }
     else
     {
+      console.log("del", key, value);
       document.documentElement.style.removeProperty("--"+key);
     }
   }
