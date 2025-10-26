@@ -23,7 +23,7 @@
 	<body onload="onload()">
 		<div id="menu">
 			<button id="toggle" onclick="toggle_menu()" aria-pressed="false"><img src="assets/menu.svg" alt="menu"></img></button>
-			<div id="menucontent" role="group" aria-labelledby="toggle">
+			<div id="menucontent" role="group" aria-labelledby="toggle" onkeyup="menu_onkeyup(event)">
 				<button onclick="import_metadata()" id="bt_import">Import</button>
 				<button onclick="export_metadata()" id="bt_export">Export</button>
 				<button onclick="show_tutorial()" id="bt_tutorial">Tutorial</button>
