@@ -1,15 +1,18 @@
 function toggle_menu()
 {
   var obj = document.getElementById("menucontent");
+  var button = document.getElementById("toggle");
   if (!document.getElementById("menu").classList.contains("menu_open"))
   {
     document.getElementById("menu").classList.add("menu_open");
     document.getElementById("menu").classList.remove("menu_close");
+    button.setAttribute("aria-pressed", true);
   }
   else
   {
     document.getElementById("menu").classList.add("menu_close");
     document.getElementById("menu").classList.remove("menu_open");
+    button.setAttribute("aria-pressed", false);
   }
 }
 
