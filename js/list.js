@@ -86,6 +86,7 @@ class Item
     }
 
     var delete_timer = -1;
+    var start_keyPress = 0;
 
     function startPress()
     {
@@ -126,11 +127,41 @@ class Item
         clearInterval(delete_timer);
       }, 1000);
     }
+    function startKeyPress(event)
+    {
+      if (event.key == "Enter" || event.key == "Space")
+      {
+        event.preventDefault();
+        event.stopPropagation();
+        if (!start_keyPress)
+        {
+          start_keyPress = (new Date()).getTime();
+        } else {
+          return;
+        }
+        startPress();
+      }
+    }
     function cancelPress()
     {
       if (delete_timer != -1)
       {
         clearInterval(delete_timer);
+      }
+    }
+    function cancelKeyPress(event)
+    {
+      if (event.key == "Enter" || event.key == "Space")
+      {
+        event.preventDefault();
+        event.stopPropagation();
+        var delta = (new Date()).getTime() - start_keyPress;
+        if (delta <= 100)
+        {
+          event.target.click();
+        }
+        cancelPress();
+        start_keyPress = 0;
       }
     }
     this.dom.addEventListener("mousedown", startPress);
@@ -139,6 +170,8 @@ class Item
     this.dom.addEventListener("touchstart", startPress);
     this.dom.addEventListener("touchend", cancelPress);
     this.dom.addEventListener("touchcancel", cancelPress);
+    this.dom.addEventListener("keydown", startKeyPress);
+    this.dom.addEventListener("keyup", cancelKeyPress);
   }
 }
 
@@ -161,6 +194,12 @@ function input_onkeydown(obj, event)
 {
   if (obj.value != "" && event.key == "Enter")
   {
+  if (obj.value == name_backup)
+  {
+    event.preventDefault();
+    event.stopPropagation();
+    return;
+  }
     editing = false;
     add_item(obj.value.trim());
     obj.value = "";
