@@ -94,3 +94,12 @@ function show_tutorial()
 {
   window.location.replace("/tutorial.html");
 }
+
+function menu_onkeyup(event)
+{
+  if (event.key == "Escape")
+  {
+    toggle_menu();
+    document.getElementById("toggle").focus();
+  }
+}
