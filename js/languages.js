@@ -862,7 +862,7 @@ var languages = {
     "style_light": "Svetlý",
     "style_yb": "Žltomodrý",
     "style_eink": "E-Ink",
-    "style_zuflucht": "Hotel Zuflucht",
+    "style_zuflucht": "Hotel Haven",
 
     //Tutorial
     "tutorial_title": "Tutoriál",
