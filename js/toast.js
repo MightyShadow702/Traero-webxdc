@@ -8,6 +8,7 @@ function traero_toast(msg, mstime, closeable=false, button_onclick=undefined)
   toast.appendChild(timer_ui);
   var text = document.createElement("p");
   text.id = "message";
+  text.role = "alert";
   text.innerHTML = msg;
   toast.appendChild(text);
   if (closeable)
