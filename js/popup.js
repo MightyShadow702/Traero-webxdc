@@ -54,6 +54,8 @@ class traero_popup
       content.classList.add(classes[i]);
     }
     document.body.appendChild(dom);
+    content.focus();
+    content.click();
   }
 }
 

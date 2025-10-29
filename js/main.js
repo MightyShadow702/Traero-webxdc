@@ -24,7 +24,6 @@ function update_handler(data)
   if (data.serial == data.max_serial)
   {
       var payload = data.payload;
-      console.log(payload.metadata);
       for (const [name, data] of Object.entries(payload.metadata))
       {
         if (!(name in metadata) || (name in metadata && metadata[name].timestamp < data.timestamp))
@@ -57,7 +56,7 @@ function onload()
   {
     changeTheme(themes[localStorage.selectedTheme]);
   }
-  
+
   window.webxdc.setUpdateListener(update_handler);
 
   if (localStorage.firstSession == undefined)
