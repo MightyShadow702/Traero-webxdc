@@ -30,7 +30,8 @@ class traero_popup
     bt_close.innerHTML = "X";
     bt_close.onclick = function()
     {
-      this.close();
+      dom.remove();
+      document.getElementById("toggle").focus();
     }
     dom.appendChild(bt_close);
     if (title)

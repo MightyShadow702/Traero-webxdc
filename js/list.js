@@ -84,6 +84,7 @@ class Item
     this.dom.onclick = function(){
       obj.Toggle();
     }
+    this.dom.setAttribute("onkeyup", "item_onkeyup(this, event)");
 
     var delete_timer = -1;
     var start_keyPress = 0;
@@ -172,6 +173,22 @@ class Item
     this.dom.addEventListener("touchcancel", cancelPress);
     this.dom.addEventListener("keydown", startKeyPress);
     this.dom.addEventListener("keyup", cancelKeyPress);
+  }
+}
+
+function item_onkeyup(obj, event)
+{
+  if (event.key == "Enter")
+  {
+    obj.click();
+  }
+  else if (/^[a-zA-Z]$/.test(event.key))
+  {
+    var input = document.getElementById("new_item_input");
+    input.focus();
+    input.click();
+    input.value += event.key;
+    input_oninput(input);
   }
 }
 
