@@ -1,18 +1,23 @@
+function close_menu()
+{
+  document.getElementById("menu").classList.add("menu_close");
+  document.getElementById("menu").classList.remove("menu_open");
+  document.getElementById("toggle").setAttribute("aria-pressed", false);
+  document.getElementById("new_item_input").focus();
+}
+
 function toggle_menu()
 {
-  var obj = document.getElementById("menucontent");
-  var button = document.getElementById("toggle");
+
   if (!document.getElementById("menu").classList.contains("menu_open"))
   {
     document.getElementById("menu").classList.add("menu_open");
     document.getElementById("menu").classList.remove("menu_close");
-    button.setAttribute("aria-pressed", true);
+    document.getElementById("toggle").setAttribute("aria-pressed", true);
   }
   else
   {
-    document.getElementById("menu").classList.add("menu_close");
-    document.getElementById("menu").classList.remove("menu_open");
-    button.setAttribute("aria-pressed", false);
+    close_menu();
   }
 }
 
@@ -99,7 +104,6 @@ function menu_onkeyup(event)
 {
   if (event.key == "Escape")
   {
-    toggle_menu();
-    document.getElementById("toggle").focus();
+    close_menu();
   }
 }

@@ -192,19 +192,27 @@ function add_item(name)
 
 function input_onkeydown(obj, event)
 {
-  if (obj.value != "" && event.key == "Enter")
+  if (obj.value != "")
   {
-  if (obj.value == name_backup)
-  {
-    event.preventDefault();
-    event.stopPropagation();
-    return;
-  }
-    editing = false;
-    add_item(obj.value.trim());
-    obj.value = "";
-    search_string = "";
-    update_search();
+    if (event.key == "Enter")
+    {
+      editing = false;
+      add_item(obj.value.trim());
+      obj.value = "";
+      search_string = "";
+      update_search();
+    }
+    else if (event.key == "Escape")
+    {
+      input_clear();
+    }
+    else if (event.key == "Delete")
+    {
+      editing = false;
+      obj.value = "";
+      search_string = "";
+      update_search();
+    }
   }
 }
 
