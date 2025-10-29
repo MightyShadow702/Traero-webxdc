@@ -24,7 +24,7 @@ class traero_popup
     this.dom = dom;
     dom.id = "popup";
     dom.setAttribute("onkeyup", "popup_onkeyup(event)");
-var bt_close = document.createElement("button");
+    var bt_close = document.createElement("button");
     bt_close.id = "bt_close";
     bt_close.innerHTML = "X";
     bt_close.onclick = function()
