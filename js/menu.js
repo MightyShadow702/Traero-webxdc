@@ -33,7 +33,7 @@ function show_about()
   title.innerHTML = "Traero";
   about_dialog.add(title);
   var version_number = document.createElement("p");
-  version_number.innerHTML = "Version: 0.8.9";
+  version_number.innerHTML = "Version: 0.8.10";
   about_dialog.add(version_number);
   var license_txt = document.createElement("p");
   license_txt.id = "license_title";
