@@ -98,6 +98,7 @@ class Item
         //check if screen moved (touch), else just true
         if (Math.abs(start_mouse_x - mouse_x) < 5 && Math.abs(start_mouse_y - mouse_y) < 5)
         {
+          start_keyPress = 0;
           obj.dom.remove();
           if (metadata[name].active)
           {
@@ -138,19 +139,23 @@ class Item
         if (!start_keyPress)
         {
           start_keyPress = (new Date()).getTime();
+          key_pressed = true;
         } else {
           return;
         }
-        key_pressed = true;
         startPress();
       }
       else if (/^[a-zA-Z]$/.test(event.key))
       {
+        event.preventDefault();
+        event.stopPropagation();
         cancelPress();
         start_keyPress = 0;
+        key_pressed = false;
         var input = document.getElementById("new_item_input");
         input.focus();
         input.click();
+        input.value += event.key;
         input_oninput(input);
       }
     }
@@ -207,11 +212,15 @@ function input_onkeyup(obj, event)
 {
   if (key_pressed)
   {
+    event.preventDefault();
+    event.stopPropagation();
+    start_keyPress = 0;
     key_pressed = false;
-    return;
   }
-  if (obj.value != "")
+  else if (obj.value != "")
   {
+    event.preventDefault();
+    event.stopPropagation();
     if (event.key == "Enter")
     {
       add_item(obj.value.trim());
