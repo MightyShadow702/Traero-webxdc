@@ -30,7 +30,7 @@ var languages = {
     "style_light": "Bright",
     "style_yb": "Yellow-Blue",
     "style_eink": "E-Ink",
-    "style_zuflucht": "Hotel Zuflucht",
+    "style_zuflucht": "Hotel Haven",
 
     //Tutorial
     "tutorial_title": "Tutorial",
@@ -831,6 +831,48 @@ var languages = {
         "tutorial_remove": "নিখুঁত! এখন এটি আপনার কেনাকাটার ইতিহাসে রয়েছে, যাতে আপনি পরের বার এটি দ্রুত খুঁজে পেতে পারেন।\nএখন আপনার জিনিসটি কেনাকাটার ইতিহাস থেকে সম্পূর্ণরূপে মুছে ফেলার জন্য আবার কিছুক্ষণের জন্য টিপুন।",
         "tutorial_close": "এটি ছিল এর সমস্ত কার্যকারিতার গুরুত্ব সহ সম্পূর্ণ টিউটোরিয়াল।\nআপনার পরবর্তী শপিং ট্যুরে মজা করুন!"
       },
+  "sk": {
+    "buy": "Kúpiť",
+    "last": "Nakúpené",
+    "search": "Potrebujem...",
+    "bt_export": "Exportovať",
+    "bt_import": "Importovať",
+    "about_title": "O aplikácii",
+    "export_message": "Tento súbor je exportovaný z aplikácie Traero",
+    "update_message": "{0} aktualizoval(a) zoznam v aplikácii Traero",
+    "update_item_txt": "položka",
+    "update_items_txt": "položiek",
+
+    //toasts
+    "toast_fist_start": "Zobraziť tutoriál?",
+    "toast_undo": "Vrátiť späť?",
+
+    //languages
+    "language_title": "Jazyk",
+    "bt_automatic": "Automaticky",
+    "language_name": "Slovenčina",
+
+    //themes
+    "themes_title": "Vzhľad",
+    "bt_default_theme": "Predvolený",
+
+    //styles
+    "style_oled": "Tmavý (OLED)",
+    "style_dark": "Tmavý",
+    "style_light": "Svetlý",
+    "style_yb": "Žltomodrý",
+
+    //Tutorial
+    "tutorial_title": "Tutoriál",
+    "tutorial_button_cancel": "Zrušiť",
+    "tutorial_button_next": "Ukončiť",
+    "tutorial_add": "V spodnej časti pridajte názov položky, ktorú si želáte kúpiť.",
+    "tutorial_edit": "Výborne, Teraz nachvíľu pridržte položku, ktorú ste práve pridali stlačenú.",
+    "tutorial_edit_change": "Teraz ste v režime úprav. Položku môžete upraviť.\nOkrem názvu môžete napísať čiarku a za čiarkou uviesť počet.",
+    "tutorial_check": "Kliknite na položku a označte ju tak ako nakúpenú.",
+    "tutorial_remove": "Nádhera! Položka je teraz v histórii nákupov a môžete ju rýchlo nájsť, ak by ste ju potrebovali kúpiť znovu.\nZ histórie nákupov položku úplne odstránite tak, že ju stlačíte a pridržíte stlačenú.",
+    "tutorial_close": "Predstavili sme vám všetky užitočné funkcie aplikácie.\nPríjemnú zábavu pri ďalších nákupoch!"
+  },
 }
 
 function translate(name, replaces=[])

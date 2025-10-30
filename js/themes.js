@@ -622,12 +622,10 @@ function changeTheme(theme)
     var value = theme[key];
     if (value != null)
     {
-      console.log("set", key, value);
       document.documentElement.style.setProperty("--"+key, value);
     }
     else
     {
-      console.log("del", key, value);
       document.documentElement.style.removeProperty("--"+key);
     }
   }

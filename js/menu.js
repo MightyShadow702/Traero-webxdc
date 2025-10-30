@@ -1,15 +1,23 @@
+function close_menu()
+{
+  document.getElementById("menu").classList.add("menu_close");
+  document.getElementById("menu").classList.remove("menu_open");
+  document.getElementById("toggle").setAttribute("aria-pressed", false);
+  document.getElementById("new_item_input").focus();
+}
+
 function toggle_menu()
 {
-  var obj = document.getElementById("menucontent");
+
   if (!document.getElementById("menu").classList.contains("menu_open"))
   {
     document.getElementById("menu").classList.add("menu_open");
     document.getElementById("menu").classList.remove("menu_close");
+    document.getElementById("toggle").setAttribute("aria-pressed", true);
   }
   else
   {
-    document.getElementById("menu").classList.add("menu_close");
-    document.getElementById("menu").classList.remove("menu_open");
+    close_menu();
   }
 }
 
@@ -25,7 +33,7 @@ function show_about()
   title.innerHTML = "Traero";
   about_dialog.add(title);
   var version_number = document.createElement("p");
-  version_number.innerHTML = "Version: 0.8.8";
+  version_number.innerHTML = "Version: 0.8.9";
   about_dialog.add(version_number);
   var license_txt = document.createElement("p");
   license_txt.id = "license_title";
@@ -90,4 +98,12 @@ function show_themes()
 function show_tutorial()
 {
   window.location.replace("/tutorial.html");
+}
+
+function menu_onkeyup(event)
+{
+  if (event.key == "Escape")
+  {
+    close_menu();
+  }
 }

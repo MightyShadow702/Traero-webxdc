@@ -19,6 +19,8 @@ document.addEventListener('touchmove', function(event) {
   }
 });
 
+var key_pressed = false;
+
 class Item
 {
   remove()
@@ -86,6 +88,7 @@ class Item
     }
 
     var delete_timer = -1;
+    var start_keyPress = 0;
 
     function startPress()
     {
@@ -95,6 +98,7 @@ class Item
         //check if screen moved (touch), else just true
         if (Math.abs(start_mouse_x - mouse_x) < 5 && Math.abs(start_mouse_y - mouse_y) < 5)
         {
+          start_keyPress = 0;
           obj.dom.remove();
           if (metadata[name].active)
           {
@@ -126,11 +130,56 @@ class Item
         clearInterval(delete_timer);
       }, 1000);
     }
+    function startKeyPress(event)
+    {
+      if (event.key == "Enter" || event.key == "Space")
+      {
+        event.preventDefault();
+        event.stopPropagation();
+        if (!start_keyPress)
+        {
+          start_keyPress = (new Date()).getTime();
+          key_pressed = true;
+        } else {
+          return;
+        }
+        startPress();
+      }
+      else if (/^[a-zA-Z]$/.test(event.key))
+      {
+        event.preventDefault();
+        event.stopPropagation();
+        cancelPress();
+        start_keyPress = 0;
+        key_pressed = false;
+        var input = document.getElementById("new_item_input");
+        input.focus();
+        input.click();
+        input.value += event.key;
+        input_oninput(input);
+      }
+    }
     function cancelPress()
     {
       if (delete_timer != -1)
       {
         clearInterval(delete_timer);
+      }
+    }
+    function cancelKeyPress(event)
+    {
+      if (event.key == "Enter" || event.key == "Space")
+      {
+        event.preventDefault();
+        event.stopPropagation();
+        var delta = (new Date()).getTime() - start_keyPress;
+        if (delta <= 150)
+        {
+          event.target.click();
+        }
+        cancelPress();
+        key_pressed = false;
+        start_keyPress = 0;
       }
     }
     this.dom.addEventListener("mousedown", startPress);
@@ -139,6 +188,8 @@ class Item
     this.dom.addEventListener("touchstart", startPress);
     this.dom.addEventListener("touchend", cancelPress);
     this.dom.addEventListener("touchcancel", cancelPress);
+    this.dom.addEventListener("keydown", startKeyPress);
+    this.dom.addEventListener("keyup", cancelKeyPress);
   }
 }
 
@@ -157,15 +208,37 @@ function add_item(name)
   save_metadata();
 }
 
-function input_onkeydown(obj, event)
+function input_onkeyup(obj, event)
 {
-  if (obj.value != "" && event.key == "Enter")
+  if (key_pressed)
   {
-    editing = false;
-    add_item(obj.value.trim());
-    obj.value = "";
-    search_string = "";
-    update_search();
+    event.preventDefault();
+    event.stopPropagation();
+    start_keyPress = 0;
+    key_pressed = false;
+  }
+  else if (obj.value != "")
+  {
+    event.preventDefault();
+    event.stopPropagation();
+    if (event.key == "Enter")
+    {
+      add_item(obj.value.trim());
+      obj.value = "";
+      search_string = "";
+      update_search();
+    }
+    else if (event.key == "Escape")
+    {
+      input_clear();
+    }
+    else if (event.key == "Delete")
+    {
+      editing = false;
+      obj.value = "";
+      search_string = "";
+      update_search();
+    }
   }
 }
 
