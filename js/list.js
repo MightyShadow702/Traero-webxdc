@@ -19,6 +19,8 @@ document.addEventListener('touchmove', function(event) {
   }
 });
 
+var key_pressed = false;
+
 class Item
 {
   remove()
@@ -84,7 +86,6 @@ class Item
     this.dom.onclick = function(){
       obj.Toggle();
     }
-    this.dom.setAttribute("onkeyup", "item_onkeyup(this, event)");
 
     var delete_timer = -1;
     var start_keyPress = 0;
@@ -140,7 +141,17 @@ class Item
         } else {
           return;
         }
+        key_pressed = true;
         startPress();
+      }
+      else if (/^[a-zA-Z]$/.test(event.key))
+      {
+        cancelPress();
+        start_keyPress = 0;
+        var input = document.getElementById("new_item_input");
+        input.focus();
+        input.click();
+        input_oninput(input);
       }
     }
     function cancelPress()
@@ -157,11 +168,12 @@ class Item
         event.preventDefault();
         event.stopPropagation();
         var delta = (new Date()).getTime() - start_keyPress;
-        if (delta <= 100)
+        if (delta <= 150)
         {
           event.target.click();
         }
         cancelPress();
+        key_pressed = false;
         start_keyPress = 0;
       }
     }
@@ -173,22 +185,6 @@ class Item
     this.dom.addEventListener("touchcancel", cancelPress);
     this.dom.addEventListener("keydown", startKeyPress);
     this.dom.addEventListener("keyup", cancelKeyPress);
-  }
-}
-
-function item_onkeyup(obj, event)
-{
-  if (event.key == "Enter")
-  {
-    obj.click();
-  }
-  else if (/^[a-zA-Z]$/.test(event.key))
-  {
-    var input = document.getElementById("new_item_input");
-    input.focus();
-    input.click();
-    input.value += event.key;
-    input_oninput(input);
   }
 }
 
@@ -207,13 +203,17 @@ function add_item(name)
   save_metadata();
 }
 
-function input_onkeydown(obj, event)
+function input_onkeyup(obj, event)
 {
+  if (key_pressed)
+  {
+    key_pressed = false;
+    return;
+  }
   if (obj.value != "")
   {
     if (event.key == "Enter")
     {
-      editing = false;
       add_item(obj.value.trim());
       obj.value = "";
       search_string = "";
